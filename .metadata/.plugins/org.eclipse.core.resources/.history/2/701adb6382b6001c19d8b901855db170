@@ -1,25 +1,17 @@
 /*
  ============================================================================
  Name        : TP_1.c
- Author      : Perez Cardenal Patricio
+ Author      : 
  Version     :
- Copyright   : TTT
- Description : TP_1 GITHUB
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
  ============================================================================
  */
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "calcular.h"
 
 int main(void) {
-	setbuf(stdout, NULL);
-
-	int suma;
-
-	suma = sumar();
-
-	printf("La suma de ambos numeros es: %d", suma);
-
+	puts("!!!Hello World!!!"); /* prints !!!Hello World!!! */
 	return EXIT_SUCCESS;
 }
