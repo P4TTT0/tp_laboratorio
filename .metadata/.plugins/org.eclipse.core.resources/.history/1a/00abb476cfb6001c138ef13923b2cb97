@@ -1,0 +1,37 @@
+/*
+ ============================================================================
+ Name        : TP_1.c
+ Author      : Perez Cardenal Patricio
+ Version     :
+ Copyright   : TTT
+ Description : TP_1 GITHUB
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+#include "calcular.h" //Incluir la bibloteca creada con ("")
+
+int main(void) {
+	setbuf(stdout, NULL);
+	int numeroUno;
+		int numeroDos;
+		int resultado;
+
+		printf("Ingrese el primer numero: ");
+		scanf("%d", &numeroUno);
+
+		printf("Ingrese el segundo numero: ");
+		scanf("%d", &numeroDos);
+
+		resultado = numeroUno + numeroDos;
+
+		system("clear");
+
+		printf("La suma de ambos numeros es: %d", resultado);
+
+		return EXIT_SUCCESS;
+
+	return EXIT_SUCCESS;
+}

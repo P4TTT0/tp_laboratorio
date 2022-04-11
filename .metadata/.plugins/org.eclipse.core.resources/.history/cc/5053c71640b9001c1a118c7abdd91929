@@ -1,0 +1,16 @@
+/*
+ * funciones.c
+ *
+ *  Created on: 10 abr. 2022
+ *      Author: patri
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+void separador()
+{
+	printf("|------------------------------------|");
+}
+
+
