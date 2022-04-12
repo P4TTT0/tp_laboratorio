@@ -20,7 +20,7 @@ void Clear()
 
 void OpcionElegida(int opcionIngresada)
 {
-	printf("|---------- OPCION >%d< ----------|\n\n", opcionIngresada);
+	printf("|---------- OPCION >%d< ----------|\n", opcionIngresada);
 }
 
 float ValidarNumero(char mensaje [], float numeroMin, float numeroMax)
@@ -36,13 +36,6 @@ float ValidarNumero(char mensaje [], float numeroMin, float numeroMax)
 		scanf("%f", &kilometrosIngresados);
 	}
 	return kilometrosIngresados;
-}
-
-void SystemPause(char mensaje [])
-{
-	printf("%s", mensaje);
-	system("pause");
-	Clear();
 }
 
 

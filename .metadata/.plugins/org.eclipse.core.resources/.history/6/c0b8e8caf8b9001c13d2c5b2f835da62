@@ -16,6 +16,5 @@ void OpcionElegida(int);
 
 int ValidarNumero(char mensaje [], float numeroMin, float numeroMax);
 
-void SystemPause(char mensaje []);
 
 #endif /* FUNCIONES_H_ */

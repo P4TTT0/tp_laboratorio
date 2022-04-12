@@ -39,7 +39,7 @@ void MenuPrincipal()
 		printf("\n5-| Carga forzada de datos |->");
 		printf("\n6-| SALIR |->\n");
 
-		Separador();
+		separador();
 
 		printf("\nIngrese opcion:");
 		scanf("%d", &opcionIngresada);
@@ -56,9 +56,7 @@ void MenuPrincipal()
 		{
 		case 1:
 			Clear();
-			OpcionElegida(opcionIngresada);
-			x = ValidarNumero("Ingrese los KM del viaje: ", 3, 21602);
-			SystemPause("\n|---------- DATOS CARGADOS ----------|\n");
+			x = validarNumero("Ingrese los KM del viaje: ", 2.7, 21602);
 		break;
 		case 2:
 		break;

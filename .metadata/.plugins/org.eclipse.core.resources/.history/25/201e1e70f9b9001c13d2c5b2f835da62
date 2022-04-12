@@ -42,7 +42,6 @@ void SystemPause(char mensaje [])
 {
 	printf("%s", mensaje);
 	system("pause");
-	Clear();
 }
 
 

@@ -58,7 +58,7 @@ void MenuPrincipal()
 			Clear();
 			OpcionElegida(opcionIngresada);
 			x = ValidarNumero("Ingrese los KM del viaje: ", 3, 21602);
-			SystemPause("\n|---------- DATOS CARGADOS ----------|\n");
+			SystemPause("\n\n|---------- DATOS CARGADOS ----------|")
 		break;
 		case 2:
 		break;

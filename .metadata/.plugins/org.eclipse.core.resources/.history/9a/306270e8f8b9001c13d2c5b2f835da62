@@ -38,11 +38,4 @@ float ValidarNumero(char mensaje [], float numeroMin, float numeroMax)
 	return kilometrosIngresados;
 }
 
-void SystemPause(char mensaje [])
-{
-	printf("%s", mensaje);
-	system("pause");
-	Clear();
-}
-
 

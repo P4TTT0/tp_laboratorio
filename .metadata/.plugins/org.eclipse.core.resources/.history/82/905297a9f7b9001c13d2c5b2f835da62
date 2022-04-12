@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void Separador()
+void separador()
 {
 	printf("\n|-------------------------------------|\n");
 }
@@ -18,12 +18,7 @@ void Clear()
 	printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 }
 
-void OpcionElegida(int opcionIngresada)
-{
-	printf("|---------- OPCION >%d< ----------|\n\n", opcionIngresada);
-}
-
-float ValidarNumero(char mensaje [], float numeroMin, float numeroMax)
+float validarNumero(char mensaje [], float numeroMin, float numeroMax)
 {
 	float kilometrosIngresados;
 
@@ -36,13 +31,6 @@ float ValidarNumero(char mensaje [], float numeroMin, float numeroMax)
 		scanf("%f", &kilometrosIngresados);
 	}
 	return kilometrosIngresados;
-}
-
-void SystemPause(char mensaje [])
-{
-	printf("%s", mensaje);
-	system("pause");
-	Clear();
 }
 
 

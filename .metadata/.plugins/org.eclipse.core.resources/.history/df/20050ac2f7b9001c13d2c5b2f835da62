@@ -8,14 +8,11 @@
 #ifndef FUNCIONES_H_
 #define FUNCIONES_H_
 
-void Separador();
+void separador();
 
 void Clear();
 
-void OpcionElegida(int);
+int validarNumero(char mensaje [], float numeroMin, float numeroMax);
 
-int ValidarNumero(char mensaje [], float numeroMin, float numeroMax);
-
-void SystemPause(char mensaje []);
 
 #endif /* FUNCIONES_H_ */

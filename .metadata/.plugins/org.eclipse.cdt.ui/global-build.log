@@ -316,3 +316,108 @@ Info: Internal Builder is used for build
 gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
 Info: Nothing to build for TP_1
 Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+21:30:30 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'OpcionElegida':
+..\src\funciones.c:23:48: error: 'opcionIngresada' undeclared (first use in this function)
+   23 |  printf("|---------- OPCION >%d< ----------|", opcionIngresada);
+      |                                                ^~~~~~~~~~~~~~~
+..\src\funciones.c:23:48: note: each undeclared identifier is reported only once for each function it appears in
+21:30:34 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+..\src\TP_1.c: In function 'MenuPrincipal':
+..\src\TP_1.c:30:8: warning: variable 'x' set but not used [-Wunused-but-set-variable]
+   30 |  float x;
+      |        ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'OpcionElegida':
+..\src\funciones.c:23:48: error: 'opcionIngresada' undeclared (first use in this function)
+   23 |  printf("|---------- OPCION >%d< ----------|", opcionIngresada);
+      |                                                ^~~~~~~~~~~~~~~
+..\src\funciones.c:23:48: note: each undeclared identifier is reported only once for each function it appears in
+21:31:52 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+..\src\TP_1.c: In function 'MenuPrincipal':
+..\src\TP_1.c:30:8: warning: variable 'x' set but not used [-Wunused-but-set-variable]
+   30 |  float x;
+      |        ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+21:32:00 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+21:32:20 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+21:32:21 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+21:32:32 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+21:32:33 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+21:39:54 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+..\src\TP_1.c: In function 'MenuPrincipal':
+..\src\TP_1.c:30:8: warning: variable 'x' set but not used [-Wunused-but-set-variable]
+   30 |  float x;
+      |        ^
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+21:39:55 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+21:40:39 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+..\src\TP_1.c: In function 'MenuPrincipal':
+..\src\TP_1.c:30:8: warning: variable 'x' set but not used [-Wunused-but-set-variable]
+   30 |  float x;
+      |        ^
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+21:40:40 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+21:40:54 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+..\src\TP_1.c: In function 'MenuPrincipal':
+..\src\TP_1.c:30:8: warning: variable 'x' set but not used [-Wunused-but-set-variable]
+   30 |  float x;
+      |        ^
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+21:40:55 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+21:42:38 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+21:42:39 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
