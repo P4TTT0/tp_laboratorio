@@ -1011,3 +1011,324 @@ Info: Internal Builder is used for build
 gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
 Info: Nothing to build for TP_1
 Info: Nothing to build for TP_1
+23:35:27 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+..\src\TP_1.c: In function 'MenuPrincipal':
+..\src\TP_1.c:126:4: error: too few arguments to function 'CalcularPrecioDebito'
+  126 |    CalcularPrecioDebito();
+      |    ^~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\TP_1.c:13:
+..\src\funciones.h:23:7: note: declared here
+   23 | float CalcularPrecioDebito(float precioBruto);
+      |       ^~~~~~~~~~~~~~~~~~~~
+..\src\TP_1.c:35:8: warning: variable 'z' set but not used [-Wunused-but-set-variable]
+   35 |  float z;
+      |        ^
+..\src\TP_1.c:34:8: warning: unused variable 'y' [-Wunused-variable]
+   34 |  float y;
+      |        ^
+..\src\TP_1.c:32:8: warning: variable 'x' set but not used [-Wunused-but-set-variable]
+   32 |  float x;
+      |        ^
+23:35:28 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+..\src\TP_1.c: In function 'MenuPrincipal':
+..\src\TP_1.c:126:4: error: too few arguments to function 'CalcularPrecioDebito'
+  126 |    CalcularPrecioDebito();
+      |    ^~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\TP_1.c:13:
+..\src\funciones.h:23:7: note: declared here
+   23 | float CalcularPrecioDebito(float precioBruto);
+      |       ^~~~~~~~~~~~~~~~~~~~
+..\src\TP_1.c:35:8: warning: variable 'z' set but not used [-Wunused-but-set-variable]
+   35 |  float z;
+      |        ^
+..\src\TP_1.c:34:8: warning: unused variable 'y' [-Wunused-variable]
+   34 |  float y;
+      |        ^
+..\src\TP_1.c:32:8: warning: variable 'x' set but not used [-Wunused-but-set-variable]
+   32 |  float x;
+      |        ^
+23:35:41 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+..\src\TP_1.c: In function 'MenuPrincipal':
+..\src\TP_1.c:34:8: warning: unused variable 'y' [-Wunused-variable]
+   34 |  float y;
+      |        ^
+..\src\TP_1.c:32:8: warning: variable 'x' set but not used [-Wunused-but-set-variable]
+   32 |  float x;
+      |        ^
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+23:36:17 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+..\src\TP_1.c: In function 'MenuPrincipal':
+..\src\TP_1.c:34:8: warning: unused variable 'y' [-Wunused-variable]
+   34 |  float y;
+      |        ^
+..\src\TP_1.c:32:8: warning: variable 'x' set but not used [-Wunused-but-set-variable]
+   32 |  float x;
+      |        ^
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+23:36:27 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+23:37:15 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'CalcularPrecioDebito':
+..\src\funciones.c:69:9: error: incompatible type for argument 1 of 'printf'
+   69 |  printf(precioFinal);
+      |         ^~~~~~~~~~~
+      |         |
+      |         float
+In file included from ..\src\funciones.c:8:
+c:\mingw\include\stdio.h:462:46: note: expected 'const char *' but argument is of type 'float'
+  462 | _CRTIMP __cdecl __MINGW_NOTHROW  int printf (const char *, ...);
+      |                                              ^~~~~~~~~~~~
+23:37:16 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'CalcularPrecioDebito':
+..\src\funciones.c:69:9: error: incompatible type for argument 1 of 'printf'
+   69 |  printf(precioFinal);
+      |         ^~~~~~~~~~~
+      |         |
+      |         float
+In file included from ..\src\funciones.c:8:
+c:\mingw\include\stdio.h:462:46: note: expected 'const char *' but argument is of type 'float'
+  462 | _CRTIMP __cdecl __MINGW_NOTHROW  int printf (const char *, ...);
+      |                                              ^~~~~~~~~~~~
+23:37:45 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'CalcularPrecioDebito':
+..\src\funciones.c:69:9: error: incompatible type for argument 1 of 'printf'
+   69 |  printf(precioFinal);
+      |         ^~~~~~~~~~~
+      |         |
+      |         float
+In file included from ..\src\funciones.c:8:
+c:\mingw\include\stdio.h:462:46: note: expected 'const char *' but argument is of type 'float'
+  462 | _CRTIMP __cdecl __MINGW_NOTHROW  int printf (const char *, ...);
+      |                                              ^~~~~~~~~~~~
+23:37:47 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'CalcularPrecioDebito':
+..\src\funciones.c:69:9: error: incompatible type for argument 1 of 'printf'
+   69 |  printf(precioFinal);
+      |         ^~~~~~~~~~~
+      |         |
+      |         float
+In file included from ..\src\funciones.c:8:
+c:\mingw\include\stdio.h:462:46: note: expected 'const char *' but argument is of type 'float'
+  462 | _CRTIMP __cdecl __MINGW_NOTHROW  int printf (const char *, ...);
+      |                                              ^~~~~~~~~~~~
+23:38:05 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+Info: Nothing to build for TP_1
+23:40:35 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+23:40:36 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+23:40:55 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+23:40:56 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+23:43:06 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+..\src\TP_1.c: In function 'MenuPrincipal':
+..\src\TP_1.c:112:14: error: lvalue required as left operand of assignment
+  112 |     (float)z = ValidarNumero("Ingrese el precio de LATAM: ", 500, 50000);
+      |              ^
+..\src\TP_1.c:34:8: warning: unused variable 'y' [-Wunused-variable]
+   34 |  float y;
+      |        ^
+..\src\TP_1.c:32:8: warning: variable 'x' set but not used [-Wunused-but-set-variable]
+   32 |  float x;
+      |        ^
+23:43:07 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+..\src\TP_1.c: In function 'MenuPrincipal':
+..\src\TP_1.c:112:14: error: lvalue required as left operand of assignment
+  112 |     (float)z = ValidarNumero("Ingrese el precio de LATAM: ", 500, 50000);
+      |              ^
+..\src\TP_1.c:34:8: warning: unused variable 'y' [-Wunused-variable]
+   34 |  float y;
+      |        ^
+..\src\TP_1.c:32:8: warning: variable 'x' set but not used [-Wunused-but-set-variable]
+   32 |  float x;
+      |        ^
+23:43:20 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+..\src\TP_1.c: In function 'MenuPrincipal':
+..\src\TP_1.c:34:8: warning: unused variable 'y' [-Wunused-variable]
+   34 |  float y;
+      |        ^
+..\src\TP_1.c:32:8: warning: variable 'x' set but not used [-Wunused-but-set-variable]
+   32 |  float x;
+      |        ^
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+Info: Nothing to build for TP_1
+23:45:05 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+23:45:19 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+..\src\TP_1.c: In function 'MenuPrincipal':
+..\src\TP_1.c:35:8: warning: variable 'z' set but not used [-Wunused-but-set-variable]
+   35 |  float z;
+      |        ^
+..\src\TP_1.c:34:8: warning: unused variable 'y' [-Wunused-variable]
+   34 |  float y;
+      |        ^
+..\src\TP_1.c:32:8: warning: variable 'x' set but not used [-Wunused-but-set-variable]
+   32 |  float x;
+      |        ^
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+23:46:45 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+..\src\TP_1.c: In function 'MenuPrincipal':
+..\src\TP_1.c:34:8: warning: unused variable 'y' [-Wunused-variable]
+   34 |  float y;
+      |        ^
+..\src\TP_1.c:32:8: warning: variable 'x' set but not used [-Wunused-but-set-variable]
+   32 |  float x;
+      |        ^
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+23:55:15 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+..\src\TP_1.c: In function 'MenuPrincipal':
+..\src\TP_1.c:34:8: warning: unused variable 'y' [-Wunused-variable]
+   34 |  float y;
+      |        ^
+..\src\TP_1.c:32:8: warning: variable 'x' set but not used [-Wunused-but-set-variable]
+   32 |  float x;
+      |        ^
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+23:55:19 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+23:56:53 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+..\src\TP_1.c: In function 'MenuPrincipal':
+..\src\TP_1.c:34:8: warning: unused variable 'y' [-Wunused-variable]
+   34 |  float y;
+      |        ^
+..\src\TP_1.c:32:8: warning: variable 'x' set but not used [-Wunused-but-set-variable]
+   32 |  float x;
+      |        ^
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+23:56:54 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+23:58:00 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+..\src\TP_1.c: In function 'MenuPrincipal':
+..\src\TP_1.c:34:8: warning: variable 'y' set but not used [-Wunused-but-set-variable]
+   34 |  float y;
+      |        ^
+..\src\TP_1.c:32:8: warning: variable 'x' set but not used [-Wunused-but-set-variable]
+   32 |  float x;
+      |        ^
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+23:58:01 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+Info: Nothing to build for TP_1
+00:04:32 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+..\src\TP_1.c: In function 'MenuPrincipal':
+..\src\TP_1.c:34:8: warning: variable 'y' set but not used [-Wunused-but-set-variable]
+   34 |  float y;
+      |        ^
+..\src\TP_1.c:32:8: warning: variable 'x' set but not used [-Wunused-but-set-variable]
+   32 |  float x;
+      |        ^
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+00:08:01 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+..\src\TP_1.c: In function 'MenuPrincipal':
+..\src\TP_1.c:34:8: warning: variable 'y' set but not used [-Wunused-but-set-variable]
+   34 |  float y;
+      |        ^
+..\src\TP_1.c:32:8: warning: variable 'x' set but not used [-Wunused-but-set-variable]
+   32 |  float x;
+      |        ^
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+00:08:03 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+00:08:23 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+..\src\TP_1.c: In function 'MenuPrincipal':
+..\src\TP_1.c:34:8: warning: variable 'y' set but not used [-Wunused-but-set-variable]
+   34 |  float y;
+      |        ^
+..\src\TP_1.c:32:8: warning: variable 'x' set but not used [-Wunused-but-set-variable]
+   32 |  float x;
+      |        ^
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+00:08:28 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 

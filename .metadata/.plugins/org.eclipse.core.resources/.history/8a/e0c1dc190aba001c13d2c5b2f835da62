@@ -62,7 +62,7 @@ float CalcularPrecioDebito(float precioBruto)
 
 	descuento = 10;
 
-	precioDescuento = precioBruto * descuento / 100;
+	precioDescuento = (float)precioBruto * descuento / 100;
 
 	precioFinal = precioBruto - precioDescuento;
 

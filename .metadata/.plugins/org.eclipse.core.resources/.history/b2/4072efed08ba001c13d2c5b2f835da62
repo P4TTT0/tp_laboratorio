@@ -54,21 +54,4 @@ void SystemPause(char mensaje [])
 	Clear();
 }
 
-float CalcularPrecioDebito(float precioBruto)
-{
-	int descuento;
-	float precioDescuento;
-	float precioFinal;
-
-	descuento = 10;
-
-	precioDescuento = precioBruto * descuento / 100;
-
-	precioFinal = precioBruto - precioDescuento;
-
-	printf("%f\n%f\n%d\n", precioFinal, precioBruto, descuento);
-
-	return precioFinal;
-}
-
 

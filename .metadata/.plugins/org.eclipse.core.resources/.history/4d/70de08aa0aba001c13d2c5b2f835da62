@@ -104,7 +104,7 @@ void MenuPrincipal()
 			{
 			case 1:
 				OpcionElegida(vueloIngresado);
-				y = ValidarNumero("Ingrese el precio de AEROLINEAS: ", 1000, 100000);
+				x = ValidarNumero("Ingrese el precio de AEROLINEAS: ", 1000, 100000);
 				SystemPause("\n|---------- DATOS CARGADOS ----------|\n");
 			break;
 			case 2:
@@ -123,7 +123,7 @@ void MenuPrincipal()
 		break;
 
 		case 3:
-			CalcularPrecioDebito(z);
+			CalcularPrecioDebito(1000);
 			SystemPause("\n|---------- DATOS CARGADOS ----------|\n");
 		break;
 		case 4:

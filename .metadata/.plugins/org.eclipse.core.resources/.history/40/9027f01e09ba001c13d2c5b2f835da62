@@ -104,7 +104,7 @@ void MenuPrincipal()
 			{
 			case 1:
 				OpcionElegida(vueloIngresado);
-				y = ValidarNumero("Ingrese el precio de AEROLINEAS: ", 1000, 100000);
+				x = ValidarNumero("Ingrese el precio de AEROLINEAS: ", 1000, 100000);
 				SystemPause("\n|---------- DATOS CARGADOS ----------|\n");
 			break;
 			case 2:
@@ -116,15 +116,11 @@ void MenuPrincipal()
 				Error("option", "INGRESE UNA OPCION VALIDA");
 				Separador();
 				printf("\nIngrese opcion:");
-				fflush(stdin);
 				scanf("%d", &vueloIngresado);
 			break;
 			}
 		break;
-
 		case 3:
-			CalcularPrecioDebito(z);
-			SystemPause("\n|---------- DATOS CARGADOS ----------|\n");
 		break;
 		case 4:
 		break;

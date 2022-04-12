@@ -64,9 +64,6 @@ float CalcularPrecioDebito(float precioBruto)
 
 	precioDescuento = precioBruto * descuento / 100;
 
-	precioFinal = precioBruto - precioDescuento;
-
-	printf("%f\n%f\n%d\n", precioFinal, precioBruto, descuento);
 
 	return precioFinal;
 }

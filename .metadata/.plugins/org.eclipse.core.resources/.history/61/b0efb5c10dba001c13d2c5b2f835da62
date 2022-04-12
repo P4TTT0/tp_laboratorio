@@ -16,7 +16,7 @@ void Error(char tipoError [], char mensaje []);
 
 void OpcionElegida(int);
 
-float ValidarNumero(char mensaje [], float numeroMin, float numeroMax);
+int ValidarNumero(char mensaje [], float numeroMin, float numeroMax);
 
 void SystemPause(char mensaje []);
 

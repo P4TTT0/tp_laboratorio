@@ -104,12 +104,12 @@ void MenuPrincipal()
 			{
 			case 1:
 				OpcionElegida(vueloIngresado);
-				y = ValidarNumero("Ingrese el precio de AEROLINEAS: ", 1000, 100000);
+				x = ValidarNumero("Ingrese el precio de AEROLINEAS: ", 1000, 100000);
 				SystemPause("\n|---------- DATOS CARGADOS ----------|\n");
 			break;
 			case 2:
 				OpcionElegida(vueloIngresado);
-				z = ValidarNumero("Ingrese el precio de LATAM: ", 500, 50000);
+				(float)z = ValidarNumero("Ingrese el precio de LATAM: ", 500, 50000);
 				SystemPause("\n|---------- DATOS CARGADOS ----------|\n");
 			break;
 			default:

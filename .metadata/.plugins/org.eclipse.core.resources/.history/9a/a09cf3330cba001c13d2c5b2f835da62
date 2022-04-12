@@ -32,7 +32,7 @@ void MenuPrincipal()
 	float x;
 	int vueloIngresado;
 	float y;
-	float z;
+	float chiste;
 
 	do
 	{
@@ -104,12 +104,12 @@ void MenuPrincipal()
 			{
 			case 1:
 				OpcionElegida(vueloIngresado);
-				y = ValidarNumero("Ingrese el precio de AEROLINEAS: ", 1000, 100000);
+				x = ValidarNumero("Ingrese el precio de AEROLINEAS: ", 1000, 100000);
 				SystemPause("\n|---------- DATOS CARGADOS ----------|\n");
 			break;
 			case 2:
 				OpcionElegida(vueloIngresado);
-				z = ValidarNumero("Ingrese el precio de LATAM: ", 500, 50000);
+				chiste = ValidarNumero("Ingrese el precio de LATAM: ", 500, 50000);
 				SystemPause("\n|---------- DATOS CARGADOS ----------|\n");
 			break;
 			default:
@@ -124,6 +124,7 @@ void MenuPrincipal()
 
 		case 3:
 			CalcularPrecioDebito(z);
+			printf("%f", z);
 			SystemPause("\n|---------- DATOS CARGADOS ----------|\n");
 		break;
 		case 4:
