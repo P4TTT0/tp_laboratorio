@@ -12,6 +12,8 @@ void Separador();
 
 void Clear();
 
+void Error(char tipoError [], char mensaje []);
+
 void OpcionElegida(int);
 
 int ValidarNumero(char mensaje [], float numeroMin, float numeroMax);
