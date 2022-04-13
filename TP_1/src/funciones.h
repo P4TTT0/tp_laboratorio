@@ -30,4 +30,6 @@ float CalcularPrecioUnitario(float kilometros, float precioBruto);
 
 float CalcularDiferenciaPrecio(float precioBrutoUno, float precioBrutoDos);
 
+int InformarDatos(int opcion, float kilometros, float precioLatam, float debitoLatam, float creditoLatam, float bitcoinLatam, float unitarioLatam, float precioAerolineas, float debitoAerolineas, float creditoAerolineas, float bitcoinAerolineas, float unitarioAerolineas, float diferenciaPrecio);
+
 #endif /* FUNCIONES_H_ */

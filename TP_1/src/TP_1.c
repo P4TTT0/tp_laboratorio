@@ -139,11 +139,13 @@ void MenuPrincipal()
 			{
 			case 1:
 				OpcionElegida(vueloIngresado);
+
 				y = ValidarNumero("Ingrese el precio de AEROLINEAS: ", 1000, 100000);
 				SystemPause("\n|---------- DATOS CARGADOS ----------|\n");
 			break;
 			case 2:
 				OpcionElegida(vueloIngresado);
+				fflush(stdin);
 				z = ValidarNumero("Ingrese el precio de LATAM: ", 500, 50000);
 				SystemPause("\n|---------- DATOS CARGADOS ----------|\n");
 			break;
@@ -198,10 +200,12 @@ void MenuPrincipal()
 			}
 			else
 			{
-
+				InformarDatos(1, x, z, precioDebitoLatam, precioCreditoLatam, precioBitcoinLatam, precioUnitarioLatam, y, precioDebitoAerolineas, precioCreditoAerolineas, precioBitcoinAerolineas, precioUnitarioAerolineas, precioDiferencia);
 			}
 		break;
+
 		case 5:
+			InformarDatos(0, x, z, precioDebitoLatam, precioCreditoLatam, precioBitcoinLatam, precioUnitarioLatam, y, precioDebitoAerolineas, precioCreditoAerolineas, precioBitcoinAerolineas, precioUnitarioAerolineas, precioDiferencia);
 		break;
 		case 6:
 		break;

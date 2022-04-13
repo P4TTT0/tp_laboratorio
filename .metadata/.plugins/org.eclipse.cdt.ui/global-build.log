@@ -1403,3 +1403,432 @@ gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funcione
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
 gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
 Info: Nothing to build for TP_1
+22:58:56 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+..\src\TP_1.c: In function 'CalcularDiferenciaPrecio':
+..\src\TP_1.c:18:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   18 | {
+      | ^
+..\src\TP_1.c:28:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   28 | {
+      | ^
+In file included from ..\src\TP_1.c:13:
+..\src\funciones.h:31:7: error: old-style parameter declarations in prototyped function definition
+   31 | float CalcularDiferenciaPrecio(float precioBrutoUno, float precioBrutoDos)
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~
+..\src\TP_1.c:217: error: expected '{' at end of input
+  217 | }
+      | 
+..\src\TP_1.c:217:1: warning: control reaches end of non-void function [-Wreturn-type]
+  217 | }
+      | ^
+22:59:23 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+..\src\TP_1.c: In function 'CalcularDiferenciaPrecio':
+..\src\TP_1.c:18:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   18 | {
+      | ^
+..\src\TP_1.c:28:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   28 | {
+      | ^
+In file included from ..\src\TP_1.c:13:
+..\src\funciones.h:31:7: error: old-style parameter declarations in prototyped function definition
+   31 | float CalcularDiferenciaPrecio(float precioBrutoUno, float precioBrutoDos)
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~
+..\src\TP_1.c:217: error: expected '{' at end of input
+  217 | }
+      | 
+..\src\TP_1.c:217:1: warning: control reaches end of non-void function [-Wreturn-type]
+  217 | }
+      | ^
+23:00:22 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'CalcularPrecioCredito':
+..\src\funciones.c:75:8: warning: variable 'precioInteres' set but not used [-Wunused-but-set-variable]
+   75 |  float precioInteres;
+      |        ^~~~~~~~~~~~~
+..\src\funciones.c: In function 'informarDatos':
+..\src\funciones.c:147:2: warning: implicit declaration of function 'Seperador'; did you mean 'Separador'? [-Wimplicit-function-declaration]
+  147 |  Seperador();
+      |  ^~~~~~~~~
+      |  Separador
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+..\src\TP_1.c: In function 'CalcularDiferenciaPrecio':
+..\src\TP_1.c:18:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   18 | {
+      | ^
+..\src\TP_1.c:28:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   28 | {
+      | ^
+In file included from ..\src\TP_1.c:13:
+..\src\funciones.h:31:7: error: old-style parameter declarations in prototyped function definition
+   31 | float CalcularDiferenciaPrecio(float precioBrutoUno, float precioBrutoDos)
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~
+..\src\TP_1.c:216: error: expected '{' at end of input
+  216 | }
+      | 
+..\src\TP_1.c:216:1: warning: control reaches end of non-void function [-Wreturn-type]
+  216 | }
+      | ^
+23:00:34 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+..\src\TP_1.c: In function 'CalcularDiferenciaPrecio':
+..\src\TP_1.c:18:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   18 | {
+      | ^
+..\src\TP_1.c:28:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   28 | {
+      | ^
+In file included from ..\src\TP_1.c:13:
+..\src\funciones.h:31:7: error: old-style parameter declarations in prototyped function definition
+   31 | float CalcularDiferenciaPrecio(float precioBrutoUno, float precioBrutoDos)
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~
+..\src\TP_1.c:215: error: expected '{' at end of input
+  215 | }
+      | 
+..\src\TP_1.c:215:1: warning: control reaches end of non-void function [-Wreturn-type]
+  215 | }
+      | ^
+23:00:54 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+..\src\TP_1.c: In function 'CalcularDiferenciaPrecio':
+..\src\TP_1.c:18:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   18 | {
+      | ^
+..\src\TP_1.c:28:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   28 | {
+      | ^
+In file included from ..\src\TP_1.c:13:
+..\src\funciones.h:31:7: error: old-style parameter declarations in prototyped function definition
+   31 | float CalcularDiferenciaPrecio(float precioBrutoUno, float precioBrutoDos)
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~
+..\src\TP_1.c:212: error: expected '{' at end of input
+  212 | }
+      | 
+..\src\TP_1.c:212:1: warning: control reaches end of non-void function [-Wreturn-type]
+  212 | }
+      | ^
+23:01:27 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+..\src\TP_1.c: In function 'CalcularDiferenciaPrecio':
+..\src\TP_1.c:18:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   18 | {
+      | ^
+..\src\TP_1.c:28:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   28 | {
+      | ^
+In file included from ..\src\TP_1.c:13:
+..\src\funciones.h:31:7: error: old-style parameter declarations in prototyped function definition
+   31 | float CalcularDiferenciaPrecio(float precioBrutoUno, float precioBrutoDos)
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~
+..\src\TP_1.c:212: error: expected '{' at end of input
+  212 | }
+      | 
+..\src\TP_1.c:212:1: warning: control reaches end of non-void function [-Wreturn-type]
+  212 | }
+      | ^
+23:01:51 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+..\src\TP_1.c: In function 'CalcularDiferenciaPrecio':
+..\src\TP_1.c:18:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   18 | {
+      | ^
+..\src\TP_1.c:28:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   28 | {
+      | ^
+In file included from ..\src\TP_1.c:13:
+..\src\funciones.h:31:7: error: old-style parameter declarations in prototyped function definition
+   31 | float CalcularDiferenciaPrecio(float precioBrutoUno, float precioBrutoDos)
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~
+..\src\TP_1.c:215: error: expected '{' at end of input
+  215 | }
+      | 
+..\src\TP_1.c:215:1: warning: control reaches end of non-void function [-Wreturn-type]
+  215 | }
+      | ^
+23:02:02 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+..\src\TP_1.c: In function 'CalcularDiferenciaPrecio':
+..\src\TP_1.c:18:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   18 | {
+      | ^
+..\src\TP_1.c:28:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   28 | {
+      | ^
+In file included from ..\src\TP_1.c:13:
+..\src\funciones.h:31:7: error: old-style parameter declarations in prototyped function definition
+   31 | float CalcularDiferenciaPrecio(float precioBrutoUno, float precioBrutoDos)
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~
+..\src\TP_1.c:215: error: expected '{' at end of input
+  215 | }
+      | 
+..\src\TP_1.c:215:1: warning: control reaches end of non-void function [-Wreturn-type]
+  215 | }
+      | ^
+23:02:24 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+..\src\TP_1.c: In function 'CalcularDiferenciaPrecio':
+..\src\TP_1.c:18:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   18 | {
+      | ^
+..\src\TP_1.c:28:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   28 | {
+      | ^
+..\src\TP_1.c:215:2: error: expected declaration specifiers before ';' token
+  215 | };
+      |  ^
+In file included from ..\src\TP_1.c:13:
+..\src\funciones.h:31:7: error: old-style parameter declarations in prototyped function definition
+   31 | float CalcularDiferenciaPrecio(float precioBrutoUno, float precioBrutoDos)
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~
+..\src\TP_1.c:215: error: expected '{' at end of input
+  215 | };
+      | 
+..\src\TP_1.c:215:2: warning: control reaches end of non-void function [-Wreturn-type]
+  215 | };
+      |  ^
+23:02:55 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+..\src\TP_1.c: In function 'MenuPrincipal':
+..\src\TP_1.c:203:5: error: too few arguments to function 'printf'
+  203 |     printf():
+      |     ^~~~~~
+In file included from ..\src\TP_1.c:11:
+c:\mingw\include\stdio.h:462:38: note: declared here
+  462 | _CRTIMP __cdecl __MINGW_NOTHROW  int printf (const char *, ...);
+      |                                      ^~~~~~
+..\src\TP_1.c:203:13: error: expected ';' before ':' token
+  203 |     printf():
+      |             ^
+      |             ;
+..\src\TP_1.c:53:8: warning: variable 'precioDiferencia' set but not used [-Wunused-but-set-variable]
+   53 |  float precioDiferencia;
+      |        ^~~~~~~~~~~~~~~~
+..\src\TP_1.c:50:8: warning: variable 'precioUnitarioLatam' set but not used [-Wunused-but-set-variable]
+   50 |  float precioUnitarioLatam;
+      |        ^~~~~~~~~~~~~~~~~~~
+..\src\TP_1.c:49:8: warning: variable 'precioBitcoinLatam' set but not used [-Wunused-but-set-variable]
+   49 |  float precioBitcoinLatam;
+      |        ^~~~~~~~~~~~~~~~~~
+..\src\TP_1.c:48:8: warning: variable 'precioCreditoLatam' set but not used [-Wunused-but-set-variable]
+   48 |  float precioCreditoLatam;
+      |        ^~~~~~~~~~~~~~~~~~
+..\src\TP_1.c:47:8: warning: variable 'precioDebitoLatam' set but not used [-Wunused-but-set-variable]
+   47 |  float precioDebitoLatam;
+      |        ^~~~~~~~~~~~~~~~~
+..\src\TP_1.c:44:8: warning: variable 'precioUnitarioAerolineas' set but not used [-Wunused-but-set-variable]
+   44 |  float precioUnitarioAerolineas;
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~
+..\src\TP_1.c:43:8: warning: variable 'precioBitcoinAerolineas' set but not used [-Wunused-but-set-variable]
+   43 |  float precioBitcoinAerolineas;
+      |        ^~~~~~~~~~~~~~~~~~~~~~~
+..\src\TP_1.c:42:8: warning: variable 'precioCreditoAerolineas' set but not used [-Wunused-but-set-variable]
+   42 |  float precioCreditoAerolineas;
+      |        ^~~~~~~~~~~~~~~~~~~~~~~
+..\src\TP_1.c:41:8: warning: variable 'precioDebitoAerolineas' set but not used [-Wunused-but-set-variable]
+   41 |  float precioDebitoAerolineas;
+      |        ^~~~~~~~~~~~~~~~~~~~~~
+23:03:36 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+..\src\TP_1.c: In function 'MenuPrincipal':
+..\src\TP_1.c:203:5: error: too many arguments to function 'informarDatos'
+  203 |     informarDatos(1, x, z, precioDebitoLatam, precioCreditoLatam, precioBitcoinLatam, precioUnitarioLatam, precioDebitoAerolineas, precioCreditoAerolineas, precioBitcoinAerolineas, precioUnitarioAerolineas, precioDiferencia);
+      |     ^~~~~~~~~~~~~
+In file included from ..\src\TP_1.c:13:
+..\src\funciones.h:33:5: note: declared here
+   33 | int informarDatos(int opcion);
+      |     ^~~~~~~~~~~~~
+..\src\TP_1.c:208:4: error: too many arguments to function 'informarDatos'
+  208 |    informarDatos(0, x, z, precioDebitoLatam, precioCreditoLatam, precioBitcoinLatam, precioUnitarioLatam, precioDebitoAerolineas, precioCreditoAerolineas, precioBitcoinAerolineas, precioUnitarioAerolineas, precioDiferencia);
+      |    ^~~~~~~~~~~~~
+In file included from ..\src\TP_1.c:13:
+..\src\funciones.h:33:5: note: declared here
+   33 | int informarDatos(int opcion);
+      |     ^~~~~~~~~~~~~
+23:04:43 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+..\src\TP_1.c: In function 'MenuPrincipal':
+..\src\TP_1.c:203:5: error: too many arguments to function 'informarDatos'
+  203 |     informarDatos(1, x, y, z, precioDebitoLatam, precioCreditoLatam, precioBitcoinLatam, precioUnitarioLatam, precioDebitoAerolineas, precioCreditoAerolineas, precioBitcoinAerolineas, precioUnitarioAerolineas, precioDiferencia);
+      |     ^~~~~~~~~~~~~
+In file included from ..\src\TP_1.c:13:
+..\src\funciones.h:33:5: note: declared here
+   33 | int informarDatos(int opcion);
+      |     ^~~~~~~~~~~~~
+..\src\TP_1.c:208:4: error: too many arguments to function 'informarDatos'
+  208 |    informarDatos(0, x, y, z, precioDebitoLatam, precioCreditoLatam, precioBitcoinLatam, precioUnitarioLatam, precioDebitoAerolineas, precioCreditoAerolineas, precioBitcoinAerolineas, precioUnitarioAerolineas, precioDiferencia);
+      |    ^~~~~~~~~~~~~
+In file included from ..\src\TP_1.c:13:
+..\src\funciones.h:33:5: note: declared here
+   33 | int informarDatos(int opcion);
+      |     ^~~~~~~~~~~~~
+23:04:44 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+..\src\TP_1.c: In function 'MenuPrincipal':
+..\src\TP_1.c:203:5: error: too many arguments to function 'informarDatos'
+  203 |     informarDatos(1, x, y, z, precioDebitoLatam, precioCreditoLatam, precioBitcoinLatam, precioUnitarioLatam, precioDebitoAerolineas, precioCreditoAerolineas, precioBitcoinAerolineas, precioUnitarioAerolineas, precioDiferencia);
+      |     ^~~~~~~~~~~~~
+In file included from ..\src\TP_1.c:13:
+..\src\funciones.h:33:5: note: declared here
+   33 | int informarDatos(int opcion);
+      |     ^~~~~~~~~~~~~
+..\src\TP_1.c:208:4: error: too many arguments to function 'informarDatos'
+  208 |    informarDatos(0, x, y, z, precioDebitoLatam, precioCreditoLatam, precioBitcoinLatam, precioUnitarioLatam, precioDebitoAerolineas, precioCreditoAerolineas, precioBitcoinAerolineas, precioUnitarioAerolineas, precioDiferencia);
+      |    ^~~~~~~~~~~~~
+In file included from ..\src\TP_1.c:13:
+..\src\funciones.h:33:5: note: declared here
+   33 | int informarDatos(int opcion);
+      |     ^~~~~~~~~~~~~
+23:08:54 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+23:09:35 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\funciones.o: in function `informarDatos':
+D:\OneDrive\Escritorio\TP_LABORATORIO_1\TP_1\Debug/../src/funciones.c:147: undefined reference to `Seperador'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: D:\OneDrive\Escritorio\TP_LABORATORIO_1\TP_1\Debug/../src/funciones.c:158: undefined reference to `Seperador'
+collect2.exe: error: ld returned 1 exit status
+23:10:10 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'CalcularPrecioCredito':
+..\src\funciones.c:75:8: warning: variable 'precioInteres' set but not used [-Wunused-but-set-variable]
+   75 |  float precioInteres;
+      |        ^~~~~~~~~~~~~
+..\src\funciones.c: In function 'informarDatos':
+..\src\funciones.c:158:2: warning: implicit declaration of function 'Seperador'; did you mean 'Separador'? [-Wimplicit-function-declaration]
+  158 |  Seperador();
+      |  ^~~~~~~~~
+      |  Separador
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\funciones.o: in function `informarDatos':
+D:\OneDrive\Escritorio\TP_LABORATORIO_1\TP_1\Debug/../src/funciones.c:158: undefined reference to `Seperador'
+collect2.exe: error: ld returned 1 exit status
+23:10:21 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'CalcularPrecioCredito':
+..\src\funciones.c:75:8: warning: variable 'precioInteres' set but not used [-Wunused-but-set-variable]
+   75 |  float precioInteres;
+      |        ^~~~~~~~~~~~~
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+Info: Nothing to build for TP_1
+23:11:03 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'CalcularPrecioCredito':
+..\src\funciones.c:75:8: warning: variable 'precioInteres' set but not used [-Wunused-but-set-variable]
+   75 |  float precioInteres;
+      |        ^~~~~~~~~~~~~
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+23:11:12 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+23:12:11 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'CalcularPrecioCredito':
+..\src\funciones.c:75:8: warning: variable 'precioInteres' set but not used [-Wunused-but-set-variable]
+   75 |  float precioInteres;
+      |        ^~~~~~~~~~~~~
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+23:12:18 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+Info: Nothing to build for TP_1
+23:14:09 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+23:14:12 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+Info: Nothing to build for TP_1
+23:15:36 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+23:19:25 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+23:19:28 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+23:24:58 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+23:25:02 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+Info: Nothing to build for TP_1
+23:29:16 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'InformarDatos':
+..\src\funciones.c:161:63: error: expected ';' before 'return'
+  161 |  SystemPause("\n|----------> DATOS INFORMADOS <----------|\n")
+      |                                                               ^
+      |                                                               ;
+  162 | 
+  163 |  return opcion;
+      |  ~~~~~~                                                        
+..\src\funciones.c:164:1: warning: control reaches end of non-void function [-Wreturn-type]
+  164 | }
+      | ^
+23:29:18 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'InformarDatos':
+..\src\funciones.c:161:63: error: expected ';' before 'return'
+  161 |  SystemPause("\n|----------> DATOS INFORMADOS <----------|\n")
+      |                                                               ^
+      |                                                               ;
+  162 | 
+  163 |  return opcion;
+      |  ~~~~~~                                                        
+..\src\funciones.c:164:1: warning: control reaches end of non-void function [-Wreturn-type]
+  164 | }
+      | ^
+23:29:30 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+Info: Nothing to build for TP_1

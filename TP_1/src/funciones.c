@@ -79,7 +79,7 @@ float CalcularPrecioCredito(float precioBruto)
 
 	precioInteres = precioBruto * interes / 100;
 
-	precioFinal = precioBruto + interes;
+	precioFinal = precioBruto + precioInteres;
 
 	return precioFinal;
 }
@@ -97,7 +97,7 @@ float CalcularPrecioUnitario(float kilometros, float precioBruto)
 {
 	float precioFinal;
 
-	precioFinal = kilometros / precioBruto;
+	precioFinal = precioBruto / kilometros;
 
 	return precioFinal;
 }
@@ -118,11 +118,49 @@ float CalcularDiferenciaPrecio(float precioBrutoUno, float precioBrutoDos)
 	return diferenciaPrecio;
 }
 
-int informarDatos(int opcion)
+int InformarDatos(int opcion, float kilometros, float precioLatam, float debitoLatam, float creditoLatam, float bitcoinLatam, float unitarioLatam, float precioAerolineas, float debitoAerolineas, float creditoAerolineas, float bitcoinAerolineas, float unitarioAerolineas, float diferenciaPrecio)
 {
-	if (opcion == 1);
+	if (opcion == 0)
+	{
+		kilometros = 7090;
+		precioAerolineas = 162965;
+		precioLatam = 159339;
 
-	return 0;
+		//CALCULAR AEROLINEAS---------
+		debitoAerolineas = CalcularPrecioDebito(precioAerolineas);
+		creditoAerolineas = CalcularPrecioCredito(precioAerolineas);
+		bitcoinAerolineas = CalcularPrecioBitcoin(precioAerolineas);
+		unitarioAerolineas = CalcularPrecioUnitario(kilometros, precioAerolineas);
+
+		//CALCULAR LATAM---------------
+		debitoLatam = CalcularPrecioDebito(precioLatam);
+		creditoLatam = CalcularPrecioCredito(precioLatam);
+		bitcoinLatam = CalcularPrecioBitcoin(precioLatam);
+		unitarioLatam = CalcularPrecioUnitario(kilometros, precioLatam);
+
+		//DIFERENCIA DE PRECIOS----------
+		diferenciaPrecio = CalcularDiferenciaPrecio(precioAerolineas, precioLatam);
+	}
+	Clear();
+	printf("|----- RESULTADOS -----|\n\n");
+	printf("|<--LATAM--> $%.2f\n", precioLatam);
+	Separador();
+	printf("\nPrecio con tarjeta de debito: $%.2f \n", debitoLatam);
+	printf("Precio con tarjeta de credito: $%.2f \n", creditoLatam);
+	printf("Precio pagando con bitcoin: $%.2f \n", bitcoinLatam);
+	printf("Precio unitario: $%.2f \n", unitarioLatam);
+	Separador();
+	printf("\n|<--AEROLINEAS--> $%.2f\n", precioAerolineas);
+	Separador();
+	printf("\nPrecio con tarjeta de debito: $%.2f \n", debitoAerolineas);
+	printf("Precio con tarjeta de credito: $%.2f \n", creditoAerolineas);
+	printf("Precio pagando con bitcoin: $%.2f\n", bitcoinAerolineas);
+	printf("Precio unitario: $%.2f\n", unitarioAerolineas);
+	Separador();
+	printf("\nLa diferencia de precio es: $%.2f\n", diferenciaPrecio);
+	SystemPause("\n|----------> DATOS INFORMADOS <----------|\n");
+
+	return opcion;
 }
 
 
