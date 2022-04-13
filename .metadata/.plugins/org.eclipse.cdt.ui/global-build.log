@@ -1832,3 +1832,295 @@ Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
 gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
 Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+23:41:31 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+..\src\TP_1.c: In function 'MenuPrincipal':
+..\src\TP_1.c:193:42: error: expected ';' before 'system'
+  193 |    printf("|---- CERRANDO SISTEMA ----|")
+      |                                          ^
+      |                                          ;
+  194 |    system("exit");
+      |    ~~~~~~                                 
+23:41:32 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+..\src\TP_1.c: In function 'MenuPrincipal':
+..\src\TP_1.c:193:42: error: expected ';' before 'system'
+  193 |    printf("|---- CERRANDO SISTEMA ----|")
+      |                                          ^
+      |                                          ;
+  194 |    system("exit");
+      |    ~~~~~~                                 
+23:41:37 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+Info: Nothing to build for TP_1
+23:42:16 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+Info: Nothing to build for TP_1
+23:43:50 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+Info: Nothing to build for TP_1
+23:50:01 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+Info: Nothing to build for TP_1
+23:51:42 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'AnimacionApagado':
+..\src\funciones.c:180:4: warning: implicit declaration of function 'delay' [-Wimplicit-function-declaration]
+  180 |    delay(500);
+      |    ^~~~~
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\funciones.o: in function `AnimacionApagado':
+D:\OneDrive\Escritorio\TP_LABORATORIO_1\TP_1\Debug/../src/funciones.c:180: undefined reference to `delay'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: D:\OneDrive\Escritorio\TP_LABORATORIO_1\TP_1\Debug/../src/funciones.c:185: undefined reference to `delay'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: D:\OneDrive\Escritorio\TP_LABORATORIO_1\TP_1\Debug/../src/funciones.c:194: undefined reference to `delay'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: D:\OneDrive\Escritorio\TP_LABORATORIO_1\TP_1\Debug/../src/funciones.c:199: undefined reference to `delay'
+collect2.exe: error: ld returned 1 exit status
+23:52:37 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'AnimacionApagado':
+..\src\funciones.c:180:4: warning: implicit declaration of function 'Sleep'; did you mean '_sleep'? [-Wimplicit-function-declaration]
+  180 |    Sleep(500);
+      |    ^~~~~
+      |    _sleep
+..\src\funciones.c:185:4: warning: implicit declaration of function 'delay' [-Wimplicit-function-declaration]
+  185 |    delay(500);
+      |    ^~~~~
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\funciones.o: in function `AnimacionApagado':
+D:\OneDrive\Escritorio\TP_LABORATORIO_1\TP_1\Debug/../src/funciones.c:180: undefined reference to `Sleep'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: D:\OneDrive\Escritorio\TP_LABORATORIO_1\TP_1\Debug/../src/funciones.c:185: undefined reference to `delay'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: D:\OneDrive\Escritorio\TP_LABORATORIO_1\TP_1\Debug/../src/funciones.c:194: undefined reference to `delay'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: D:\OneDrive\Escritorio\TP_LABORATORIO_1\TP_1\Debug/../src/funciones.c:199: undefined reference to `delay'
+collect2.exe: error: ld returned 1 exit status
+23:52:38 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\funciones.o: in function `AnimacionApagado':
+D:\OneDrive\Escritorio\TP_LABORATORIO_1\TP_1\Debug/../src/funciones.c:180: undefined reference to `Sleep'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: D:\OneDrive\Escritorio\TP_LABORATORIO_1\TP_1\Debug/../src/funciones.c:185: undefined reference to `delay'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: D:\OneDrive\Escritorio\TP_LABORATORIO_1\TP_1\Debug/../src/funciones.c:194: undefined reference to `delay'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: D:\OneDrive\Escritorio\TP_LABORATORIO_1\TP_1\Debug/../src/funciones.c:199: undefined reference to `delay'
+collect2.exe: error: ld returned 1 exit status
+23:53:41 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'AnimacionApagado':
+..\src\funciones.c:180:4: warning: implicit declaration of function 'Sleep'; did you mean '_sleep'? [-Wimplicit-function-declaration]
+  180 |    Sleep(500);
+      |    ^~~~~
+      |    _sleep
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\funciones.o: in function `AnimacionApagado':
+D:\OneDrive\Escritorio\TP_LABORATORIO_1\TP_1\Debug/../src/funciones.c:180: undefined reference to `Sleep'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: D:\OneDrive\Escritorio\TP_LABORATORIO_1\TP_1\Debug/../src/funciones.c:185: undefined reference to `Sleep'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: D:\OneDrive\Escritorio\TP_LABORATORIO_1\TP_1\Debug/../src/funciones.c:194: undefined reference to `Sleep'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: D:\OneDrive\Escritorio\TP_LABORATORIO_1\TP_1\Debug/../src/funciones.c:199: undefined reference to `Sleep'
+collect2.exe: error: ld returned 1 exit status
+23:53:41 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\funciones.o: in function `AnimacionApagado':
+D:\OneDrive\Escritorio\TP_LABORATORIO_1\TP_1\Debug/../src/funciones.c:180: undefined reference to `Sleep'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: D:\OneDrive\Escritorio\TP_LABORATORIO_1\TP_1\Debug/../src/funciones.c:185: undefined reference to `Sleep'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: D:\OneDrive\Escritorio\TP_LABORATORIO_1\TP_1\Debug/../src/funciones.c:194: undefined reference to `Sleep'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: D:\OneDrive\Escritorio\TP_LABORATORIO_1\TP_1\Debug/../src/funciones.c:199: undefined reference to `Sleep'
+collect2.exe: error: ld returned 1 exit status
+23:55:51 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'AnimacionApagado':
+..\src\funciones.c:180:4: warning: implicit declaration of function 'Delay' [-Wimplicit-function-declaration]
+  180 |    Delay(500);
+      |    ^~~~~
+..\src\funciones.c:185:4: warning: implicit declaration of function 'Sleep'; did you mean '_sleep'? [-Wimplicit-function-declaration]
+  185 |    Sleep(500);
+      |    ^~~~~
+      |    _sleep
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\funciones.o: in function `AnimacionApagado':
+D:\OneDrive\Escritorio\TP_LABORATORIO_1\TP_1\Debug/../src/funciones.c:180: undefined reference to `Delay'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: D:\OneDrive\Escritorio\TP_LABORATORIO_1\TP_1\Debug/../src/funciones.c:185: undefined reference to `Sleep'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: D:\OneDrive\Escritorio\TP_LABORATORIO_1\TP_1\Debug/../src/funciones.c:194: undefined reference to `Sleep'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: D:\OneDrive\Escritorio\TP_LABORATORIO_1\TP_1\Debug/../src/funciones.c:199: undefined reference to `Sleep'
+collect2.exe: error: ld returned 1 exit status
+23:56:04 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'AnimacionApagado':
+..\src\funciones.c:180:4: warning: implicit declaration of function 'Delay' [-Wimplicit-function-declaration]
+  180 |    Delay(500);
+      |    ^~~~~
+..\src\funciones.c:185:4: warning: implicit declaration of function 'sleep'; did you mean '_sleep'? [-Wimplicit-function-declaration]
+  185 |    sleep(500);
+      |    ^~~~~
+      |    _sleep
+..\src\funciones.c:194:4: warning: implicit declaration of function 'Sleep'; did you mean '_sleep'? [-Wimplicit-function-declaration]
+  194 |    Sleep(500);
+      |    ^~~~~
+      |    _sleep
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: warning: resolving _Sleep by linking to _Sleep@4
+Use --enable-stdcall-fixup to disable these warnings
+Use --disable-stdcall-fixup to disable these fixups
+`_Sleep' referenced in section `.text' of src\funciones.o: defined in discarded section `.text' of c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../libkernel32.a(dlrulbs01143.o)
+`_Sleep' referenced in section `.text' of src\funciones.o: defined in discarded section `.text' of c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../libkernel32.a(dlrulbs01143.o)
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\funciones.o: in function `AnimacionApagado':
+D:\OneDrive\Escritorio\TP_LABORATORIO_1\TP_1\Debug/../src/funciones.c:180: undefined reference to `Delay'
+collect2.exe: error: ld returned 1 exit status
+23:56:11 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'AnimacionApagado':
+..\src\funciones.c:180:4: warning: implicit declaration of function 'Delay' [-Wimplicit-function-declaration]
+  180 |    Delay(500);
+      |    ^~~~~
+..\src\funciones.c:185:4: warning: '_sleep' is deprecated [-Wdeprecated-declarations]
+  185 |    _sleep(500);
+      |    ^~~~~~
+In file included from ..\src\funciones.c:9:
+c:\mingw\include\stdlib.h:694:39: note: declared here
+  694 | _CRTIMP __cdecl __MINGW_NOTHROW  void _sleep (unsigned long) __MINGW_ATTRIB_DEPRECATED;
+      |                                       ^~~~~~
+..\src\funciones.c:194:4: warning: implicit declaration of function 'Sleep'; did you mean '_sleep'? [-Wimplicit-function-declaration]
+  194 |    Sleep(500);
+      |    ^~~~~
+      |    _sleep
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\funciones.o: in function `AnimacionApagado':
+D:\OneDrive\Escritorio\TP_LABORATORIO_1\TP_1\Debug/../src/funciones.c:180: undefined reference to `Delay'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: D:\OneDrive\Escritorio\TP_LABORATORIO_1\TP_1\Debug/../src/funciones.c:194: undefined reference to `Sleep'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: D:\OneDrive\Escritorio\TP_LABORATORIO_1\TP_1\Debug/../src/funciones.c:199: undefined reference to `Sleep'
+collect2.exe: error: ld returned 1 exit status
+23:56:53 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'AnimacionApagado':
+..\src\funciones.c:180:4: warning: implicit declaration of function 'Delay' [-Wimplicit-function-declaration]
+  180 |    Delay(500);
+      |    ^~~~~
+..\src\funciones.c:185:4: warning: implicit declaration of function '_delay' [-Wimplicit-function-declaration]
+  185 |    _delay(500);
+      |    ^~~~~~
+..\src\funciones.c:194:4: warning: implicit declaration of function 'Sleep'; did you mean '_sleep'? [-Wimplicit-function-declaration]
+  194 |    Sleep(500);
+      |    ^~~~~
+      |    _sleep
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\funciones.o: in function `AnimacionApagado':
+D:\OneDrive\Escritorio\TP_LABORATORIO_1\TP_1\Debug/../src/funciones.c:180: undefined reference to `Delay'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: D:\OneDrive\Escritorio\TP_LABORATORIO_1\TP_1\Debug/../src/funciones.c:185: undefined reference to `_delay'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: D:\OneDrive\Escritorio\TP_LABORATORIO_1\TP_1\Debug/../src/funciones.c:194: undefined reference to `Sleep'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: D:\OneDrive\Escritorio\TP_LABORATORIO_1\TP_1\Debug/../src/funciones.c:199: undefined reference to `Sleep'
+collect2.exe: error: ld returned 1 exit status
+23:57:03 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'AnimacionApagado':
+..\src\funciones.c:180:4: warning: implicit declaration of function 'Delay' [-Wimplicit-function-declaration]
+  180 |    Delay(500);
+      |    ^~~~~
+..\src\funciones.c:185:4: warning: implicit declaration of function 'delay' [-Wimplicit-function-declaration]
+  185 |    delay(500);
+      |    ^~~~~
+..\src\funciones.c:194:4: warning: implicit declaration of function 'Sleep'; did you mean '_sleep'? [-Wimplicit-function-declaration]
+  194 |    Sleep(500);
+      |    ^~~~~
+      |    _sleep
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\funciones.o: in function `AnimacionApagado':
+D:\OneDrive\Escritorio\TP_LABORATORIO_1\TP_1\Debug/../src/funciones.c:180: undefined reference to `Delay'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: D:\OneDrive\Escritorio\TP_LABORATORIO_1\TP_1\Debug/../src/funciones.c:185: undefined reference to `delay'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: D:\OneDrive\Escritorio\TP_LABORATORIO_1\TP_1\Debug/../src/funciones.c:194: undefined reference to `Sleep'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: D:\OneDrive\Escritorio\TP_LABORATORIO_1\TP_1\Debug/../src/funciones.c:199: undefined reference to `Sleep'
+collect2.exe: error: ld returned 1 exit status
+23:58:54 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'AnimacionApagado':
+..\src\funciones.c:181:4: warning: 'usleep' is deprecated [-Wdeprecated-declarations]
+  181 |    usleep(500);
+      |    ^~~~~~
+In file included from ..\src\funciones.c:10:
+c:\mingw\include\unistd.h:100:29: note: declared here
+  100 | int __cdecl __MINGW_NOTHROW usleep( useconds_t )__MINGW_ATTRIB_DEPRECATED;
+      |                             ^~~~~~
+..\src\funciones.c:186:4: warning: implicit declaration of function 'delay' [-Wimplicit-function-declaration]
+  186 |    delay(500);
+      |    ^~~~~
+..\src\funciones.c:195:4: warning: implicit declaration of function 'Sleep'; did you mean 'sleep'? [-Wimplicit-function-declaration]
+  195 |    Sleep(500);
+      |    ^~~~~
+      |    sleep
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: warning: resolving _Sleep by linking to _Sleep@4
+Use --enable-stdcall-fixup to disable these warnings
+Use --disable-stdcall-fixup to disable these fixups
+`_Sleep' referenced in section `.text' of src\funciones.o: defined in discarded section `.text' of c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../libkernel32.a(dlrulbs01143.o)
+`_Sleep' referenced in section `.text' of src\funciones.o: defined in discarded section `.text' of c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../libkernel32.a(dlrulbs01143.o)
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\funciones.o: in function `AnimacionApagado':
+D:\OneDrive\Escritorio\TP_LABORATORIO_1\TP_1\Debug/../src/funciones.c:186: undefined reference to `delay'
+collect2.exe: error: ld returned 1 exit status
+23:59:55 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'AnimacionApagado':
+..\src\funciones.c:181:4: warning: implicit declaration of function 'usleep'; did you mean '_sleep'? [-Wimplicit-function-declaration]
+  181 |    usleep(500);
+      |    ^~~~~~
+      |    _sleep
+..\src\funciones.c:186:4: warning: implicit declaration of function 'delay' [-Wimplicit-function-declaration]
+  186 |    delay(500);
+      |    ^~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\funciones.o: in function `AnimacionApagado':
+D:\OneDrive\Escritorio\TP_LABORATORIO_1\TP_1\Debug/../src/funciones.c:186: undefined reference to `delay'
+collect2.exe: error: ld returned 1 exit status
+00:00:00 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'AnimacionApagado':
+..\src\funciones.c:186:4: warning: implicit declaration of function 'delay' [-Wimplicit-function-declaration]
+  186 |    delay(500);
+      |    ^~~~~
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\funciones.o: in function `AnimacionApagado':
+D:\OneDrive\Escritorio\TP_LABORATORIO_1\TP_1\Debug/../src/funciones.c:186: undefined reference to `delay'
+collect2.exe: error: ld returned 1 exit status
+00:00:09 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+Info: Nothing to build for TP_1
+00:00:31 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1

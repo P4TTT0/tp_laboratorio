@@ -10,7 +10,6 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <windows.h>
 #include "funciones.h" //Incluir la bibloteca creada con ("")
 
 void MenuPrincipal();
@@ -190,9 +189,7 @@ void MenuPrincipal()
 		break;
 
 		case 6:
-			Clear();
-			printf("|---- CERRANDO SISTEMA ----|");
-			AnimacionApagado();
+
 		break;
 		default:
 			Clear();
@@ -215,7 +212,4 @@ void MenuPrincipal()
 		}
 
 	}while(opcionIngresada != 6);
-
-	Clear();
-	printf("|---- SISTEMA APAGADO ----|");
 }

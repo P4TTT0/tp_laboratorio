@@ -10,7 +10,6 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <windows.h>
 #include "funciones.h" //Incluir la bibloteca creada con ("")
 
 void MenuPrincipal();
@@ -85,6 +84,26 @@ void MenuPrincipal()
 		printf("\nIngrese opcion:");
 		fflush(stdin);
 		scanf("%d", &opcionIngresada);
+
+		while(opcionIngresada < 1 || opcionIngresada > 6)
+		{
+			Clear();
+			Error("option", "INGRESE UNA OPCION VALIDA");
+
+			printf("|----- > Seleccione una opcion < -----|\n\n");
+			printf("\n1-| Ingresar KM |->");
+			printf("\n2-| Ingresar precio de vuelvos |->");
+			printf("\n3-| Calcular costos |->");
+			printf("\n4-| Informar resultados |->");
+			printf("\n5-| Carga forzada de datos |->");
+			printf("\n6-| SALIR |->\n");
+
+			Separador();
+
+			printf("\nIngrese opcion:");
+			fflush(stdin);
+			scanf("%d", &opcionIngresada);
+		}
 
 		switch(opcionIngresada)
 		{
@@ -188,34 +207,11 @@ void MenuPrincipal()
 		case 5:
 			InformarDatos(0, x, z, precioDebitoLatam, precioCreditoLatam, precioBitcoinLatam, precioUnitarioLatam, y, precioDebitoAerolineas, precioCreditoAerolineas, precioBitcoinAerolineas, precioUnitarioAerolineas, precioDiferencia);
 		break;
-
 		case 6:
-			Clear();
-			printf("|---- CERRANDO SISTEMA ----|");
-			AnimacionApagado();
 		break;
 		default:
-			Clear();
-			Error("option", "INGRESE UNA OPCION VALIDA");
-
-			printf("|----- > Seleccione una opcion < -----|\n\n");
-			printf("\n1-| Ingresar KM |->");
-			printf("\n2-| Ingresar precio de vuelvos |->");
-			printf("\n3-| Calcular costos |->");
-			printf("\n4-| Informar resultados |->");
-			printf("\n5-| Carga forzada de datos |->");
-			printf("\n6-| SALIR |->\n");
-
-			Separador();
-
-			printf("\nIngrese opcion:");
-			fflush(stdin);
-			scanf("%d", &opcionIngresada);
 		break;
 		}
 
 	}while(opcionIngresada != 6);
-
-	Clear();
-	printf("|---- SISTEMA APAGADO ----|");
 }

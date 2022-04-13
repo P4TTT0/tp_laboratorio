@@ -7,7 +7,6 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <windows.h>
 
 void Separador()
 {
@@ -162,46 +161,6 @@ int InformarDatos(int opcion, float kilometros, float precioLatam, float debitoL
 	SystemPause("\n|----------> DATOS INFORMADOS <----------|\n");
 
 	return opcion;
-}
-
-void AnimacionApagado(void)
-{
-	int i;
-	int frames;
-
-	frames = 5;
-
-	for(i = 0; i < frames; i++)
-	{
-		switch(i)
-		{
-		case 1:
-			Clear();
-			printf("|>--                  <|");
-			Sleep(500);
-		break;
-		case 2:
-			Clear();
-			printf("|>-----               <|");
-			Sleep(500);
-		break;
-		case 3:
-			Clear();
-			printf("|>-----------         <|");
-			Sleep(500);
-		break;
-		case 4:
-			Clear();
-			printf("|>-----------------   <|");
-			Sleep(500);
-		break;
-		case 5:
-			Clear();
-			printf("|>--------------------<|");
-			Sleep(500);
-		break;
-		}
-	}
 }
 
 

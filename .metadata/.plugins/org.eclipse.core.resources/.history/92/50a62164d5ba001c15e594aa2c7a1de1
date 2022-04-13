@@ -7,7 +7,6 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <windows.h>
 
 void Separador()
 {
@@ -178,17 +177,16 @@ void AnimacionApagado(void)
 		case 1:
 			Clear();
 			printf("|>--                  <|");
-			Sleep(500);
+			Delay(500);
 		break;
 		case 2:
 			Clear();
 			printf("|>-----               <|");
-			Sleep(500);
+			_delay(500);
 		break;
 		case 3:
 			Clear();
 			printf("|>-----------         <|");
-			Sleep(500);
 		break;
 		case 4:
 			Clear();
