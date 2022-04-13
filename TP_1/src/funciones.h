@@ -22,4 +22,12 @@ void SystemPause(char mensaje []);
 
 float CalcularPrecioDebito(float precioBruto);
 
+float CalcularPrecioCredito(float precioBruto);
+
+float CalcularPrecioBitcoin(float precioBruto);
+
+float CalcularPrecioUnitario(float kilometros, float precioBruto);
+
+float CalcularDiferenciaPrecio(float precioBrutoUno, float precioBrutoDos);
+
 #endif /* FUNCIONES_H_ */

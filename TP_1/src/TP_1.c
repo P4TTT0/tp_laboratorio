@@ -29,10 +29,45 @@ void MenuPrincipal()
 	setbuf(stdout, NULL);
 
 	int opcionIngresada;
-	float x;
 	int vueloIngresado;
+
+	float x;
 	float y;
 	float z;
+
+	int banderaDatosCargados;
+
+	//VARIABLES PARA GUARDAR DATOS DE AEROLINEAS-----
+	float precioDebitoAerolineas;
+	float precioCreditoAerolineas;
+	float precioBitcoinAerolineas;
+	float precioUnitarioAerolineas;
+
+	//VARIABLES PARA GUARDAR DATOS DE LATAM------
+	float precioDebitoLatam;
+	float precioCreditoLatam;
+	float precioBitcoinLatam;
+	float precioUnitarioLatam;
+
+	//VARIABLE PARA GUARDAR DIFERENCIA DE PRECIOS-----
+	float precioDiferencia;
+
+	x = 0;
+	y = 0;
+	z = 0;
+	banderaDatosCargados = 0;
+
+	precioDebitoAerolineas = 0;
+	precioCreditoAerolineas = 0;
+	precioBitcoinAerolineas = 0;
+	precioUnitarioAerolineas = 0;
+
+	precioDebitoLatam = 0;
+	precioCreditoLatam = 0;
+	precioBitcoinLatam = 0;
+	precioUnitarioLatam = 0;
+
+	precioDiferencia = 0;
 
 	do
 	{
@@ -123,10 +158,48 @@ void MenuPrincipal()
 		break;
 
 		case 3:
-			CalcularPrecioDebito(z);
-			SystemPause("\n|---------- DATOS CARGADOS ----------|\n");
+			if (x == 0 || y == 0 || z == 0)
+			{
+				Error("option", "FALTAN CARGAR DATOS");
+				SystemPause("\n|----------> COMPLETE LOS DATOS <----------|\n");
+			}
+			else
+			{
+				//CALCULAR AEROLINEAS---------
+				precioDebitoAerolineas = CalcularPrecioDebito(y);
+				precioCreditoAerolineas = CalcularPrecioCredito(y);
+				precioBitcoinAerolineas = CalcularPrecioBitcoin(y);
+				precioUnitarioAerolineas = CalcularPrecioUnitario(x, y);
+
+				//CALCULAR LATAM---------------
+				precioDebitoLatam = CalcularPrecioDebito(z);
+				precioCreditoLatam = CalcularPrecioCredito(z);
+				precioBitcoinLatam = CalcularPrecioBitcoin(z);
+				precioUnitarioLatam = CalcularPrecioUnitario(x, z);
+
+				//DIFERENCIA DE PRECIOS----------
+				precioDiferencia = CalcularDiferenciaPrecio(y, z);
+
+				//BANDERA DE DATOS CARGADOS-----------
+				banderaDatosCargados = 1;
+
+				//MENSAJE DE CONFIRMACION---------
+				Clear();
+				SystemPause("\n|---------- DATOS CALCULADOS ----------|\n");
+			}
 		break;
+
 		case 4:
+			if (banderaDatosCargados == 0)
+			{
+				Clear();
+				Error("option","FALTA CARGAR DATOS");
+				SystemPause("\n|----------> COMPLETE LOS DATOS <----------|\n");
+			}
+			else
+			{
+
+			}
 		break;
 		case 5:
 		break;

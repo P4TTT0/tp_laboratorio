@@ -1332,3 +1332,74 @@ collect2.exe: error: ld returned 1 exit status
 00:08:28 **** Incremental Build of configuration Debug for project TP_1 ****
 Info: Internal Builder is used for build
 gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+10:20:28 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+..\src\TP_1.c: In function 'MenuPrincipal':
+..\src\TP_1.c:126:28: error: lvalue required as left operand of assignment
+  126 |    if (x = 0 || y = 0 || z = 0)
+      |                            ^
+..\src\TP_1.c:32:8: warning: variable 'x' set but not used [-Wunused-but-set-variable]
+   32 |  float x;
+      |        ^
+10:20:50 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+Info: Nothing to build for TP_1
+10:25:09 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'CalcularPrecioCredito':
+..\src\funciones.c:75:8: warning: variable 'precioInteres' set but not used [-Wunused-but-set-variable]
+   75 |  float precioInteres;
+      |        ^~~~~~~~~~~~~
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+10:25:40 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+10:27:47 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+10:27:49 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+21:53:11 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+..\src\TP_1.c: In function 'MenuPrincipal':
+..\src\TP_1.c:143:5: warning: implicit declaration of function 'CalcularPrecioBitcoin'; did you mean 'CalcularPrecioBitcion'? [-Wimplicit-function-declaration]
+  143 |     CalcularPrecioBitcoin(y);
+      |     ^~~~~~~~~~~~~~~~~~~~~
+      |     CalcularPrecioBitcion
+..\src\TP_1.c:144:5: error: too few arguments to function 'CalcularPrecioUnitario'
+  144 |     CalcularPrecioUnitario(y);
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\TP_1.c:13:
+..\src\funciones.h:29:7: note: declared here
+   29 | float CalcularPrecioUnitario(float kilometros, float precioBruto);
+      |       ^~~~~~~~~~~~~~~~~~~~~~
+..\src\TP_1.c:150:5: error: too few arguments to function 'CalcularPrecioUnitario'
+  150 |     CalcularPrecioUnitario(z);
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\TP_1.c:13:
+..\src\funciones.h:29:7: note: declared here
+   29 | float CalcularPrecioUnitario(float kilometros, float precioBruto);
+      |       ^~~~~~~~~~~~~~~~~~~~~~
+21:55:54 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'CalcularPrecioCredito':
+..\src\funciones.c:75:8: warning: variable 'precioInteres' set but not used [-Wunused-but-set-variable]
+   75 |  float precioInteres;
+      |        ^~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+Info: Nothing to build for TP_1
