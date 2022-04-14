@@ -29,13 +29,19 @@ void MenuPrincipal()
 {
 	setbuf(stdout, NULL);
 
+	//VARIABLE PARA GUARDAR OPCION---
 	int opcionIngresada;
+	//VARIABLE PARA GUARDAR VUELO INGRESADO---
 	int vueloIngresado;
 
+	//VARIABLE PARA GUARDAR KILOMETROS---
 	float x;
+	//VARIABLE PARA GUARDAR PRECIO AEROLINEA---
 	float y;
+	//VARIABLE PARA GUARDAR PRECIO LATAM---
 	float z;
 
+	//BANDERA PARA VERIFICAR SI LOS DATOS HAN SIDO CARGADOS---
 	int banderaDatosCargados;
 
 	//VARIABLES PARA GUARDAR DATOS DE AEROLINEAS-----
@@ -56,6 +62,7 @@ void MenuPrincipal()
 	x = 0;
 	y = 0;
 	z = 0;
+
 	banderaDatosCargados = 0;
 
 	precioDebitoAerolineas = 0;
@@ -192,7 +199,7 @@ void MenuPrincipal()
 		case 6:
 			Clear();
 			printf("|---- CERRANDO SISTEMA ----|");
-			AnimacionApagado();
+			Sleep(500);
 		break;
 		default:
 			Clear();
@@ -217,5 +224,7 @@ void MenuPrincipal()
 	}while(opcionIngresada != 6);
 
 	Clear();
-	printf("|---- SISTEMA APAGADO ----|");
+	AnimacionApagado();
+	Clear();
+	printf("\n|---- SISTEMA APAGADO ----|");
 }

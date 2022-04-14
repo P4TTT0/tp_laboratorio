@@ -16,7 +16,7 @@ void Separador()
 
 void Clear()
 {
-	printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+	printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 }
 
 void Error(char tipoError [], char mensaje [])
@@ -148,14 +148,14 @@ int InformarDatos(int opcion, float kilometros, float precioLatam, float debitoL
 	Separador();
 	printf("\nPrecio con tarjeta de debito: $%.2f \n", debitoLatam);
 	printf("Precio con tarjeta de credito: $%.2f \n", creditoLatam);
-	printf("Precio pagando con bitcoin: $%.2f \n", bitcoinLatam);
+	printf("Precio pagando con bitcoin: $%.5f \n", bitcoinLatam);
 	printf("Precio unitario: $%.2f \n", unitarioLatam);
 	Separador();
 	printf("\n|<--AEROLINEAS--> $%.2f\n", precioAerolineas);
 	Separador();
 	printf("\nPrecio con tarjeta de debito: $%.2f \n", debitoAerolineas);
 	printf("Precio con tarjeta de credito: $%.2f \n", creditoAerolineas);
-	printf("Precio pagando con bitcoin: $%.2f\n", bitcoinAerolineas);
+	printf("Precio pagando con bitcoin: $%.5f\n", bitcoinAerolineas);
 	printf("Precio unitario: $%.2f\n", unitarioAerolineas);
 	Separador();
 	printf("\nLa diferencia de precio es: $%.2f\n", diferenciaPrecio);
