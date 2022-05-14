@@ -20,4 +20,10 @@ int calculateAveragePrice (sPassenger* list, int size);
 
 int countPassengrOverAveragePrice (sPassenger* list, int size);
 
+int orderInteger(char number[]);
+
+int orderFloat(char numbersFloat[]);
+
+int validateNumber (char numbers[]);
+
 #endif /* INPUT_H_ */

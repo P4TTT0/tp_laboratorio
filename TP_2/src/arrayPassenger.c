@@ -35,12 +35,14 @@ sPassenger getPassenger (sTypePassenger typePassenger[], sStatusFlight statusFli
 	//Guarda en la variable NAME.
 	scanf("%s", onePassenger.name);
 
+	//Valida el ingreso de caracteres
 	validator = validateCharacter(onePassenger.name);
 
+	//Si ingreso algun numero VALIDATOR = 0 entonces vuelve a pedir el ingreso de caracteres.
 	while (validator == 0)
 	{
 		//Pide nombre.
-		printf("<|---NOMBRE (ERROR) |\n1-Ingrese el nombre: \n");
+		printf("\n<|---NOMBRE (ERROR) |\n1-Ingrese el nombre: \n");
 		//Guarda en la variable NAME.
 		scanf("%s", onePassenger.name);
 		validator = validateCharacter(onePassenger.name);
@@ -51,39 +53,59 @@ sPassenger getPassenger (sTypePassenger typePassenger[], sStatusFlight statusFli
 	//Guarda en la variable LASTNAME.
 	scanf("%s", onePassenger.lastName);
 
+	//Valida el ingreso de caracteres
 	validator = validateCharacter(onePassenger.lastName);
 
+	//Si ingreso algun numero VALIDATOR = 0 entonces vuelve a pedir el ingreso de caracteres.
 	while (validator == 0)
 	{
 		//Pide apellido.
-		printf("<|---APELLIDO|\n-Ingrese el apellido: \n");
+		printf("\n<|---APELLIDO (ERROR) |\n-Ingrese el apellido: \n");
 		//Guarda en la variable LASTNAME.
 		scanf("%s", onePassenger.lastName);
 		validator = validateCharacter(onePassenger.lastName);
 	}
 
-	//Pide precio.
-	printf("<|---PRECIO|\n-Ingrese el precio: \n");
-	//Guarda en la variable PRICE.
-	fflush(stdin);
-	scanf("%f", &onePassenger.price);
+	//Pide y valida el ingreso de un ENTERO, luego se guarda en su respectiva variable.
+	onePassenger.price = orderInteger("<|---PRECIO|\n-Ingrese el precio (200 - 10000): \n");
+
+	//Valida dicho ingreso en un rango de entre 200 y 10000
+	while (onePassenger.price < 200 || onePassenger.price > 10000)
+	{
+		onePassenger.price = orderInteger("(ERROR)<|---PRECIO|\n-Ingrese el precio (200 - 10000): \n");
+	}
+
 	//Pide codigo de vuelo.
 	printf("<|---CODIGO DE VUELO|\n-Ingrese el codigo de vuelo: \n");
 	//Guarda en la variable FLYCODE.
 	scanf("%s", onePassenger.flycode);
-	//Pide tipo de pasajero.
-	printf("<|---TIPO DE PASAJERO|\n-Ingrese el tipo de pasajero: \n");
-	optionsTypePassenger(typePassenger, 4);
-	//Guardar en la variable TYPEPASSENGER.
-	fflush(stdin);
-	scanf("%d", &onePassenger.idTypePassenger);
-	//Pide tipo de pasajero.
-	printf("<|---ESTADO DEL VUELO|\n-Ingrese el estado del vuelo: \n");
-	optionStatusFlight(statusFlight, 3);
-	//Guardar en la variable TYPEPASSENGER.
-	fflush(stdin);
-	scanf("%d", &onePassenger.idStatusFlight);
 
+	//Muestra las distinas opciones del tipo de pasajero.
+	optionsTypePassenger(typePassenger, 4);
+	//Pide y valida el ingreso de un ENTERO, luego se guarda en su respectiva variable.
+	onePassenger.idTypePassenger = orderInteger("<|---TIPO DE PASAJERO|\n-Ingrese el tipo de pasajero: \n");
+
+	//Valida dicho ingreso en un rango de entre 1 y 4
+	while (onePassenger.idTypePassenger < 1 || onePassenger.idTypePassenger > 4)
+	{
+		optionsTypePassenger(typePassenger, 4);
+		onePassenger.idTypePassenger = orderInteger("(ERROR - INGRESE UN NUMERO ENTRE 1 Y 4)\n<|---TIPO DE PASAJERO|\n-Ingrese el tipo de pasajero: \n");
+
+	}
+
+	//Muestra las distinas opciones del estado del vuelo.
+	optionStatusFlight(statusFlight, 3);
+	//Pide y valida el ingreso de un ENTERO, luego se guarda en su respectiva variable.
+	onePassenger.idStatusFlight = orderInteger("<|---ESTADO DE VUELO|\n-Ingrese el estado de vuelo: \n");
+
+	//Valida dicho ingreso en un rango de entre 1 y 3
+	while (onePassenger.idStatusFlight < 1 || onePassenger.idStatusFlight > 3)
+	{
+		optionStatusFlight(statusFlight, 3);
+		onePassenger.idStatusFlight = orderInteger("(ERROR - INGRESE UN NUMERO ENTRE 1 Y 3)\n<|---ESTADO DE VUELO|\n-Ingrese el estado de vuelo: \n");
+	}
+
+	//Retorna el pasajero recien CREADO.
 	return onePassenger;
 }
 
@@ -99,7 +121,6 @@ int initPassengers(sPassenger* list, int len)
 	return 0;
 }
 
-//Retorna el indice, 0 = OCUPADO de lo contrario devuelve el indice vacio.
 int freeSpace (sPassenger* list, int len)
 {
 	int index;
@@ -199,12 +220,14 @@ int modifyData (sPassenger* list, sTypePassenger typePassenger[], sStatusFlight 
 	int indexType;
 	int indexStatus;
 	int subOption;
+	int validator;
 
 	auxId = 0;
 	passengerIndex = 0;
 	indexType = 0;
 	indexStatus = 0;
 	subOption = 0;
+	validator = 0;
 
 	printf("\n\n|----MODIFICAR PASAJERO----|\n\n"
 			"<|---INGRESE EL [ID]\n"
@@ -246,17 +269,38 @@ int modifyData (sPassenger* list, sTypePassenger typePassenger[], sStatusFlight 
 				printf("\n\n|---| NOMBRE ACTUAL |-> [%s]\n", list[passengerIndex].name);
 				printf("\n\n-| Ingrese el nuevo nombre |->");
 				gets(list[passengerIndex].name);
+
+				validator = validateCharacter(list[passengerIndex].name);
+
+				while (validator == 0)
+					{
+						printf("\n<|---NOMBRE (ERROR) |\n1-Ingrese el nuevo nombre: \n");
+						scanf("%s", list[passengerIndex].name);
+						validator = validateCharacter(list[passengerIndex].name);
+					}
 			break;
 			case 2:
 				printf("\n\n|---| APELLIDO ACTUAL |-> [%s]\n", list[passengerIndex].lastName);
 				printf("\n\n-| Ingrese el nuevo apellido|->");
 				gets(list[passengerIndex].lastName);
+
+				validator = validateCharacter(list[passengerIndex].lastName);
+
+				while (validator == 0)
+				{
+					printf("\n<|---NOMBRE (ERROR) |\n1-Ingrese el nuevo apellido: \n");
+					scanf("%s", list[passengerIndex].lastName);
+					validator = validateCharacter(list[passengerIndex].lastName);
+				}
 			break;
 			case 3:
 				printf("\n\n|---| PRECIO ACTUAL |-> [%f]\n", list[passengerIndex].price);
-				printf("\n\n-| Ingrese el nuevo apellido |->");
-				fflush(stdin);
-				scanf("%f", &list[passengerIndex].price);
+				list[passengerIndex].price = orderInteger("<|---PRECIO|\n-Ingrese el nuevo precio (200 - 10000): \n");
+
+				while (list[passengerIndex].price < 200 || list[passengerIndex].price > 10000)
+				{
+					list[passengerIndex].price = orderInteger("(ERROR)<|---PRECIO|\n-Ingrese el nuevo precio (200 - 10000): \n");
+				}
 			break;
 			case 4:
 				printf("\n\n|---| CODIGO DE VUELO ACTUAL |-> [%s]\n", list[passengerIndex].flycode);
@@ -265,17 +309,27 @@ int modifyData (sPassenger* list, sTypePassenger typePassenger[], sStatusFlight 
 			break;
 			case 5:
 				printf("\n\n|---| TIPO DE PASAJERO ACTUAL |-> [%d] <|- [%s]", typePassenger[indexType].idTypePassenger, typePassenger[indexType].typePassenger);
-				printf("\n\n-| Ingrese el nuevo tipo de pasajero |->");
 				optionsTypePassenger(typePassenger, 4);
-				fflush(stdin);
-				scanf("%d", &list[passengerIndex].idTypePassenger);
+				list[passengerIndex].idTypePassenger = orderInteger("<|---TIPO DE PASAJERO|\n-Ingrese el nuevo tipo de pasajero: \n");
+
+				while (list[passengerIndex].idTypePassenger < 1 || list[passengerIndex].idTypePassenger > 4)
+				{
+					optionsTypePassenger(typePassenger, 4);
+					list[passengerIndex].idTypePassenger = orderInteger("(ERROR - INGRESE UN NUMERO ENTRE 1 Y 4)\n<|---TIPO DE PASAJERO|\n-Ingrese el tipo de pasajero: \n");
+
+				}
 			break;
 			case 6:
 				printf("\n\n|---| ESTADO DE VUELO ACTUAL |-> [%d] <|- [%s]", statusFlight[indexStatus].idStatusFlight, statusFlight[indexStatus].statusFlight);
-				printf("\n\n-| Ingrese el nuevo estado de vuelo |->");
 				optionStatusFlight(statusFlight, 3);
-				fflush(stdin);
-				scanf("%d", &list[passengerIndex].idStatusFlight);
+				list[passengerIndex].idStatusFlight = orderInteger("<|---ESTADO DE VUELO|\n-Ingrese el nuevo estado de vuelo: \n");
+
+				while (list[passengerIndex].idStatusFlight < 1 || list[passengerIndex].idStatusFlight > 4)
+				{
+					optionStatusFlight(statusFlight, 3);
+					list[passengerIndex].idStatusFlight = orderInteger("(ERROR - INGRESE UN NUMERO ENTRE 1 Y 3)\n<|---ESTADO DE VUELO|\n-Ingrese el nuevo estado de vuelo: \n");
+
+				}
 			break;
 			case 7:
 				system("pause");

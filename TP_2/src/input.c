@@ -30,23 +30,6 @@ int validateCharacter (char string[])
 	return validator;
 }
 
-int validateNumber (char numbers[])
-{
-	int validator;
-	int i;
-
-	validator = 1;
-
-	for(i = 0; i < strlen(numbers); i++)
-	{
-		if (!(isdigit(numbers[i])))
-		{
-			validator = 0;
-		}
-	}
-	return validator;
-}
-
 int countPassengers (sPassenger* list, int size)
 {
 	int countPassenger;
@@ -116,4 +99,63 @@ int countPassengrOverAveragePrice (sPassenger* list, int size)
 	}
 
 	return countPassengersOverAveragePrice;
+}
+
+int orderInteger(char message[])
+{
+	int integer;
+
+	char number[1000];
+
+	printf(message);
+	scanf("%s", number);
+
+	while(!validateNumber(number))
+	{
+		printf("\nERROR");
+		printf(message);
+		scanf("%s",number);
+	}
+
+	integer = atoi(number);
+
+	return integer;
+}
+
+int orderFloat(char message[])
+{
+	int numberFloat;
+
+	char numbersFloat[1000];
+
+	printf(message);
+	scanf("%s", numbersFloat);
+
+	while(!validateNumber(numbersFloat))
+	{
+		printf("\n(ERROR)");
+		printf(message);
+		scanf("%s",numbersFloat);
+	}
+
+	numberFloat = atof(numbersFloat);
+
+	return numberFloat;
+}
+
+int validateNumber (char numbers[])
+{
+	int validator;
+	int i;
+
+	validator = 1;
+
+	for(i = 0; i < strlen(numbers); i++)
+	{
+		if (!(isdigit(numbers[i])))
+		{
+			validator = 0;
+		}
+	}
+	return validator;
 }
