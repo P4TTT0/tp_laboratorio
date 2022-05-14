@@ -296,25 +296,33 @@ int deletePassenger(sPassenger* list, int size)
 	if (list[passengerIndex].isEmpty == OCUPADO)
 	{
 		list[passengerIndex].isEmpty = VACIO;
-		return 0;
+		return passengerIndex;
 	}
 
-	return 1;
+	return passengerIndex;
 }
 
-int showPassengers (sPassenger* list, int size)
+int showPassengers (sPassenger* list, int size, sTypePassenger typePassenger[],sStatusFlight statusFlight[])
 {
 	int i;
+	int indexType;
+	int indexStatus;
 
-	printf("==========================================================================================================================\n");
+	printf("================================================================================================\n"
+			"||ID     ||NOMBRE       ||APELLIDO     ||PRECIO       ||FLYCODE||TIPO PASAJERO||ESTADO VUELO ||\n"
+			"================================================================================================\n");
 
 	for (i = 0; i < size; i++)
 	{
+		indexType = indexTypePassenger(list[i],typePassenger, 4);
+		indexStatus = indexStatusFlight(list[i],statusFlight, 3);
 		if (list[i].isEmpty == OCUPADO)
 		{
-			printf("||[%d]       ||[%s]         ||[%s]           ||[%f]             ||[%s]            ||[%d]       ||[%d]       ||\n", list[i].id, list[i].name, list[i].lastName, list[i].price, list[i].flycode, list[i].idTypePassenger, list[i].idStatusFlight );
+			printf("||%-7d||%-13s||%-13s||%-13.2f||%-7s||%-13s||%-13s||\n", list[i].id, list[i].name, list[i].lastName, list[i].price, list[i].flycode, typePassenger[indexType].typePassenger , statusFlight[indexStatus].statusFlight );
 		}
 	}
+
+	printf("================================================================================================\n");
 
 	return 0;
 }

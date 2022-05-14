@@ -47,22 +47,6 @@ int validateNumber (char numbers[])
 	return validator;
 }
 
-/*int indexTypePassenger(sPassenger list[], int size, sTypePassenger typePassenger[], int typePassengerSize)
-{
-	int index;
-	int i;
-
-	for (i = 0; i < size; i++)
-	{
-		if (list[i].isEmpty == OCUPADO)
-		{
-			index = compareTypePassenger(list[i], typePassenger, typePassengerSize);
-			break;
-		}
-	}
-	return index;
-}*/
-
 int indexTypePassenger(sPassenger list, sTypePassenger typePassenger[], int typePassengerSize)
 {
 	int index;

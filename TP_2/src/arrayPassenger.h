@@ -57,6 +57,6 @@ int modifyData (sPassenger* list, sTypePassenger typePassenger[], sStatusFlight 
 
 int deletePassenger(sPassenger* list, int size);
 
-int showPassengers (sPassenger* list, int size);
+int showPassengers (sPassenger* list, int size, sTypePassenger typePassenger[],sStatusFlight statusFlight[]);
 
 #endif /* ARRAYPASSENGER_H_ */

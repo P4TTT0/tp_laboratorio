@@ -21,10 +21,10 @@ int main(void)
 
 	int option;
 	int index;
+	int indexDelete;
 
 	option = 0;
 	index = 0;
-
 
 	sPassenger passengers[LEN];
 	sStatusFlight statusFlight[3] = {{1,"NORMAL"}, {2,"DEMORADO"}, {3, "CANCELADO"}};
@@ -73,7 +73,7 @@ int main(void)
 			case 3:
 				index = deletePassenger(passengers, LEN);
 
-				if (index == 1)
+				if (index == OCUPADO)
 				{
 					printf("\n <|-----IMPOSIBLE BORRAR -----|>");
 					system("pause");
@@ -87,7 +87,7 @@ int main(void)
 			break;
 
 			case 4:
-				showPassengers (passengers, LEN);
+				showPassengers (passengers, LEN, typePassenger, statusFlight);
 			break;
 
 			case 5:
