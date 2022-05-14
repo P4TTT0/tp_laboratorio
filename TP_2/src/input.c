@@ -47,11 +47,53 @@ int validateNumber (char numbers[])
 	return validator;
 }
 
-/*int validateFloat (char message[], int max, int min)
+/*int indexTypePassenger(sPassenger list[], int size, sTypePassenger typePassenger[], int typePassengerSize)
 {
-	int validator;
+	int index;
+	int i;
 
+	for (i = 0; i < size; i++)
+	{
+		if (list[i].isEmpty == OCUPADO)
+		{
+			index = compareTypePassenger(list[i], typePassenger, typePassengerSize);
+			break;
+		}
+	}
+	return index;
 }*/
+
+int indexTypePassenger(sPassenger list, sTypePassenger typePassenger[], int typePassengerSize)
+{
+	int index;
+	int i;
+
+	for (i = 0; i < typePassengerSize; i++)
+	{
+		if (list.idTypePassenger == typePassenger[i].idTypePassenger)
+		{
+			index = i;
+			break;
+		}
+	}
+	return index;
+}
+
+int indexStatusFlight(sPassenger list, sStatusFlight statusFlight[], int statusFlightSize)
+{
+	int index;
+	int i;
+
+	for (i = 0; i < statusFlightSize; i++)
+	{
+		if (list.idStatusFlight == statusFlight[i].idStatusFlight)
+		{
+			index = i;
+			break;
+		}
+	}
+	return index;
+}
 
 
 

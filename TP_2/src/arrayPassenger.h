@@ -39,18 +39,20 @@ typedef struct
 
 int idGenerator();
 
-sPassenger getPassenger(sTypePassenger typePassenger[], int typePassengerSize);
+sPassenger getPassenger (sTypePassenger typePassenger[], sStatusFlight statusFlight[]);
 
 int initPassengers(sPassenger* list, int len);
 
 int freeSpace (sPassenger* list, int len);
 
-int addPassenger(sPassenger *list, int len, int id, char name[], char lastName[], float price, char flycode[], int typePassenger, int statusFlight);
+int addPassenger(sPassenger *list, int len, sTypePassenger typePassenger[], sStatusFlight statusFlight[]);
 
 int optionsTypePassenger(sTypePassenger typePassenger[], int size);
 
 int optionStatusFlight(sStatusFlight statusFlight[], int size);
 
 int findPassengerById(sPassenger* list, int len, int id);
+
+int modifyData (sPassenger* list, sTypePassenger typePassenger[], sStatusFlight statusFlight[]);
 
 #endif /* ARRAYPASSENGER_H_ */
