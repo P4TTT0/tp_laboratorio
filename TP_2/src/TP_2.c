@@ -87,6 +87,7 @@ int main(void)
 			break;
 
 			case 4:
+				showPassengers (passengers, LEN);
 			break;
 
 			case 5:

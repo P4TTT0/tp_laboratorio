@@ -302,3 +302,20 @@ int deletePassenger(sPassenger* list, int size)
 	return 1;
 }
 
+int showPassengers (sPassenger* list, int size)
+{
+	int i;
+
+	printf("==========================================================================================================================\n");
+
+	for (i = 0; i < size; i++)
+	{
+		if (list[i].isEmpty == OCUPADO)
+		{
+			printf("||[%d]       ||[%s]         ||[%s]           ||[%f]             ||[%s]            ||[%d]       ||[%d]       ||\n", list[i].id, list[i].name, list[i].lastName, list[i].price, list[i].flycode, list[i].idTypePassenger, list[i].idStatusFlight );
+		}
+	}
+
+	return 0;
+}
+
