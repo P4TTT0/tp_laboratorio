@@ -45,6 +45,8 @@ int initPassengers(sPassenger* list, int len);
 
 int freeSpace (sPassenger* list, int len);
 
+int occupiedSpace (sPassenger* list, int len);
+
 int addPassenger(sPassenger *list, int len, sTypePassenger typePassenger[], sStatusFlight statusFlight[]);
 
 int optionsTypePassenger(sTypePassenger typePassenger[], int size);
@@ -58,5 +60,17 @@ int modifyData (sPassenger* list, sTypePassenger typePassenger[], sStatusFlight 
 int deletePassenger(sPassenger* list, int size);
 
 int showPassengers (sPassenger* list, int size, sTypePassenger typePassenger[],sStatusFlight statusFlight[]);
+
+int indexTypePassenger(sPassenger list, sTypePassenger typePassenger[], int typePassengerSize);
+
+int indexStatusFlight(sPassenger list, sStatusFlight statusFlight[], int statusFlightSize);
+
+int informData (sPassenger* list, int len, sTypePassenger typePassenger[], sStatusFlight statusFlight[]);
+
+int sortByLastName(sPassenger list[], int size, int order);
+
+int sortByFlyCode(sPassenger list[], int size, int order);
+
+int addForcedPassengers(sPassenger* list, int size);
 
 #endif /* ARRAYPASSENGER_H_ */

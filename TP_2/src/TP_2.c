@@ -21,15 +21,15 @@ int main(void)
 
 	int option;
 	int index;
-	int indexDelete;
+	int indexOccupied;
 
 	option = 0;
 	index = 0;
+	indexOccupied = 0;
 
 	sPassenger passengers[LEN];
 	sStatusFlight statusFlight[3] = {{1,"NORMAL"}, {2,"DEMORADO"}, {3, "CANCELADO"}};
 	sTypePassenger typePassenger[4] = {{1, "ECONOMICO"}, {2, "PREMIUM"}, {3, "VIP"}, {4, "LORD"}};
-
 
 	initPassengers(passengers, LEN);
 
@@ -67,30 +67,68 @@ int main(void)
 			break;
 
 			case 2:
-				modifyData(passengers, typePassenger, statusFlight);
+				indexOccupied = occupiedSpace(passengers, LEN);
+
+				if (indexOccupied != VACIO)
+				{
+					modifyData(passengers, typePassenger, statusFlight);
+				}
+				else
+				{
+					printf("\n<|-----NO HAY PASAJEROS EN LISTA-----|>");
+					printf("\n(imposible modificar)\n");
+					system("pause");
+				}
 			break;
 
 			case 3:
-				index = deletePassenger(passengers, LEN);
+				indexOccupied = occupiedSpace(passengers, LEN);
 
-				if (index == OCUPADO)
+				if (indexOccupied != VACIO)
 				{
-					printf("\n <|-----IMPOSIBLE BORRAR -----|>");
+					index = deletePassenger(passengers, LEN);
+
+					if (index == OCUPADO)
+					{
+						printf("\n <|-----IMPOSIBLE BORRAR -----|>");
+						system("pause");
+					}
+					else
+					{
+						printf("\n <|-----BORRADO CON EXITO-----|>");
+						printf("\n (Pasajero de indice [%d] con el ID [%d] BORRADO)\n", index, passengers[index].id);
+						system("pause");
+					}
+				}
+				else
+				{
+					printf("\n<|-----NO HAY PASAJEROS EN LISTA-----|>");
+					printf("\n(imposible borrar)\n");
+					system("pause");
+				}
+
+			break;
+
+			case 4:
+				indexOccupied = occupiedSpace(passengers, LEN);
+
+				if (indexOccupied != VACIO)
+				{
+					informData (passengers, LEN, typePassenger, statusFlight);
 					system("pause");
 				}
 				else
 				{
-					printf("\n <|-----BORRADO CON EXITO-----|>");
-					printf("\n (Pasajero de indice [%d] con el ID [%d] BORRADO)\n", index, passengers[index].id);
+					printf("\n<|-----NO HAY PASAJEROS EN LISTA-----|>");
+					printf("\n(imposible informar)\n");
 					system("pause");
 				}
 			break;
 
-			case 4:
-				showPassengers (passengers, LEN, typePassenger, statusFlight);
-			break;
-
 			case 5:
+				addForcedPassengers(passengers, LEN);
+				printf("\n<|-----PASAJEROS FORZADOS CARGADOS EXITOSASMENTE-----|>\n");
+				system("pause");
 			break;
 
 			case 6:

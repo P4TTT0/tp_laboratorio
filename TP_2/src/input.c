@@ -47,37 +47,73 @@ int validateNumber (char numbers[])
 	return validator;
 }
 
-int indexTypePassenger(sPassenger list, sTypePassenger typePassenger[], int typePassengerSize)
+int countPassengers (sPassenger* list, int size)
 {
-	int index;
+	int countPassenger;
 	int i;
 
-	for (i = 0; i < typePassengerSize; i++)
+	countPassenger = 0;
+
+	for (i = 0; i < size; i++)
 	{
-		if (list.idTypePassenger == typePassenger[i].idTypePassenger)
+		if(list[i].isEmpty == OCUPADO)
 		{
-			index = i;
-			break;
+			countPassenger++;
 		}
 	}
-	return index;
+
+	return countPassenger;
 }
 
-int indexStatusFlight(sPassenger list, sStatusFlight statusFlight[], int statusFlightSize)
+int countPassengersPrices (sPassenger* list, int size)
 {
-	int index;
+	int countPassengerPrices;
 	int i;
 
-	for (i = 0; i < statusFlightSize; i++)
+	countPassengerPrices = 0;
+
+	for (i = 0; i < size; i++)
 	{
-		if (list.idStatusFlight == statusFlight[i].idStatusFlight)
+		if(list[i].isEmpty == OCUPADO)
 		{
-			index = i;
-			break;
+			countPassengerPrices = countPassengerPrices + list[i].price;
 		}
 	}
-	return index;
+
+	return countPassengerPrices;
 }
 
+int calculateAveragePrice (sPassenger* list, int size)
+{
+	int average;
+	int totalPassengers = countPassengers (list, size);
+	int totalPassengerPrices = countPassengersPrices (list, size);
 
+	average = totalPassengerPrices / totalPassengers;
 
+	return average;
+}
+
+int countPassengrOverAveragePrice (sPassenger* list, int size)
+{
+	int average;
+	int i;
+	int countPassengersOverAveragePrice;
+
+	countPassengersOverAveragePrice = 0;
+
+	average = calculateAveragePrice(list, size);
+
+	for (i = 0; i < size; i++)
+	{
+		if (list[i].isEmpty == OCUPADO)
+		{
+			if (list[i].price > average)
+			{
+				countPassengersOverAveragePrice++;
+			}
+		}
+	}
+
+	return countPassengersOverAveragePrice;
+}

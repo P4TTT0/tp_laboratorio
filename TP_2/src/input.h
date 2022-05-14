@@ -12,8 +12,12 @@ int validateCharacter (char string[]);
 
 int validateNumber (char numbers[]);
 
-int indexTypePassenger(sPassenger list, sTypePassenger typePassenger[], int typePassengerSize);
+int countPassengers (sPassenger* list, int size);
 
-int indexStatusFlight(sPassenger list, sStatusFlight statusFlight[], int statusFlightSize);
+int countPassengersPrices (sPassenger* list, int size);
+
+int calculateAveragePrice (sPassenger* list, int size);
+
+int countPassengrOverAveragePrice (sPassenger* list, int size);
 
 #endif /* INPUT_H_ */
