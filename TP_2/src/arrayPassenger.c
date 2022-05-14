@@ -103,10 +103,11 @@ sPassenger getPassenger (sTypePassenger typePassenger[], sStatusFlight statusFli
 int freeSpace (sPassenger* list, int len)
 {
 	int index;
+	int i;
 
 	index = OCUPADO;
 
-	for (int i = 0; i < len; i++)
+	for (i = 0; i < len; i++)
 	{
 		if (list[i].isEmpty == VACIO)
 		{
@@ -267,5 +268,37 @@ int modifyData (sPassenger* list, sTypePassenger typePassenger[], sStatusFlight 
 	}while(subOption != 7);
 
 	return 0;
+}
+
+int deletePassenger(sPassenger* list, int size)
+{
+	int auxId;
+	int passengerIndex;
+
+	auxId = 0;
+	passengerIndex = 0;
+
+	printf("\n\n|----ELIMINAR PASAJERO----|\n\n"
+				"<|---INGRESE EL [ID]\n"
+				"-Ingrese el [ID] del pasajero a eliminar");
+	scanf("%d", &auxId);
+	passengerIndex = findPassengerById(list, size, auxId);
+
+	while (passengerIndex == -1)
+	{
+		printf( "<|---INGRESE EL [ID] (ERROR - ID NO ENCONTRADO)\n"
+				"-Ingrese el [ID] del pasajero a modificar");
+		scanf("%d", &auxId);
+
+		passengerIndex = findPassengerById(list, size, auxId);
+	}
+
+	if (list[passengerIndex].isEmpty == OCUPADO)
+	{
+		list[passengerIndex].isEmpty = VACIO;
+		return 0;
+	}
+
+	return 1;
 }
 

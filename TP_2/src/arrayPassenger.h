@@ -55,4 +55,6 @@ int findPassengerById(sPassenger* list, int len, int id);
 
 int modifyData (sPassenger* list, sTypePassenger typePassenger[], sStatusFlight statusFlight[]);
 
+int deletePassenger(sPassenger* list, int size);
+
 #endif /* ARRAYPASSENGER_H_ */

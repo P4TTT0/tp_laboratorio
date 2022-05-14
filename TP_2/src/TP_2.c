@@ -56,13 +56,13 @@ int main(void)
 
 				if (index == OCUPADO)
 				{
-					printf("\n <|-----LISTA LLENA-----|>");
-					printf("\n (imposible guardar)\n");
+					printf("\n<|-----LISTA LLENA-----|>");
+					printf("\n(imposible guardar)\n");
 				}
 				else
 				{
-					printf("\n <|-----GUARDADO CON EXITO-----|>");
-					printf("\n (Guardado en la posicion [%d] ID [%d])\n", index, passengers[index].id);
+					printf("\n<|-----GUARDADO CON EXITO-----|>");
+					printf("\n(Guardado en la posicion [%d] ID [%d])\n", index, passengers[index].id);
 				}
 			break;
 
@@ -71,6 +71,19 @@ int main(void)
 			break;
 
 			case 3:
+				index = deletePassenger(passengers, LEN);
+
+				if (index == 1)
+				{
+					printf("\n <|-----IMPOSIBLE BORRAR -----|>");
+					system("pause");
+				}
+				else
+				{
+					printf("\n <|-----BORRADO CON EXITO-----|>");
+					printf("\n (Pasajero de indice [%d] con el ID [%d] BORRADO)\n", index, passengers[index].id);
+					system("pause");
+				}
 			break;
 
 			case 4:
