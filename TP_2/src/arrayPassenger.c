@@ -2,7 +2,7 @@
  * arrayPassenger.c
  *
  *  Created on: 11 may. 2022
- *      Author: patri
+ *      Author: Perez Cardenal Patricio
  */
 #include <stdio.h>
 #include <stdlib.h>
@@ -139,20 +139,6 @@ int freeSpace (sPassenger* list, int len)
 	return index;
 }
 
-int addPassenger(sPassenger *list, int len, sTypePassenger typePassenger[], sStatusFlight statusFlight[])
-{
-	int index;
-
-	index = freeSpace(list, len);
-
-	if (index != OCUPADO)
-	{
-		list[index] = getPassenger(typePassenger, statusFlight);
-		list[index].isEmpty = OCUPADO;
-	}
-	return index;
-}
-
 int occupiedSpace (sPassenger* list, int len)
 {
 	int index;
@@ -168,6 +154,21 @@ int occupiedSpace (sPassenger* list, int len)
 				break;
 			}
 		}
+	return index;
+}
+
+
+int addPassenger(sPassenger *list, int len, sTypePassenger typePassenger[], sStatusFlight statusFlight[])
+{
+	int index;
+
+	index = freeSpace(list, len);
+
+	if (index != OCUPADO)
+	{
+		list[index] = getPassenger(typePassenger, statusFlight);
+		list[index].isEmpty = OCUPADO;
+	}
 	return index;
 }
 
@@ -213,7 +214,7 @@ int findPassengerById(sPassenger* list, int len, int id)
 		return index;
 }
 
-int modifyData (sPassenger* list, sTypePassenger typePassenger[], sStatusFlight statusFlight[])
+int modifyData (sPassenger* list, int len, sTypePassenger typePassenger[], sStatusFlight statusFlight[])
 {
 	int auxId;
 	int passengerIndex;
@@ -231,9 +232,11 @@ int modifyData (sPassenger* list, sTypePassenger typePassenger[], sStatusFlight 
 
 	printf("\n\n|----MODIFICAR PASAJERO----|\n\n"
 			"<|---INGRESE EL [ID]\n"
-			"-Ingrese el [ID] del pasajero a modificar");
+			"-Ingrese el [ID] del pasajero a modificar\n");
+	showPassengers (list, len, typePassenger, statusFlight);
 	scanf("%d", &auxId);
-	passengerIndex = findPassengerById(list, LEN, auxId);
+	passengerIndex = findPassengerById(list, len, auxId);
+
 
 	while (passengerIndex == -1)
 	{
@@ -507,6 +510,8 @@ int informData (sPassenger* list, int len, sTypePassenger typePassenger[], sStat
 						system("pause");
 					break;
 					default:
+						printf("|----- > OPCION INVALIDA < -----|\n\n");
+						system("pause");
 					break;
 				}
 
@@ -522,6 +527,7 @@ int informData (sPassenger* list, int len, sTypePassenger typePassenger[], sStat
 			break;
 			default:
 				printf("|----- > OPCION INVALIDA < -----|\n\n");
+				system("pause");
 			break;
 		}
 	}while (option != 3);

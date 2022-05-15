@@ -1,10 +1,10 @@
 /*
  ============================================================================
  Name        : TP_2.c
- Author      : 
+ Author      : Perez Cardenal Patricio
  Version     :
- Copyright   : Your copyright notice
- Description : Hello World in C, Ansi-style
+ Copyright   : TTT
+ Description : TRABAJO PRACTICO 2
  ============================================================================
  */
 
@@ -71,7 +71,7 @@ int main(void)
 
 				if (indexOccupied != VACIO)
 				{
-					modifyData(passengers, typePassenger, statusFlight);
+					modifyData(passengers, LEN, typePassenger, statusFlight);
 				}
 				else
 				{
@@ -132,9 +132,12 @@ int main(void)
 			break;
 
 			case 6:
+				system("pause");
 			break;
 
 			default:
+				printf("|----- > OPCION INVALIDA < -----|\n\n");
+				system("pause");
 			break;
 		}
 	}while(option != 6);

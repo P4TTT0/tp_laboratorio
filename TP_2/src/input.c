@@ -2,7 +2,7 @@
  * input.c
  *
  *  Created on: 12 may. 2022
- *      Author: patri
+ *      Author: Perez Cardenal Patricio
  */
 #include <stdio.h>
 #include <stdlib.h>
