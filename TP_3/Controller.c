@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "LinkedList.h"
 #include "Passenger.h"
+#include "parser.h"
 
 
 /** \brief Carga los datos de los pasajeros desde el archivo data.csv (modo texto).
@@ -13,7 +14,29 @@
  */
 int controller_loadFromText(char* path , LinkedList* pArrayListPassenger)
 {
-    return 1;
+	int validacion;
+	FILE* pFile;
+
+	if (path == NULL && pArrayListPassenger == NULL)
+	{
+		validacion = 0;
+
+		return validacion;
+	}
+
+	pFile = fopen(path, "r");
+
+	if (pFile == NULL)
+	{
+		printf("[ERROR] - NO SE HA PODIDO ABRIR EL ARCHIVO CORRECTAMENTE.");
+		exit(1);
+	}
+
+	validacion = parser_PassengerFromText(pFile, pArrayListPassenger);
+
+	fclose(pFile);
+
+    return validacion;
 }
 
 /** \brief Carga los datos de los pasajeros desde el archivo data.csv (modo binario).
@@ -73,6 +96,23 @@ int controller_removePassenger(LinkedList* pArrayListPassenger)
  */
 int controller_ListPassenger(LinkedList* pArrayListPassenger)
 {
+	int longitud;
+	int i;
+	Passenger* this;
+
+	longitud = ll_len(pArrayListPassenger);
+	printf("||===========================================================================================================================||\n"
+			"||---[ID]---||----[NOMBRE]----||----[APELLIDO]----||--[PRECIO]--||--[CODIGO VUELO]--||--[TIPO PASAJERO]--||--[ESTADO VUELO]--||\n"
+			"||===========================================================================================================================||\n");
+
+	for (i = 0; i < longitud; i++)
+	{
+		this = (Passenger*) ll_get(pArrayListPassenger, i);
+		Passenger_list(this);
+		printf("||===========================================================================================================================||\n");
+	}
+
+
     return 1;
 }
 

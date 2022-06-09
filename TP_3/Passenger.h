@@ -44,5 +44,6 @@ int Passenger_getPrecio(Passenger* this,float* precio);
 int Passenger_setEstadoVuelo(Passenger* this,char* estadoVuelo);
 int Passenger_getEstadoVuelo(Passenger* this,char* estadoVuelo);
 
+void Passenger_list(Passenger* this);
 
 #endif /* PASSENGER_H_ */

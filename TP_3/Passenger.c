@@ -28,7 +28,7 @@ Passenger* Passenger_new()
 
 Passenger* Passenger_newParametros(char* idStr,char* nombreStr,char* apellidoStr,char* precioStr,char* tipoPasajeroStr,char* codigoVueloStr,char* estadoVueloStr)
 {
-	Passenger* this = NULL;
+	Passenger* this;
 	int id;
 	float precio;
 	int tipoPasajero;
@@ -37,15 +37,7 @@ Passenger* Passenger_newParametros(char* idStr,char* nombreStr,char* apellidoStr
 
 	id = atoi(idStr);
 
-	Passenger_setId(this, id);
-
-	Passenger_setNombre(this, nombreStr);
-
-	Passenger_setApellido(this, apellidoStr);
-
 	precio = atof(precioStr);
-
-	Passenger_setPrecio(this, precio);
 
 	if (strcmp(tipoPasajeroStr, "FirstClass") == 0)
 	{
@@ -65,22 +57,15 @@ Passenger* Passenger_newParametros(char* idStr,char* nombreStr,char* apellidoStr
 			}
 		}
 	}
-
-	Passenger_setTipoPasajero(this, tipoPasajero);
-
-	Passenger_setCodigoVuelo(this, codigoVueloStr);
-
-	Passenger_setEstadoVuelo(this, estadoVueloStr);
-
 	if (this != NULL)
 	{
-		if(Passenger_setId(this, id) == -1 ||
-		   Passenger_setNombre(this, nombreStr) == -1||
-		   Passenger_setApellido(this, apellidoStr) == -1||
-		   Passenger_setPrecio(this, precio) == -1||
-		   Passenger_setTipoPasajero(this, tipoPasajero) == -1||
-		   Passenger_setCodigoVuelo(this, codigoVueloStr) == -1||
-		   Passenger_setEstadoVuelo(this, estadoVueloStr) == -1)
+		if(Passenger_setId(this, id) == 0 ||
+		   Passenger_setNombre(this, nombreStr) == 0||
+		   Passenger_setApellido(this, apellidoStr) == 0||
+		   Passenger_setPrecio(this, precio) == 0||
+		   Passenger_setTipoPasajero(this, tipoPasajero) == 0||
+		   Passenger_setCodigoVuelo(this, codigoVueloStr) == 0||
+		   Passenger_setEstadoVuelo(this, estadoVueloStr) == 0)
 		{
 			Passenger_delete(this);
 			this = NULL;
@@ -285,7 +270,7 @@ int Passenger_setEstadoVuelo(Passenger* this,char* estadoVuelo)
 
 	if (this != NULL && estadoVuelo != NULL)
 	{
-		strcpy(this->codigoVuelo, estadoVuelo);
+		strcpy(this->estadoVuelo, estadoVuelo);
 		retorno = 1;
 	}
 
@@ -300,7 +285,7 @@ int Passenger_getEstadoVuelo(Passenger* this,char* estadoVuelo)
 
 	if (this != NULL && estadoVuelo != NULL)
 	{
-		strcpy(estadoVuelo, this->codigoVuelo);
+		strcpy(estadoVuelo, this->estadoVuelo);
 		retorno = 1;
 	}
 
@@ -314,4 +299,50 @@ void Passenger_delete(Passenger* this)
 		free(this);
 		this = NULL;
 	}
+}
+//-------------------------------- [LISTAR UN PASAJERO] --------------------------------------
+void Passenger_list(Passenger* this)
+{
+	int id;
+	char nombre[50];
+	char apellido[50];
+	float precio;
+	int tipoPasajero;
+	char codigoVuelo[8];
+	char estadoVuelo[40];
+
+	char tipoPasajeroStr[20];
+
+	Passenger_getId(this, &id);
+	Passenger_getNombre(this, nombre);
+	Passenger_getApellido(this, apellido);
+	Passenger_getPrecio(this, &precio);
+	Passenger_getCodigoVuelo(this, codigoVuelo);
+	Passenger_getTipoPasajero(this, &tipoPasajero);
+	Passenger_getEstadoVuelo(this, estadoVuelo);
+
+	if (tipoPasajero == 1)
+	{
+		strcpy(tipoPasajeroStr, "FirstClass");
+	}
+	else
+	{
+		if (tipoPasajero == 2)
+		{
+			strcpy(tipoPasajeroStr, "ExecutiveClass");
+		}
+		else
+		{
+			strcpy(tipoPasajeroStr, "EconomyClass");
+		}
+	}
+
+	printf("||%-10d||%-16s||%-18s||%-12.2f||%-18s||%-19s||%-18s||\n",
+			id,
+			nombre,
+			apellido,
+			precio,
+			codigoVuelo,
+			tipoPasajeroStr,
+			estadoVuelo);
 }
