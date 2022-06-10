@@ -40,7 +40,7 @@ int main()
     			"[6] | LISTAR PASAJERO\n"
     			"[7] | ORDENAR PASAJEROS\n"
     			"[8] | GUARDAR LOS DATOS DE LOS PASAJEROS DESDE EL ARCHIVO 'data.csv' (MODO TEXTO)\n"
-    			"[9] | GUARDAR LOS DATOS DE LOS PASAJEROS DESDE EL ARCHIVO 'data.csv' (MODO TEXTO)\n\n"
+    			"[9] | GUARDAR LOS DATOS DE LOS PASAJEROS DESDE EL ARCHIVO 'data.csv' (MODO BINARIO)\n\n"
 
     			"||--->[INGRESAR OPCION]:");
 
@@ -50,22 +50,84 @@ int main()
         switch(option)
         {
             case 1:
-            	validacion = controller_loadFromText("data.csv",listaPasajeros);
 
-            	if (validacion == 1)
+            	if (ll_isEmpty(listaPasajeros))
             	{
-            		printf("||----< [DATOS CARGADOS CORRECTAMENTES] >----\n");
-            		system("pause");
+            		validacion = controller_loadFromText("data.csv",listaPasajeros);
+
+					if (validacion == 1)
+					{
+						printf("||----< [DATOS CARGADOS CORRECTAMENTES] >----\n");
+						system("pause");
+					}
+					else
+					{
+						printf("||----< [ERROR] - NO SE HAN PODIDO CARGAR LOS DATOS. >----\n");
+						system("pause");
+					}
             	}
             	else
             	{
-            		printf("||----< [ERROR] - NO SE HAN PODIDO CARGAR LOS DATOS >----\n");
+            		printf("||----< [ERROR] - LOS DATOS YA HAN SIDO CARGADOS. >----\n");
 					system("pause");
             	}
 			break;
 
+            case 2:
+            	if (ll_isEmpty(listaPasajeros))
+				{
+					validacion = controller_loadFromBinary("data.bin",listaPasajeros);
+
+					if (validacion == 1)
+					{
+						printf("||----< [DATOS CARGADOS CORRECTAMENTES] >----\n");
+						system("pause");
+					}
+					else
+					{
+						printf("||----< [ERROR] - NO SE HAN PODIDO CARGAR LOS DATOS. >----\n");
+						system("pause");
+					}
+				}
+				else
+				{
+					printf("||----< [ERROR] - LOS DATOS YA HAN SIDO CARGADOS. >----\n");
+					system("pause");
+				}
+			break;
+
             case 6:
             	controller_ListPassenger(listaPasajeros);
+			break;
+
+            case 8:
+            	validacion = controller_saveAsText("data.csv", listaPasajeros);
+
+            	if (validacion == 1)
+				{
+					printf("||----< [DATOS GUARDADOS CORRECTAMENTES] >----\n");
+					system("pause");
+				}
+				else
+				{
+					printf("||----< [ERROR] - NO SE HAN PODIDO GUARDAR LOS DATOS >----\n");
+					system("pause");
+				}
+			break;
+
+            case 9:
+            	validacion = controller_saveAsBinary("data.bin", listaPasajeros);
+
+            	if (validacion == 1)
+				{
+					printf("||----< [DATOS GUARDADOS CORRECTAMENTES] >----\n");
+					system("pause");
+				}
+				else
+				{
+					printf("||----< [ERROR] - NO SE HAN PODIDO GUARDAR LOS DATOS >----\n");
+					system("pause");
+				}
 			break;
         }
     }while(option != 10);

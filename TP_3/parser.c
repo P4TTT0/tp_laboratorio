@@ -31,7 +31,7 @@ int parser_PassengerFromText(FILE* pFile , LinkedList* pArrayListPassenger)
 		exit(1);
 	}
 
-	leido = fscanf(pFile, "%[^,],%[^,],%[^,],%[^,],%[^,],%[^,],%[^\n]", //FALSA LECTURA
+	fscanf(pFile, "%[^,],%[^,],%[^,],%[^,],%[^,],%[^,],%[^\n]", //FALSA LECTURA
 					auxId,
 					auxNombre,
 					auxApellido,
@@ -70,6 +70,36 @@ int parser_PassengerFromText(FILE* pFile , LinkedList* pArrayListPassenger)
  */
 int parser_PassengerFromBinary(FILE* pFile , LinkedList* pArrayListPassenger)
 {
+	int validacion;
+	int leido;
+	Passenger* this = NULL;
 
-    return 1;
+	validacion = 0;
+
+	if (pFile == NULL && pArrayListPassenger == NULL)
+	{
+		printf("NO EXISTE EL ARCHIVO");
+		exit(1);
+	}
+
+	while(!feof(pFile))
+	{
+		this = Passenger_new();
+
+		leido = fread(this, sizeof(Passenger), 1, pFile);
+
+		if (leido == 1)
+		{
+			if (feof(pFile))
+			{
+				break;
+			}
+
+			ll_add(pArrayListPassenger, this);
+			validacion = 1;
+			printf("LEDIO %d\n", leido);
+		}
+	}
+
+    return validacion;
 }

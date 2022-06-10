@@ -8,6 +8,12 @@
 #ifndef PASSENGER_H_
 #define PASSENGER_H_
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "Passenger.h"
+#include "LinkedList.h"
+
 typedef struct
 {
 	int id;
@@ -45,5 +51,8 @@ int Passenger_setEstadoVuelo(Passenger* this,char* estadoVuelo);
 int Passenger_getEstadoVuelo(Passenger* this,char* estadoVuelo);
 
 void Passenger_list(Passenger* this);
+
+int SaveTxt(FILE* pFile, LinkedList* pArrayListPassenger);
+int SaveBinary(FILE* pFile, LinkedList* pArrayListPassenger);
 
 #endif /* PASSENGER_H_ */

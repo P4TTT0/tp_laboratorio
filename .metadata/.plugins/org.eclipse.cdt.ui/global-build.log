@@ -1,257 +1,55 @@
-Info: Nothing to build for TP_3
-Info: Nothing to build for TP_3
-Info: Nothing to build for TP_3
-23:45:32 **** Incremental Build of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
-23:45:42 **** Incremental Build of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
-23:50:34 **** Incremental Build of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
-23:53:29 **** Incremental Build of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
-23:54:53 **** Incremental Build of configuration Debug for project TP_3 ****
+01:31:13 **** Incremental Build of configuration Debug for project TP_3 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
 gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
-23:55:23 **** Incremental Build of configuration Debug for project TP_3 ****
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+01:31:22 **** Incremental Build of configuration Debug for project TP_3 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
 gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
-23:57:31 **** Incremental Build of configuration Debug for project TP_3 ****
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+01:31:30 **** Incremental Build of configuration Debug for project TP_3 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
 gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
-23:58:01 **** Incremental Build of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
-gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
-23:59:51 **** Incremental Build of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
-gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
-00:00:11 **** Incremental Build of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
-gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
-00:00:31 **** Incremental Build of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
-gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
-Info: Nothing to build for TP_3
-00:02:27 **** Incremental Build of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Passenger.o "..\\Passenger.c" 
-gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
-Info: Nothing to build for TP_3
-Info: Nothing to build for TP_3
-00:08:13 **** Incremental Build of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Passenger.o "..\\Passenger.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
-gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
-00:08:40 **** Incremental Build of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
-gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
-00:08:49 **** Incremental Build of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
-gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
-00:09:08 **** Incremental Build of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
-gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
-00:09:18 **** Incremental Build of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
-gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
-00:09:30 **** Incremental Build of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
-gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
-00:09:50 **** Incremental Build of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
-gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
-00:12:11 **** Incremental Build of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Passenger.o "..\\Passenger.c" 
-gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
-00:17:08 **** Incremental Build of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Passenger.o "..\\Passenger.c" 
-gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
-00:19:47 **** Incremental Build of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
-gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
-00:22:29 **** Incremental Build of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
-gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
-00:22:48 **** Incremental Build of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
-gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
-00:25:15 **** Incremental Build of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
-gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
-00:25:27 **** Incremental Build of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
-gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
-00:28:35 **** Incremental Build of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Passenger.o "..\\Passenger.c" 
-gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
-Info: Nothing to build for TP_3
-00:33:38 **** Incremental Build of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
-gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
-00:35:09 **** Incremental Build of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Passenger.o "..\\Passenger.c" 
-gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
-Info: Nothing to build for TP_3
-00:39:42 **** Incremental Build of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Passenger.o "..\\Passenger.c" 
-gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
-00:41:53 **** Incremental Build of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Passenger.o "..\\Passenger.c" 
-gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
-00:42:16 **** Incremental Build of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Passenger.o "..\\Passenger.c" 
-gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
-00:42:49 **** Incremental Build of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Passenger.o "..\\Passenger.c" 
-gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
-00:46:57 **** Incremental Build of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Passenger.o "..\\Passenger.c" 
-..\Passenger.c: In function 'Passenger_list':
-..\Passenger.c:322:46: warning: format '%d' expects argument of type 'int', but argument 6 has type 'char *' [-Wformat=]
-  322 |  printf("||%-10d||%-16s||%-16s||%-12.2f||%-18d||%-19d||%-18s||\n",
-      |                                          ~~~~^
-      |                                              |
-      |                                              int
-      |                                          %-18s
-......
-  327 |    codigoVuelo,
-      |    ~~~~~~~~~~~                                
-      |    |
-      |    char *
-gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
-00:47:20 **** Incremental Build of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Passenger.o "..\\Passenger.c" 
-..\Passenger.c: In function 'Passenger_list':
-..\Passenger.c:322:46: warning: format '%d' expects argument of type 'int', but argument 6 has type 'char *' [-Wformat=]
-  322 |  printf("||%-10d||%-16s||%-16s||%-12.2f||%-18d||%-19s||%-18s||\n",
-      |                                          ~~~~^
-      |                                              |
-      |                                              int
-      |                                          %-18s
-......
-  327 |    codigoVuelo,
-      |    ~~~~~~~~~~~                                
-      |    |
-      |    char *
-..\Passenger.c:322:53: warning: format '%s' expects argument of type 'char *', but argument 7 has type 'int' [-Wformat=]
-  322 |  printf("||%-10d||%-16s||%-16s||%-12.2f||%-18d||%-19s||%-18s||\n",
-      |                                                 ~~~~^
-      |                                                     |
-      |                                                     char *
-      |                                                 %-19d
-......
-  328 |    tipoPasajero,
-      |    ~~~~~~~~~~~~                                      
-      |    |
-      |    int
-gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
-00:47:42 **** Incremental Build of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Passenger.o "..\\Passenger.c" 
-gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
-00:49:06 **** Incremental Build of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Passenger.o "..\\Passenger.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
-gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
-Info: Nothing to build for TP_3
-Info: Nothing to build for TP_3
-00:52:51 **** Incremental Build of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
-gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
-00:53:25 **** Incremental Build of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
-gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
-00:55:01 **** Incremental Build of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
-gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
-00:55:16 **** Incremental Build of configuration Debug for project TP_3 ****
+01:33:04 **** Incremental Build of configuration Debug for project TP_3 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
 gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
 Info: Nothing to build for TP_3
 Info: Nothing to build for TP_3
-00:57:53 **** Incremental Build of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Passenger.o "..\\Passenger.c" 
-gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
-00:58:19 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Nothing to build for TP_3
+Info: Nothing to build for TP_3
+01:36:35 **** Incremental Build of configuration Debug for project TP_3 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
 gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
 Info: Nothing to build for TP_3
-00:59:48 **** Incremental Build of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Passenger.o "..\\Passenger.c" 
-gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
-01:03:36 **** Incremental Build of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Passenger.o "..\\Passenger.c" 
-gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
-01:07:29 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Nothing to build for TP_3
+Info: Nothing to build for TP_3
+Info: Nothing to build for TP_3
+Info: Nothing to build for TP_3
+01:40:53 **** Incremental Build of configuration Debug for project TP_3 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
 gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
-01:08:10 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Nothing to build for TP_3
+Info: Nothing to build for TP_3
+Info: Nothing to build for TP_3
+Info: Nothing to build for TP_3
+01:44:35 **** Incremental Build of configuration Debug for project TP_3 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Passenger.o "..\\Passenger.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
+..\parser.c: In function 'parser_PassengerFromBinary':
+..\parser.c:100:19: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'int' [-Wformat=]
+  100 |    printf("LEDIO %s\n", leido);
+      |                  ~^     ~~~~~
+      |                   |     |
+      |                   |     int
+      |                   char *
+      |                  %d
 gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
-01:14:45 **** Incremental Build of configuration Debug for project TP_3 ****
+01:44:53 **** Incremental Build of configuration Debug for project TP_3 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Passenger.o "..\\Passenger.c" 
-gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
-01:17:37 **** Incremental Build of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Passenger.o "..\\Passenger.c" 
-gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
-01:18:09 **** Incremental Build of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
-gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
-01:18:31 **** Incremental Build of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
 gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 

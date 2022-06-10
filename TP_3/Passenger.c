@@ -8,14 +8,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include "Passenger.h"
+#include "LinkedList.h"
 
-	/*int id;
-	char nombre[50];
-	char apellido[50];
-	float precio;
-	int tipoPasajero;
-	char codigoVuelo[4];
-	int isEmpty;*/
 
 Passenger* Passenger_new()
 {
@@ -345,4 +339,89 @@ void Passenger_list(Passenger* this)
 			codigoVuelo,
 			tipoPasajeroStr,
 			estadoVuelo);
+}
+
+int SaveTxt(FILE* pFile, LinkedList* pArrayListPassenger)
+{
+	int longitud;
+	int i;
+	int auxId;
+	char auxNombre[50];
+	char auxApellido[50];
+	float auxPrecio;
+	char auxCodigoVuelo[8];
+	char auxEstadoVuelo[40];
+	int validacion;
+
+	validacion = 0;
+
+	Passenger* this;
+
+	if (pFile == NULL && pArrayListPassenger == NULL)
+	{
+		printf("[ERROR] - NO EXISTE EL ARCHIVO");
+		exit(1);
+	}
+
+	longitud = ll_len(pArrayListPassenger);
+
+	if (longitud > 0)
+	{
+		fprintf(pFile, "ID,NOMBRE,APELLIDO,PRECIO,CODIGOVUELO,TIPOPASAJERO,ESTADOVUELO\n");
+
+		for(i = 0; i < longitud; i++)
+		{
+			this = (Passenger*) ll_get(pArrayListPassenger, i);
+			if (this != NULL)
+			{
+				Passenger_getId(this, &auxId);
+				Passenger_getNombre(this, auxNombre);
+				Passenger_getApellido(this, auxApellido);
+				Passenger_getPrecio(this, &auxPrecio);
+				Passenger_getCodigoVuelo(this, auxCodigoVuelo);
+				Passenger_getEstadoVuelo(this, auxEstadoVuelo);
+
+				fprintf(pFile, "%d,%s,%s,%f,%s,%s\n", auxId, auxNombre, auxApellido, auxPrecio, auxCodigoVuelo, auxEstadoVuelo);
+
+				validacion = 1;
+			}
+		}
+	}
+
+	return validacion;
+}
+
+int SaveBinary(FILE* pFile, LinkedList* pArrayListPassenger)
+{
+	int longitud;
+	int i;
+	int validacion;
+
+	validacion = 0;
+
+	Passenger* this;
+
+	if (pFile == NULL && pArrayListPassenger == NULL)
+	{
+		printf("[ERROR] - NO EXISTE EL ARCHIVO");
+		exit(1);
+	}
+
+	longitud = ll_len(pArrayListPassenger);
+
+	if (longitud > 0)
+	{
+		for(i = 0; i < longitud; i++)
+		{
+			this = (Passenger*) ll_get(pArrayListPassenger, i);
+			if (this != NULL)
+			{
+				fwrite(this, sizeof(Passenger), 1, pFile);
+
+				validacion = 1;
+			}
+		}
+	}
+
+	return validacion;
 }
