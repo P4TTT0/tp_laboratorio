@@ -446,6 +446,36 @@ int SaveBinary(FILE* pFile, LinkedList* pArrayListPassenger)
 	return validacion;
 }
 
+int mayorId(LinkedList* pArrayListPassenger)
+{
+	int auxMayorId;
+	int auxId;
+	int longitud;
+	int i;
+	Passenger* this;
+
+	if (pArrayListPassenger != NULL)
+	{
+		longitud = ll_len(pArrayListPassenger);
+
+		if (longitud > 0)
+		{
+			for (i = 0; i < longitud; i++)
+			{
+				this = (Passenger*)ll_get(pArrayListPassenger, i);
+				Passenger_getId(this, &auxId);
+
+				if (i == 0 || auxMayorId < auxId)
+				{
+					auxMayorId = auxId;
+				}
+			}
+		}
+	}
+
+	return auxMayorId;
+}
+
 int Passenger_compareByName(void* nombreUno, void* nombreDos)
 {
 	int validacion;
@@ -534,6 +564,39 @@ int Passenger_compareByPrecio(void* precioUno, void* precioDos)
 	else
 	{
 		if (auxPrecioUno > auxPrecioDos)
+		{
+			validacion = 1;
+		}
+		else
+		{
+			validacion = -1;
+		}
+	}
+	return validacion;
+}
+
+int Passenger_compareById(void* idUno, void* idDos)
+{
+	int validacion;
+	int auxIdUno;
+	int auxIdDos;
+
+	Passenger* idPasajeroUno;
+	Passenger* idPasajeroDos;
+
+	idPasajeroUno = (Passenger*) idUno;
+	idPasajeroDos = (Passenger*) idDos;
+
+	Passenger_getId(idPasajeroUno, &auxIdUno);
+	Passenger_getId(idPasajeroDos, &auxIdDos);
+
+	if(auxIdUno == auxIdDos)
+	{
+		validacion = 0;
+	}
+	else
+	{
+		if (auxIdUno > auxIdDos)
 		{
 			validacion = 1;
 		}

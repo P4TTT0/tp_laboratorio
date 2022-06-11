@@ -999,3 +999,5 @@ ID,NOMBRE,APELLIDO,PRECIO,CODIGOVUELO,TIPOPASAJERO,ESTADOVUELO
 998,Jaye,Gutiérrez,25000.000000,MM0987B,EconomyClass,En Horario
 999,Tamarra,Navarro,15000.000000,MM0987B,EconomyClass,En Horario
 1000,Saleem,Torres,20000.000000,MM0987B,EconomyClass,En Horario
+1002,Robert,Ror,2450.000000,AAAAAAA,EconomyClass,Demorado
+1004,Luan,Peruan,2344.000000,AAAAAAA,EconomyClass,Aterrizado

@@ -55,9 +55,12 @@ void Passenger_list(Passenger* this);
 int SaveTxt(FILE* pFile, LinkedList* pArrayListPassenger);
 int SaveBinary(FILE* pFile, LinkedList* pArrayListPassenger);
 
+int mayorId(LinkedList* pArrayListPassenger);
+
 int Passenger_compareByName(void* nombreUno, void* nombreDos);
 int Passenger_compareByApellido(void* apellidoUno, void* apellidoDos);
 int Passenger_compareByPrecio(void* precioUno, void* precioDos);
+int Passenger_compareById(void* idUno, void* idDos);
 
 int criterioOrdenamiento();
 

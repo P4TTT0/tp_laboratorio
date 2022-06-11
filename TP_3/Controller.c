@@ -5,7 +5,6 @@
 #include "parser.h"
 #include "input.h"
 
-
 /** \brief Carga los datos de los pasajeros desde el archivo data.csv (modo texto).
  *
  * \param path char*
@@ -32,7 +31,6 @@ int controller_loadFromText(char* path , LinkedList* pArrayListPassenger)
 
     return validacion;
 }
-
 /** \brief Carga los datos de los pasajeros desde el archivo data.csv (modo binario).
  *
  * \param path char*
@@ -60,6 +58,53 @@ int controller_loadFromBinary(char* path , LinkedList* pArrayListPassenger)
     return validacion;
 }
 
+int controller_id()
+{
+	int auxId;
+	char auxIdStr[10];
+	FILE* pFile;
+
+	pFile = fopen("id.csv", "r");
+
+	if (pFile != NULL)
+	{
+
+
+		do{
+			fscanf(pFile, "%[^\n]\n", auxIdStr);
+
+		}while(!feof(pFile));
+
+
+		auxId = atoi(auxIdStr);
+
+		fclose(pFile);
+	}
+
+	return auxId + 1;
+}
+
+int controller_updateId(int id)
+{
+	int validacion;
+
+	validacion = 0;
+
+	FILE* pFile;
+
+	pFile = fopen("id.csv", "w");
+
+	if (pFile != NULL)
+	{
+		fprintf(pFile, "%d\n", id);
+
+		validacion = 1;
+	}
+
+	fclose(pFile);
+
+	return validacion;
+}
 /** \brief Alta de pasajero
  *
  * \param path char*
@@ -185,7 +230,7 @@ int controller_addPassenger(LinkedList* pArrayListPassenger)
 		break;
 	}
 
-	auxId = 1001;
+	auxId = controller_id();
 
 	sprintf(auxIdStr, "%d", auxId);
 	sprintf(auxPrecioStr, "%f", auxPrecio);
@@ -195,6 +240,7 @@ int controller_addPassenger(LinkedList* pArrayListPassenger)
 	if (this != NULL)
 	{
 		ll_add(pArrayListPassenger, this);
+		controller_updateId(auxId);
 		validacion = 1;
 	}
 	else
@@ -339,6 +385,8 @@ int controller_removePassenger(LinkedList* pArrayListPassenger)
 	int indice;
 	Passenger* this;
 
+	validacion = 0;
+
 	controller_ListPassenger(pArrayListPassenger);
 	printf("||----< | [Eliminar pasajero] | >---||\n\n");
 	auxId = orderInteger("[1] - Ingrese el [ID] del pasajero a ELIMINAR |:");
@@ -360,6 +408,7 @@ int controller_removePassenger(LinkedList* pArrayListPassenger)
 		printf("||===========================================================================================================================||\n\n");
 		ll_remove(pArrayListPassenger, indice);
 		printf("|| --- [PASAJERO BORRADO] --- ||");
+		validacion = 1;
 	}
 
     return validacion;
@@ -380,37 +429,59 @@ int controller_sortPassenger(LinkedList* pArrayListPassenger)
 
 	if (pArrayListPassenger != NULL)
 	{
-		printf("||----< | [ORDENAR PASAJEROS] | >---||\n\n"
-
-		"[1] | Ordenar por [NOMBRE]\n"
-		"[2] | Ordenar por [APELLIDO]\n"
-		"[3] | Ordenar por [PRECIO]\n\n"
-
-		"||--->[INGRESAR OPCION]:");
-
-		fflush(stdin);
-		scanf("%d", &opcion);
-
-		switch(opcion)
+		do
 		{
-			case 1:
-				criterio = criterioOrdenamiento();
-				ll_sort(pArrayListPassenger, Passenger_compareByName, criterio);
-				validacion = 1;
-			break;
+			printf("||----< | [ORDENAR PASAJEROS] | >---||\n\n"
 
-			case 2:
-				criterio = criterioOrdenamiento();
-				ll_sort(pArrayListPassenger, Passenger_compareByApellido, criterio);
-				validacion = 1;
-			break;
+			"[1] | Ordenar por [NOMBRE]\n"
+			"[2] | Ordenar por [APELLIDO]\n"
+			"[3] | Ordenar por [PRECIO]\n"
+			"[4] | Ordenar por [ID]\n\n"
+			"[5] | [SALIR] \n\n"
 
-			case 3:
-				criterio = criterioOrdenamiento();
-				ll_sort(pArrayListPassenger, Passenger_compareByPrecio, criterio);
-				validacion = 1;
-			break;
-		}
+
+			"||--->[INGRESAR OPCION]:");
+
+			fflush(stdin);
+			scanf("%d", &opcion);
+
+			switch(opcion)
+			{
+				case 1:
+					criterio = criterioOrdenamiento();
+					ll_sort(pArrayListPassenger, Passenger_compareByName, criterio);
+					validacion = 1;
+				break;
+
+				case 2:
+					criterio = criterioOrdenamiento();
+					ll_sort(pArrayListPassenger, Passenger_compareByApellido, criterio);
+					validacion = 1;
+				break;
+
+				case 3:
+					criterio = criterioOrdenamiento();
+					ll_sort(pArrayListPassenger, Passenger_compareByPrecio, criterio);
+					validacion = 1;
+				break;
+
+				case 4:
+					criterio = criterioOrdenamiento();
+					ll_sort(pArrayListPassenger, Passenger_compareById, criterio);
+					validacion = 1;
+				break;
+
+				case 5:
+					printf("|| - [VOLIENVO AL MENU] - ||\n");
+				break;
+
+				default:
+					printf("|| [ERROR] - OPCION INVALIDA.\n");
+					system("pause");
+				break;
+			}
+
+		}while (opcion != 5);
 	}
     return validacion;
 }

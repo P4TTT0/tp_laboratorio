@@ -59,6 +59,7 @@ int main()
 					if (validacion == 1)
 					{
 						printf("||----< [DATOS CARGADOS CORRECTAMENTES] >----\n");
+						ll_sort(listaPasajeros, Passenger_compareById, 1);
 						system("pause");
 						banderaTexto = 1;
 					}
@@ -84,6 +85,7 @@ int main()
 					if (validacion == 1)
 					{
 						printf("||----< [DATOS CARGADOS CORRECTAMENTES] >----\n");
+						ll_sort(listaPasajeros, Passenger_compareById, 1);
 						system("pause");
 					}
 					else
@@ -104,19 +106,51 @@ int main()
 			break;
 
             case 4:
-            	controller_editPassenger(listaPasajeros);
+            	if (!ll_isEmpty(listaPasajeros))
+            	{
+            		controller_editPassenger(listaPasajeros);
+            	}
+            	else
+            	{
+            		printf("||----< [ERROR] - NO HAY PASAJEROS CARGADOS. >----\n");
+					system("pause");
+            	}
 			break;
 
             case 5:
-            	controller_removePassenger(listaPasajeros);
+            	if (!ll_isEmpty(listaPasajeros))
+				{
+            		controller_removePassenger(listaPasajeros);
+				}
+				else
+				{
+					printf("||----< [ERROR] - NO HAY PASAJEROS CARGADOS. >----\n");
+					system("pause");
+				}
 			break;
 
             case 6:
-            	controller_ListPassenger(listaPasajeros);
+            	if (!ll_isEmpty(listaPasajeros))
+				{
+            		controller_ListPassenger(listaPasajeros);
+				}
+				else
+				{
+					printf("||----< [ERROR] - NO HAY PASAJEROS CARGADOS. >----\n");
+					system("pause");
+				}
 			break;
 
             case 7:
-            	controller_sortPassenger(listaPasajeros);
+            	if (!ll_isEmpty(listaPasajeros))
+				{
+            		controller_sortPassenger(listaPasajeros);
+				}
+				else
+				{
+					printf("||----< [ERROR] - NO HAY PASAJEROS CARGADOS. >----\n");
+					system("pause");
+				}
 			break;
 
             case 8:
