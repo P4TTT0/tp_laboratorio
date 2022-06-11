@@ -26,6 +26,9 @@ int main()
     int option = 0;
     int validacion = 0;
     int banderaTexto = 0;
+    int banderaBinario = 0;
+    int banderaGuardadoTexto = 1;
+    int banderaGuardadoBinario = 1;
 
     LinkedList* listaPasajeros = ll_newLinkedList();
 
@@ -41,7 +44,8 @@ int main()
     			"[6] | LISTAR PASAJERO\n"
     			"[7] | ORDENAR PASAJEROS\n"
     			"[8] | GUARDAR LOS DATOS DE LOS PASAJEROS DESDE EL ARCHIVO 'data.csv' (MODO TEXTO)\n"
-    			"[9] | GUARDAR LOS DATOS DE LOS PASAJEROS DESDE EL ARCHIVO 'data.csv' (MODO BINARIO)\n\n"
+    			"[9] | GUARDAR LOS DATOS DE LOS PASAJEROS DESDE EL ARCHIVO 'data.csv' (MODO BINARIO)\n"
+    			"[10]| [SALIR]->|\n\n"
 
     			"||--->[INGRESAR OPCION]:");
 
@@ -52,7 +56,7 @@ int main()
         {
             case 1:
 
-            	if (ll_isEmpty(listaPasajeros) || banderaTexto == 0)
+            	if (ll_isEmpty(listaPasajeros) || (banderaTexto == 0 && banderaBinario == 0))
             	{
             		validacion = controller_loadFromText("data.csv",listaPasajeros);
 
@@ -67,7 +71,6 @@ int main()
 					{
 						printf("||----< [ERROR] - NO SE HAN PODIDO CARGAR LOS DATOS. >----\n");
 						system("pause");
-						banderaTexto = 0;
 					}
             	}
             	else
@@ -78,7 +81,7 @@ int main()
 			break;
 
             case 2:
-            	if (ll_isEmpty(listaPasajeros))
+            	if (ll_isEmpty(listaPasajeros) || (banderaTexto == 0 && banderaBinario == 0))
 				{
 					validacion = controller_loadFromBinary("data.bin",listaPasajeros);
 
@@ -87,6 +90,7 @@ int main()
 						printf("||----< [DATOS CARGADOS CORRECTAMENTES] >----\n");
 						ll_sort(listaPasajeros, Passenger_compareById, 1);
 						system("pause");
+						banderaBinario = 1;
 					}
 					else
 					{
@@ -103,12 +107,16 @@ int main()
 
             case 3:
             	controller_addPassenger(listaPasajeros);
+            	banderaGuardadoTexto = 0;
+            	banderaGuardadoBinario = 0;
 			break;
 
             case 4:
             	if (!ll_isEmpty(listaPasajeros))
             	{
             		controller_editPassenger(listaPasajeros);
+            		banderaGuardadoTexto = 0;
+					banderaGuardadoBinario = 0;
             	}
             	else
             	{
@@ -121,6 +129,8 @@ int main()
             	if (!ll_isEmpty(listaPasajeros))
 				{
             		controller_removePassenger(listaPasajeros);
+            		banderaGuardadoTexto = 0;
+					banderaGuardadoBinario = 0;
 				}
 				else
 				{
@@ -160,6 +170,7 @@ int main()
 				{
 					printf("||----< [DATOS GUARDADOS CORRECTAMENTES] >----\n");
 					system("pause");
+					banderaGuardadoTexto = 1;
 				}
 				else
 				{
@@ -175,12 +186,26 @@ int main()
 				{
 					printf("||----< [DATOS GUARDADOS CORRECTAMENTES] >----\n");
 					system("pause");
+					banderaGuardadoBinario = 1;
 				}
 				else
 				{
 					printf("||----< [ERROR] - NO SE HAN PODIDO GUARDAR LOS DATOS >----\n");
 					system("pause");
 				}
+			break;
+
+            case 10:
+            	if (banderaGuardadoTexto == 1 && banderaGuardadoBinario == 1)
+            	{
+            		printf("|| - [SALIENDO] - ||");
+            	}
+            	else
+            	{
+            		printf("||[ERROR] | DEBES GUARDAR LOS CAMBIOS ANTES DE SALIR.\n");
+            		option = 1;
+            		system("pause");
+            	}
 			break;
         }
     }while(option != 10);
