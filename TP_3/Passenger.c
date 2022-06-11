@@ -6,9 +6,10 @@
  */
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-#include "Passenger.h"
 #include "LinkedList.h"
+#include "Passenger.h"
+#include "parser.h"
+#include "input.h"
 
 
 Passenger* Passenger_new()
@@ -568,6 +569,8 @@ int Passener_buscarId(LinkedList* pArrayListPassenger, int id)
 	int longitud;
 	Passenger* this;
 
+	indice = -1;
+
 	if (pArrayListPassenger != NULL)
 	{
 		longitud = ll_len(pArrayListPassenger);
@@ -588,4 +591,242 @@ int Passener_buscarId(LinkedList* pArrayListPassenger, int id)
 	}
 
 	return indice;
+}
+
+int Passenger_modificarNombre(LinkedList* pArrayListPassenger, int indice)
+{
+	char auxNombre[50];
+	int validacion;
+	int retorno;
+
+	retorno = 0;
+
+	Passenger* this;
+
+	if (pArrayListPassenger != NULL)
+	{
+		printf("[1] | Modificar [NOMBRE]\n\n"
+				"|| Ingrese el nuevo nombre ->|:");
+
+		fflush(stdin);
+		gets(auxNombre);
+
+		validacion = validateCharacter(auxNombre);
+
+		if (validacion == 0)
+		{
+			printf("||[ERROR] -> Ingrese el nuevo nombre ->|:");
+
+			fflush(stdin);
+			gets(auxNombre);
+		}
+
+		this = (Passenger*) ll_get(pArrayListPassenger, indice);
+
+		if (this != NULL)
+		{
+			Passenger_setNombre(this, auxNombre);
+			retorno = 1;
+		}
+	}
+
+	return retorno;
+}
+
+int Passenger_modificarApellido(LinkedList* pArrayListPassenger, int indice)
+{
+	char auxApellido[50];
+	int validacion;
+	int retorno;
+
+	retorno = 0;
+
+	Passenger* this;
+
+	if (pArrayListPassenger != NULL)
+	{
+		printf("[2] | Modificar [APELLIDO]\n\n"
+				"|| Ingrese el nuevo apellido ->|:");
+
+		fflush(stdin);
+		gets(auxApellido);
+
+		validacion = validateCharacter(auxApellido);
+
+		if (validacion == 0)
+		{
+			printf("||[ERROR] -> Ingrese el nuevo apellido ->|:");
+
+			fflush(stdin);
+			gets(auxApellido);
+		}
+
+		this = (Passenger*) ll_get(pArrayListPassenger, indice);
+
+		if (this != NULL)
+		{
+			Passenger_setApellido(this, auxApellido);
+			retorno = 1;
+		}
+	}
+
+	return retorno;
+}
+
+int Passenger_modificarPrecio(LinkedList* pArrayListPassenger, int indice)
+{
+	float auxPrecio;
+	int retorno;
+
+	retorno = 0;
+
+	Passenger* this;
+
+	if (pArrayListPassenger != NULL)
+	{
+		auxPrecio = orderFloat("[3] | Modificar [PRECIO]\n\n"
+								"|| Ingrese el nuevo precio -> (500 - 10.000) |:");
+
+		while (auxPrecio < 500 || auxPrecio > 100000)
+		{
+			auxPrecio = orderFloat("||[ERROR] -> Ingrese el nuevo precio -> (500 - 10.000) |:");
+		}
+
+		this = (Passenger*) ll_get(pArrayListPassenger, indice);
+
+		if (this != NULL)
+		{
+			Passenger_setPrecio(this, auxPrecio);
+			retorno = 1;
+		}
+	}
+
+	return retorno;
+}
+
+int Passenger_modificarCodigoVuelo(LinkedList* pArrayListPassenger, int indice)
+{
+	char auxCodigoVuelo[8];
+	int retorno;
+
+	retorno = 0;
+
+	Passenger* this;
+
+	if (pArrayListPassenger != NULL)
+	{
+		printf("[4] | Modificar [CODIGO DE VUELO]\n\n"
+				"|| Ingrese el nuevo codigo de vuelo -> (7 Caracteres) |:");
+
+		fflush(stdin);
+		gets(auxCodigoVuelo);
+		toMayus(auxCodigoVuelo);
+
+		while (strlen(auxCodigoVuelo) != 7)
+		{
+			printf("||[ERROR] -> Ingrese el [CODIGO DE VUELO] | (7 Caracteres)");
+
+			fflush(stdin);
+			gets(auxCodigoVuelo);
+			toMayus(auxCodigoVuelo);
+		}
+
+		this = (Passenger*) ll_get(pArrayListPassenger, indice);
+
+		if (this != NULL)
+		{
+			Passenger_setCodigoVuelo(this, auxCodigoVuelo);
+			retorno = 1;
+		}
+	}
+
+	return retorno;
+}
+
+int Passenger_modificarTipoPasajero(LinkedList* pArrayListPassenger, int indice)
+{
+	int auxTipoPasajero;
+	int retorno;
+
+	retorno = 0;
+
+	Passenger* this;
+
+	if (pArrayListPassenger != NULL)
+	{
+		auxTipoPasajero = orderInteger("[5] | Modificar [TIPO DE PASAJERO]\n\n"
+										"[1] - FirstClass\n"
+										"[2] - ExecutiveClass\n"
+										"[3] - EconomyClass");
+
+		while (auxTipoPasajero < 1 || auxTipoPasajero > 3)
+		{
+			auxTipoPasajero = orderInteger("[5] |[ERROR] -> Ingrese un [TIPO DE PASAJERO]\n\n"
+												"[1] - FirstClass\n"
+												"[2] - ExecutiveClass\n"
+												"[3] - EconomyClass");
+		}
+
+		this = (Passenger*) ll_get(pArrayListPassenger, indice);
+
+		if (this != NULL)
+		{
+			Passenger_setTipoPasajero(this, auxTipoPasajero);
+			retorno = 1;
+		}
+	}
+
+	return retorno;
+}
+
+int Passenger_modificarEstadoVuelo(LinkedList* pArrayListPassenger, int indice)
+{
+	int auxEstadoVuelo;
+	char auxEstadoVueloStr[30];
+	int retorno;
+
+	retorno = 0;
+
+	Passenger* this;
+	if (pArrayListPassenger != NULL)
+	{
+		auxEstadoVuelo = orderInteger("[6] | Modificar [ESTADO DE VUELO]\n\n"
+									"[1] - En Horario\n"
+									"[2] - Demorado\n"
+									"[3] - Aterrizado");
+
+		while(auxEstadoVuelo < 1 || auxEstadoVuelo > 3)
+		{
+			auxEstadoVuelo = orderInteger("[6]|[ERROR] -> Ingrese un [ESTADO DE VUELO]\n\n"
+											"[1] - En Horario\n"
+											"[2] - Demorado\n"
+											"[3] - Aterrizado");
+		}
+
+		//-----------------[ELVAUA OPCION ELEGIDA]--------------------
+		switch (auxEstadoVuelo)
+		{
+			case 1:
+				strcpy(auxEstadoVueloStr, "En Horario");
+			break;
+
+			case 2:
+				strcpy(auxEstadoVueloStr, "Demorado");
+			break;
+
+			default:
+				strcpy(auxEstadoVueloStr, "Aterrizado");
+			break;
+		}
+
+			this = (Passenger*) ll_get(pArrayListPassenger, indice);
+
+			if (this != NULL)
+			{
+				Passenger_setEstadoVuelo(this, auxEstadoVueloStr);
+				retorno = 1;
+			}
+	}
+
+	return retorno;
 }

@@ -207,30 +207,6 @@ int controller_addPassenger(LinkedList* pArrayListPassenger)
     return validacion;
 }
 
-/** \brief Modificar datos de pasajero
- *
- * \param path char*
- * \param pArrayListPassenger LinkedList*
- * \return int
- *
- */
-int controller_editPassenger(LinkedList* pArrayListPassenger)
-{
-    return 1;
-}
-
-/** \brief Baja de pasajero
- *
- * \param path char*
- * \param pArrayListPassenger LinkedList*
- * \return int
- *
- */
-int controller_removePassenger(LinkedList* pArrayListPassenger)
-{
-    return 1;
-}
-
 /** \brief Listar pasajeros
  *
  * \param path char*
@@ -258,6 +234,133 @@ int controller_ListPassenger(LinkedList* pArrayListPassenger)
 
 
     return 1;
+}
+
+/** \brief Modificar datos de pasajero
+ *
+ * \param path char*
+ * \param pArrayListPassenger LinkedList*
+ * \return int
+ *
+ */
+int controller_editPassenger(LinkedList* pArrayListPassenger)
+{
+	int validacion;
+	int auxId;
+	int indice;
+	int opcion;
+	Passenger* this;
+
+	validacion = 0;
+
+	if (pArrayListPassenger != NULL)
+	{
+		controller_ListPassenger(pArrayListPassenger);
+		printf("||----< | [Modificar pasajero] | >---||\n\n");
+		auxId = orderInteger("[1] - Ingrese el [ID] del pasajero a MODIFICAR |:");
+		indice= Passener_buscarId(pArrayListPassenger, auxId);
+
+		while (indice == -1)
+		{
+			auxId = orderInteger("[1] [ERORR]-> Ingrese el [ID] de un pasajero EXISTENTE |");
+			indice= Passener_buscarId(pArrayListPassenger, auxId);
+		}
+
+		if (indice >= 0)
+		{
+			do
+			{
+
+			this = (Passenger*) ll_get(pArrayListPassenger, indice);
+			printf("||===========================================================================================================================||\n"
+					"||---[ID]---||----[NOMBRE]----||----[APELLIDO]----||--[PRECIO]--||--[CODIGO VUELO]--||--[TIPO PASAJERO]--||--[ESTADO VUELO]--||\n"
+					"||===========================================================================================================================||\n");
+			Passenger_list(this);
+			printf("||===========================================================================================================================||\n\n");
+
+			printf("||----< | [Modificar pasajero] | >---||\n\n"
+					"[1] - Modificar [NOMBRE]\n"
+					"[2] - Modificar [APELLIDO]\n"
+					"[3] - Modificar [PRECIO]\n"
+					"[4] - Modificar [CODIGO DE VUELO]\n"
+					"[5] - Modificar [TIPO PASAJERO]\n"
+					"[6] - Modificar [ESTADO DE VUELO]\n"
+					"[7] - [SALIR]\n\n"
+					"||--->[INGRESAR OPCION]:");
+
+			fflush(stdin);
+			scanf("%d", &opcion);
+
+			switch (opcion)
+			{
+				case 1:
+					Passenger_modificarNombre(pArrayListPassenger, indice);
+				break;
+
+				case 2:
+					Passenger_modificarApellido(pArrayListPassenger, indice);
+				break;
+
+				case 3:
+					Passenger_modificarPrecio(pArrayListPassenger, indice);
+				break;
+
+				case 4:
+					Passenger_modificarCodigoVuelo(pArrayListPassenger, indice);
+				break;
+
+				case 5:
+					Passenger_modificarTipoPasajero(pArrayListPassenger, indice);
+				break;
+
+				case 6:
+					Passenger_modificarEstadoVuelo(pArrayListPassenger, indice);
+				break;
+
+
+			}
+			}while (opcion != 7);
+		}
+	}
+    return validacion;
+}
+
+/** \brief Baja de pasajero
+ *
+ * \param path char*
+ * \param pArrayListPassenger LinkedList*
+ * \return int
+ *
+ */
+int controller_removePassenger(LinkedList* pArrayListPassenger)
+{
+	int validacion;
+	int auxId;
+	int indice;
+	Passenger* this;
+
+	controller_ListPassenger(pArrayListPassenger);
+	printf("||----< | [Eliminar pasajero] | >---||\n\n");
+	auxId = orderInteger("[1] - Ingrese el [ID] del pasajero a ELIMINAR |:");
+	indice= Passener_buscarId(pArrayListPassenger, auxId);
+
+	while (indice == -1)
+	{
+		auxId = orderInteger("[1] [ERORR]-> Ingrese el [ID] de un pasajero EXISTENTE |");
+		indice= Passener_buscarId(pArrayListPassenger, auxId);
+	}
+
+	if (indice >= 0)
+	{
+		this = (Passenger*) ll_get(pArrayListPassenger, indice);
+				printf("||===========================================================================================================================||\n"
+						"||---[ID]---||----[NOMBRE]----||----[APELLIDO]----||--[PRECIO]--||--[CODIGO VUELO]--||--[TIPO PASAJERO]--||--[ESTADO VUELO]--||\n"
+						"||===========================================================================================================================||\n");
+				Passenger_list(this);
+				printf("||===========================================================================================================================||\n\n");
+	}
+
+    return validacion;
 }
 
 /** \brief Ordenar pasajeros

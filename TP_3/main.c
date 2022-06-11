@@ -103,6 +103,10 @@ int main()
             	controller_addPassenger(listaPasajeros);
 			break;
 
+            case 4:
+            	controller_editPassenger(listaPasajeros);
+			break;
+
             case 6:
             	controller_ListPassenger(listaPasajeros);
 			break;

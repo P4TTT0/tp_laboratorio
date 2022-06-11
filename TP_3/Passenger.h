@@ -63,6 +63,10 @@ int criterioOrdenamiento();
 
 int Passener_buscarId(LinkedList* pArrayListPassenger, int id);
 
-int Passenger_generarId(FILE* pFile, char* path);
-
+int Passenger_modificarNombre(LinkedList* pArrayListPassenger, int indice);
+int Passenger_modificarApellido(LinkedList* pArrayListPassenger, int indice);
+int Passenger_modificarPrecio(LinkedList* pArrayListPassenger, int indice);
+int Passenger_modificarCodigoVuelo(LinkedList* pArrayListPassenger, int indice);
+int Passenger_modificarTipoPasajero(LinkedList* pArrayListPassenger, int indice);
+int Passenger_modificarEstadoVuelo(LinkedList* pArrayListPassenger, int indice);
 #endif /* PASSENGER_H_ */
