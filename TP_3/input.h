@@ -36,6 +36,11 @@ int orderFloat(char numbersFloat[]);
 /// @return retorna Retorna 0 si contiene todo lo que no sean digitos || Retorna 1 si contiene unicamente numeros.
 int validateNumber (char numbers[]);
 
+/// @fn int toMayus(char*)
+/// @brief Recorre un array para transformar cada caracter en mayusculas
+///
+/// @param string array a recorrer
+/// @return Retorna 0
 int toMayus (char* string);
 
 #endif /* INPUT_H_ */

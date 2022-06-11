@@ -69,6 +69,15 @@ Passenger* Passenger_newParametros(char* idStr,char* nombreStr,char* apellidoStr
 
 	return this;
 }
+//-------------------------------- [BORRAR PASAJERO] --------------------------------------
+void Passenger_delete(Passenger* this)
+{
+	if(this != NULL)
+	{
+		free(this);
+		this = NULL;
+	}
+}
 
 //-------------------------------- [ID] --------------------------------------
 int Passenger_setId(Passenger* this,int id)
@@ -286,15 +295,6 @@ int Passenger_getEstadoVuelo(Passenger* this,char* estadoVuelo)
 
 	return retorno;
 }
-//-------------------------------- [BORRAR PASAJERO] --------------------------------------
-void Passenger_delete(Passenger* this)
-{
-	if(this != NULL)
-	{
-		free(this);
-		this = NULL;
-	}
-}
 //-------------------------------- [LISTAR UN PASAJERO] --------------------------------------
 void Passenger_list(Passenger* this)
 {
@@ -444,36 +444,6 @@ int SaveBinary(FILE* pFile, LinkedList* pArrayListPassenger)
 	}
 
 	return validacion;
-}
-
-int mayorId(LinkedList* pArrayListPassenger)
-{
-	int auxMayorId;
-	int auxId;
-	int longitud;
-	int i;
-	Passenger* this;
-
-	if (pArrayListPassenger != NULL)
-	{
-		longitud = ll_len(pArrayListPassenger);
-
-		if (longitud > 0)
-		{
-			for (i = 0; i < longitud; i++)
-			{
-				this = (Passenger*)ll_get(pArrayListPassenger, i);
-				Passenger_getId(this, &auxId);
-
-				if (i == 0 || auxMayorId < auxId)
-				{
-					auxMayorId = auxId;
-				}
-			}
-		}
-	}
-
-	return auxMayorId;
 }
 
 int Passenger_compareByName(void* nombreUno, void* nombreDos)

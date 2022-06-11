@@ -2343,3 +2343,12 @@ gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
 gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o input.o main.o parser.o -lLinkedList 
+16:12:57 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Passenger.o "..\\Passenger.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o input.o "..\\input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o input.o main.o parser.o -lLinkedList 
+Info: Nothing to build for TP_3
