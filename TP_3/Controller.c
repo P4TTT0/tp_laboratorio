@@ -3,6 +3,7 @@
 #include "LinkedList.h"
 #include "Passenger.h"
 #include "parser.h"
+#include "input.h"
 
 
 /** \brief Carga los datos de los pasajeros desde el archivo data.csv (modo texto).
@@ -68,7 +69,142 @@ int controller_loadFromBinary(char* path , LinkedList* pArrayListPassenger)
  */
 int controller_addPassenger(LinkedList* pArrayListPassenger)
 {
-    return 1;
+	int validacion = 0;
+	Passenger* this;
+
+	int auxId;
+	char auxIdStr[10];
+	char auxNombre[50];
+	char auxApellido[50];
+	float auxPrecio;
+	char auxPrecioStr[40];
+	char auxCodigoVuelo[8];
+	int auxTipoPasajero;
+	char auxTipoPasajeroStr[30];
+	int auxEstadoVuelo;
+	char auxEstadoVueloStr[20];
+
+	//-----------------[PEDIR NOMBRE]--------------------
+	printf("||----< | [MENU] | >---||\n\n"
+			"[1] | Ingrese el [NOMBRE]:\n");
+
+	fflush(stdin);
+	gets(auxNombre);
+
+	validacion = validateCharacter(auxNombre);
+
+	while (validacion == 0)
+	{
+		printf("[1] |[ERROR] -> Ingrese el [NOMBRE]:\n");
+
+		fflush(stdin);
+		gets(auxNombre);
+	}
+
+	//-----------------[PEDIR APELLIDO]--------------------
+	printf("[2] | Ingrese el [APELLIDO]\n");
+
+	fflush(stdin);
+	gets(auxApellido);
+
+	validacion = validateCharacter(auxApellido);
+
+	while (validacion == 0)
+	{
+		printf("[2] |[ERROR] -> Ingrese el [APELLIDO]\n");
+
+		fflush(stdin);
+		gets(auxNombre);
+	}
+
+	//-----------------[PEDIR PRECIO]--------------------
+	auxPrecio = orderFloat("[3] | Ingrese el [PRECIO] | (500 - 100.000)\n");
+
+	while (auxPrecio < 500 || auxPrecio > 100000)
+	{
+		auxPrecio = orderFloat("[3] |[ERROR] -> Ingrese el [PRECIO] | (500 - 100.000)\n");
+	}
+
+	//-----------------[PEDIR CODIGO DE VUELO]--------------------
+	printf("[4] | Ingrese el [CODIGO DE VUELO] | (7 Caracteres)");
+
+	fflush(stdin);
+	gets(auxCodigoVuelo);
+	toMayus(auxCodigoVuelo);
+
+	while (strlen(auxCodigoVuelo) != 7)
+	{
+		printf("[4] |[ERROR] -> Ingrese el [CODIGO DE VUELO] | (7 Caracteres)");
+
+		fflush(stdin);
+		gets(auxCodigoVuelo);
+		toMayus(auxCodigoVuelo);
+	}
+
+	//-----------------[PEDIR TIPO DE PASAJERO]--------------------
+	auxTipoPasajero = orderInteger("[5] | Ingrese el [TIPO DE PASAJERO]\n\n"
+									"[1] - FirstClass\n"
+									"[2] - ExecutiveClass\n"
+									"[3] - EconomyClass");
+
+	while (auxTipoPasajero < 1 || auxTipoPasajero > 3)
+	{
+		auxTipoPasajero = orderInteger("[5] |[ERROR] -> Ingrese el [TIPO DE PASAJERO]\n\n"
+											"[1] - FirstClass\n"
+											"[2] - ExecutiveClass\n"
+											"[3] - EconomyClass");
+	}
+
+	//-----------------[PEDIR ESTADO VUELO]--------------------
+	auxEstadoVuelo = orderInteger("[6] | Ingrese el [ESTADO DE VUELO]\n\n"
+								"[1] - En Horario\n"
+								"[2] - Demorado\n"
+								"[3] - Aterrizado");
+
+	while(auxEstadoVuelo < 1 || auxEstadoVuelo > 3)
+	{
+		auxEstadoVuelo = orderInteger("[6] | Ingrese el [ESTADO DE VUELO]\n\n"
+										"[1] - En Horario\n"
+										"[2] - Demorado\n"
+										"[3] - Aterrizado");
+	}
+
+	//-----------------[ELVAUA OPCION ELEGIDA]--------------------
+	switch (auxEstadoVuelo)
+	{
+		case 1:
+			strcpy(auxEstadoVueloStr, "En Horario");
+		break;
+
+		case 2:
+			strcpy(auxEstadoVueloStr, "Demorado");
+		break;
+
+		default:
+			strcpy(auxEstadoVueloStr, "Aterrizado");
+		break;
+	}
+
+	auxId = 1001;
+
+	sprintf(auxIdStr, "%d", auxId);
+	sprintf(auxPrecioStr, "%f", auxPrecio);
+	sprintf(auxTipoPasajeroStr, "%d", auxTipoPasajero);
+
+	this = Passenger_newParametros(auxIdStr, auxNombre, auxApellido, auxPrecioStr, auxTipoPasajeroStr, auxCodigoVuelo, auxEstadoVueloStr);
+	if (this != NULL)
+	{
+		ll_add(pArrayListPassenger, this);
+		validacion = 1;
+	}
+	else
+	{
+		printf("[ERROR] - NO HAY ESPACIO EN MEMORIA");
+		Passenger_delete(this);
+	}
+
+
+    return validacion;
 }
 
 /** \brief Modificar datos de pasajero

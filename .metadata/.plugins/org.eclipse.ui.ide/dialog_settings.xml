@@ -21,6 +21,7 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="D:\OneDrive\Escritorio\TP_LABORATORIO_1\TP_2"/>
 			<item value="D:\OneDrive\Escritorio\TP_LABORATORIO_1\TP_1"/>
 			<item value="D:\OneDrive\Escritorio\TP_LABORATORIO_1\TP_3"/>
 			<item value="D:\OneDrive\Escritorio\TP_03\eclipse_tp3_v4\tp3_windows"/>

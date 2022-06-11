@@ -560,3 +560,32 @@ int criterioOrdenamiento()
 
 	return opcion;
 }
+
+int Passener_buscarId(LinkedList* pArrayListPassenger, int id)
+{
+	int indice;
+	int i;
+	int longitud;
+	Passenger* this;
+
+	if (pArrayListPassenger != NULL)
+	{
+		longitud = ll_len(pArrayListPassenger);
+
+		if (longitud > 0)
+		{
+			for (i = 0; i < longitud; i++)
+			{
+				this = (Passenger*) ll_get(pArrayListPassenger, i);
+
+				if (this->id == id)
+				{
+					indice = i;
+					break;
+				}
+			}
+		}
+	}
+
+	return indice;
+}

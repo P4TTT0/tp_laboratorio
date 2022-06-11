@@ -61,4 +61,8 @@ int Passenger_compareByPrecio(void* precioUno, void* precioDos);
 
 int criterioOrdenamiento();
 
+int Passener_buscarId(LinkedList* pArrayListPassenger, int id);
+
+int Passenger_generarId(FILE* pFile, char* path);
+
 #endif /* PASSENGER_H_ */

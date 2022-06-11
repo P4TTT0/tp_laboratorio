@@ -25,6 +25,7 @@ int main()
 	setbuf(stdout, NULL);
     int option = 0;
     int validacion = 0;
+    int banderaTexto = 0;
 
     LinkedList* listaPasajeros = ll_newLinkedList();
 
@@ -51,7 +52,7 @@ int main()
         {
             case 1:
 
-            	if (ll_isEmpty(listaPasajeros))
+            	if (ll_isEmpty(listaPasajeros) || banderaTexto == 0)
             	{
             		validacion = controller_loadFromText("data.csv",listaPasajeros);
 
@@ -59,11 +60,13 @@ int main()
 					{
 						printf("||----< [DATOS CARGADOS CORRECTAMENTES] >----\n");
 						system("pause");
+						banderaTexto = 1;
 					}
 					else
 					{
 						printf("||----< [ERROR] - NO SE HAN PODIDO CARGAR LOS DATOS. >----\n");
 						system("pause");
+						banderaTexto = 0;
 					}
             	}
             	else
@@ -94,6 +97,10 @@ int main()
 					printf("||----< [ERROR] - LOS DATOS YA HAN SIDO CARGADOS. >----\n");
 					system("pause");
 				}
+			break;
+
+            case 3:
+            	controller_addPassenger(listaPasajeros);
 			break;
 
             case 6:
