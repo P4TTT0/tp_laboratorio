@@ -649,3 +649,22 @@ Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
 gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o input.o main.o parser.o -lLinkedList 
 Info: Nothing to build for TP_3
+12:09:33 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_removePassenger':
+..\Controller.c:362:45: error: expected ';' before '}' token
+  362 |   printf("|| --- [PASAJERO BORRADO] --- ||")
+      |                                             ^
+      |                                             ;
+  363 |  }
+      |  ~                                           
+12:10:03 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_removePassenger':
+..\Controller.c:365:12: warning: 'validacion' is used uninitialized in this function [-Wuninitialized]
+  365 |     return validacion;
+      |            ^~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o input.o main.o parser.o -lLinkedList 

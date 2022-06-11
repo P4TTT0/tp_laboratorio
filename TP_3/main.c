@@ -107,6 +107,10 @@ int main()
             	controller_editPassenger(listaPasajeros);
 			break;
 
+            case 5:
+            	controller_removePassenger(listaPasajeros);
+			break;
+
             case 6:
             	controller_ListPassenger(listaPasajeros);
 			break;
