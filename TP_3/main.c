@@ -100,6 +100,10 @@ int main()
             	controller_ListPassenger(listaPasajeros);
 			break;
 
+            case 7:
+            	controller_sortPassenger(listaPasajeros);
+			break;
+
             case 8:
             	validacion = controller_saveAsText("data.csv", listaPasajeros);
 

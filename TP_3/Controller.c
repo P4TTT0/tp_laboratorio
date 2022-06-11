@@ -133,7 +133,45 @@ int controller_ListPassenger(LinkedList* pArrayListPassenger)
  */
 int controller_sortPassenger(LinkedList* pArrayListPassenger)
 {
-    return 1;
+	int validacion = 0;
+	int opcion;
+	int criterio;
+
+	if (pArrayListPassenger != NULL)
+	{
+		printf("||----< | [ORDENAR PASAJEROS] | >---||\n\n"
+
+		"[1] | Ordenar por [NOMBRE]\n"
+		"[2] | Ordenar por [APELLIDO]\n"
+		"[3] | Ordenar por [PRECIO]\n\n"
+
+		"||--->[INGRESAR OPCION]:");
+
+		fflush(stdin);
+		scanf("%d", &opcion);
+
+		switch(opcion)
+		{
+			case 1:
+				criterio = criterioOrdenamiento();
+				ll_sort(pArrayListPassenger, Passenger_compareByName, criterio);
+				validacion = 1;
+			break;
+
+			case 2:
+				criterio = criterioOrdenamiento();
+				ll_sort(pArrayListPassenger, Passenger_compareByApellido, criterio);
+				validacion = 1;
+			break;
+
+			case 3:
+				criterio = criterioOrdenamiento();
+				ll_sort(pArrayListPassenger, Passenger_compareByPrecio, criterio);
+				validacion = 1;
+			break;
+		}
+	}
+    return validacion;
 }
 
 /** \brief Guarda los datos de los pasajeros en el archivo data.csv (modo texto).

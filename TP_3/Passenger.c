@@ -349,6 +349,8 @@ int SaveTxt(FILE* pFile, LinkedList* pArrayListPassenger)
 	char auxNombre[50];
 	char auxApellido[50];
 	float auxPrecio;
+	int auxTipoPasajero;
+	char auxTipoPasajeroStr[50];
 	char auxCodigoVuelo[8];
 	char auxEstadoVuelo[40];
 	int validacion;
@@ -379,9 +381,26 @@ int SaveTxt(FILE* pFile, LinkedList* pArrayListPassenger)
 				Passenger_getApellido(this, auxApellido);
 				Passenger_getPrecio(this, &auxPrecio);
 				Passenger_getCodigoVuelo(this, auxCodigoVuelo);
+				Passenger_getTipoPasajero(this, &auxTipoPasajero);
 				Passenger_getEstadoVuelo(this, auxEstadoVuelo);
 
-				fprintf(pFile, "%d,%s,%s,%f,%s,%s\n", auxId, auxNombre, auxApellido, auxPrecio, auxCodigoVuelo, auxEstadoVuelo);
+				if (auxTipoPasajero == 1)
+					{
+						strcpy(auxTipoPasajeroStr, "FirstClass");
+					}
+					else
+					{
+						if (auxTipoPasajero == 2)
+						{
+							strcpy(auxTipoPasajeroStr, "ExecutiveClass");
+						}
+						else
+						{
+							strcpy(auxTipoPasajeroStr, "EconomyClass");
+						}
+					}
+
+				fprintf(pFile, "%d,%s,%s,%f,%s,%s,%s\n", auxId, auxNombre, auxApellido, auxPrecio, auxCodigoVuelo, auxTipoPasajeroStr, auxEstadoVuelo);
 
 				validacion = 1;
 			}
@@ -424,4 +443,120 @@ int SaveBinary(FILE* pFile, LinkedList* pArrayListPassenger)
 	}
 
 	return validacion;
+}
+
+int Passenger_compareByName(void* nombreUno, void* nombreDos)
+{
+	int validacion;
+	char auxNombreUno[50];
+	char auxNombreDos[50];
+
+	Passenger* nombrePasajeroUno;
+	Passenger* nombrePasajeroDos;
+
+	nombrePasajeroUno = (Passenger*) nombreUno;
+	nombrePasajeroDos = (Passenger*) nombreDos;
+
+	Passenger_getNombre(nombrePasajeroUno, auxNombreUno);
+	Passenger_getNombre(nombrePasajeroDos, auxNombreDos);
+
+	if(strcmp(auxNombreUno, auxNombreDos) == 0)
+	{
+		validacion = 0;
+	}
+	else
+	{
+		if (strcmp(auxNombreUno, auxNombreDos) > 0)
+		{
+			validacion = 1;
+		}
+		else
+		{
+			validacion = -1;
+		}
+	}
+	return validacion;
+}
+
+int Passenger_compareByApellido(void* apellidoUno, void* apellidoDos)
+{
+	int validacion;
+	char auxApellidoUno[50];
+	char auxApellidoDos[50];
+
+	Passenger* apellidoPasajeroUno;
+	Passenger* apellidoPasajeroDos;
+
+	apellidoPasajeroUno = (Passenger*) apellidoUno;
+	apellidoPasajeroDos = (Passenger*) apellidoDos;
+
+	Passenger_getApellido(apellidoPasajeroUno, auxApellidoUno);
+	Passenger_getApellido(apellidoPasajeroDos, auxApellidoDos);
+
+	if(strcmp(auxApellidoUno, auxApellidoDos) == 0)
+	{
+		validacion = 0;
+	}
+	else
+	{
+		if (strcmp(auxApellidoUno, auxApellidoDos) > 0)
+		{
+			validacion = 1;
+		}
+		else
+		{
+			validacion = -1;
+		}
+	}
+	return validacion;
+}
+
+int Passenger_compareByPrecio(void* precioUno, void* precioDos)
+{
+	int validacion;
+	float auxPrecioUno;
+	float auxPrecioDos;
+
+	Passenger* precioPasajeroUno;
+	Passenger* precioPasajeroDos;
+
+	precioPasajeroUno = (Passenger*) precioUno;
+	precioPasajeroDos = (Passenger*) precioDos;
+
+	Passenger_getPrecio(precioPasajeroUno, &auxPrecioUno);
+	Passenger_getPrecio(precioPasajeroDos, &auxPrecioDos);
+
+	if(auxPrecioUno == auxPrecioDos)
+	{
+		validacion = 0;
+	}
+	else
+	{
+		if (auxPrecioUno > auxPrecioDos)
+		{
+			validacion = 1;
+		}
+		else
+		{
+			validacion = -1;
+		}
+	}
+	return validacion;
+}
+
+int criterioOrdenamiento()
+{
+	int opcion;
+
+	printf("||----< | [CRITERIO] | >---||\n\n"
+
+	"[0] | Ordenar en [DESCENDENTE]\n"
+	"[1] | Ordenar en [ASCENDENTE]\n\n"
+
+	"||--->[INGRESAR OPCION]:");
+
+	fflush(stdin);
+	scanf("%d", &opcion);
+
+	return opcion;
 }

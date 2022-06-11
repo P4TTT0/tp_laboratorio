@@ -54,8 +54,16 @@ int parser_PassengerFromText(FILE* pFile , LinkedList* pArrayListPassenger)
 		if (leido == 7)
 		{
 			this = Passenger_newParametros(auxId, auxNombre, auxApellido, auxPrecio, auxTipoPasajero, auxCodigoVuelo, auxEstadoVuelo);
-			ll_add(pArrayListPassenger, this);
-			validacion = 1;
+			if (this != NULL)
+			{
+				ll_add(pArrayListPassenger, this);
+				validacion = 1;
+			}
+			else
+			{
+				printf("[ERROR] - NO HAY ESPACIO EN MEMORIA");
+				Passenger_delete(this);
+			}
 		}
 	}
     return validacion;
@@ -88,18 +96,19 @@ int parser_PassengerFromBinary(FILE* pFile , LinkedList* pArrayListPassenger)
 
 		leido = fread(this, sizeof(Passenger), 1, pFile);
 
-		if (leido == 1)
+		if (this != NULL)
 		{
-			if (feof(pFile))
+			if (leido == 1)
 			{
-				break;
+				ll_add(pArrayListPassenger, this);
+				validacion = 1;
 			}
-
-			ll_add(pArrayListPassenger, this);
-			validacion = 1;
-			printf("LEDIO %d\n", leido);
+		}
+		else
+		{
+			printf("[ERROR] - NO HAY ESPACIO EN MEMORIA");
+			Passenger_delete(this);
 		}
 	}
-
     return validacion;
 }

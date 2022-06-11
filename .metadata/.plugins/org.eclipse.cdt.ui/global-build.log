@@ -1,55 +1,591 @@
-01:31:13 **** Incremental Build of configuration Debug for project TP_3 ****
+11:32:33 **** Rebuild of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" 
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+20:28:08 **** Rebuild of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Passenger.o "..\\Passenger.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
+Info: Nothing to build for TP_3
+Info: Nothing to build for TP_3
+Info: Nothing to build for TP_3
+20:34:28 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Passenger.o "..\\Passenger.c" 
+..\Passenger.c: In function 'SaveTxt':
+..\Passenger.c:384:37: warning: passing argument 2 of 'Passenger_getTipoPasajero' makes pointer from integer without a cast [-Wint-conversion]
+  384 |     Passenger_getTipoPasajero(this, auxTipoPasajero);
+      |                                     ^~~~~~~~~~~~~~~
+      |                                     |
+      |                                     int
+..\Passenger.c:212:52: note: expected 'int *' but argument is of type 'int'
+  212 | int Passenger_getTipoPasajero(Passenger* this,int* tipoPasajero)
+      |                                               ~~~~~^~~~~~~~~~~~
+..\Passenger.c:384:5: warning: 'auxTipoPasajero' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  384 |     Passenger_getTipoPasajero(this, auxTipoPasajero);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
+20:34:59 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Passenger.o "..\\Passenger.c" 
+gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
+Info: Nothing to build for TP_3
+20:38:20 **** Incremental Build of configuration Debug for project TP_3 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
 gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
-c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_3.exe: Permission denied
-collect2.exe: error: ld returned 1 exit status
-01:31:22 **** Incremental Build of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
-c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_3.exe: Permission denied
-collect2.exe: error: ld returned 1 exit status
-01:31:30 **** Incremental Build of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
-01:33:04 **** Incremental Build of configuration Debug for project TP_3 ****
+20:39:51 **** Incremental Build of configuration Debug for project TP_3 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
 gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
-Info: Nothing to build for TP_3
-Info: Nothing to build for TP_3
-Info: Nothing to build for TP_3
-Info: Nothing to build for TP_3
-01:36:35 **** Incremental Build of configuration Debug for project TP_3 ****
+22:06:39 **** Incremental Build of configuration Debug for project TP_3 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Passenger.o "..\\Passenger.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_sortPassenger':
+..\Controller.c:161:12: warning: 'validacion' is used uninitialized in this function [-Wuninitialized]
+  161 |     return validacion;
+      |            ^~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
+22:06:55 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
+22:07:48 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
+22:08:27 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
 gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
 Info: Nothing to build for TP_3
 Info: Nothing to build for TP_3
-Info: Nothing to build for TP_3
-Info: Nothing to build for TP_3
-Info: Nothing to build for TP_3
-01:40:53 **** Incremental Build of configuration Debug for project TP_3 ****
+22:16:15 **** Incremental Build of configuration Debug for project TP_3 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
+22:19:15 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
 gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
 Info: Nothing to build for TP_3
 Info: Nothing to build for TP_3
+22:28:26 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_sortPassenger':
+..\Controller.c:138:6: warning: variable 'criterio' set but not used [-Wunused-but-set-variable]
+  138 |  int criterio;
+      |      ^~~~~~~~
+gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
+22:28:52 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_sortPassenger':
+..\Controller.c:138:6: warning: variable 'criterio' set but not used [-Wunused-but-set-variable]
+  138 |  int criterio;
+      |      ^~~~~~~~
+gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
+22:30:42 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_sortPassenger':
+..\Controller.c:138:6: warning: variable 'criterio' set but not used [-Wunused-but-set-variable]
+  138 |  int criterio;
+      |      ^~~~~~~~
+gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
+22:31:18 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_sortPassenger':
+..\Controller.c:138:6: warning: variable 'criterio' set but not used [-Wunused-but-set-variable]
+  138 |  int criterio;
+      |      ^~~~~~~~
+gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
+22:31:40 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_sortPassenger':
+..\Controller.c:138:6: warning: variable 'criterio' set but not used [-Wunused-but-set-variable]
+  138 |  int criterio;
+      |      ^~~~~~~~
+gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
+22:33:43 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_sortPassenger':
+..\Controller.c:138:6: warning: variable 'criterio' set but not used [-Wunused-but-set-variable]
+  138 |  int criterio;
+      |      ^~~~~~~~
+gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
+22:35:39 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_sortPassenger':
+..\Controller.c:138:6: warning: variable 'criterio' set but not used [-Wunused-but-set-variable]
+  138 |  int criterio;
+      |      ^~~~~~~~
+gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
 Info: Nothing to build for TP_3
 Info: Nothing to build for TP_3
-01:44:35 **** Incremental Build of configuration Debug for project TP_3 ****
+22:40:46 **** Incremental Build of configuration Debug for project TP_3 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
-..\parser.c: In function 'parser_PassengerFromBinary':
-..\parser.c:100:19: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'int' [-Wformat=]
-  100 |    printf("LEDIO %s\n", leido);
-      |                  ~^     ~~~~~
-      |                   |     |
-      |                   |     int
-      |                   char *
-      |                  %d
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Passenger.o "..\\Passenger.c" 
 gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
-01:44:53 **** Incremental Build of configuration Debug for project TP_3 ****
+22:41:38 **** Incremental Build of configuration Debug for project TP_3 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Passenger.o "..\\Passenger.c" 
 gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
+22:45:50 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
+22:48:30 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Passenger.o "..\\Passenger.c" 
+..\Passenger.c: In function 'Passenger_compareByName':
+..\Passenger.c:481:2: error: conversion to non-scalar type requested
+  481 |  pasajero1 = (Passenger) p1;
+      |  ^~~~~~~~~
+..\Passenger.c:482:2: error: conversion to non-scalar type requested
+  482 |  pasajero2 = (Passenger) p2;
+      |  ^~~~~~~~~
+22:48:52 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Passenger.o "..\\Passenger.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
+22:50:23 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Passenger.o "..\\Passenger.c" 
+..\Passenger.c: In function 'Passenger_compareByName':
+..\Passenger.c:457:35: error: 'nombreUno' undeclared (first use in this function); did you mean 'auxNombreUno'?
+  457 |  nombrePasajeroUno = (Passenger*) nombreUno;
+      |                                   ^~~~~~~~~
+      |                                   auxNombreUno
+..\Passenger.c:457:35: note: each undeclared identifier is reported only once for each function it appears in
+..\Passenger.c:458:35: error: 'nombreDos' undeclared (first use in this function); did you mean 'auxNombreDos'?
+  458 |  nombrePasajeroDos = (Passenger*) nombreDos;
+      |                                   ^~~~~~~~~
+      |                                   auxNombreDos
+22:50:35 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Passenger.o "..\\Passenger.c" 
+gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
+Info: Nothing to build for TP_3
+22:52:21 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
+22:55:17 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
+Info: Nothing to build for TP_3
+00:09:13 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Passenger.o "..\\Passenger.c" 
+..\Passenger.c: In function 'Passenger_compareByPrecio':
+..\Passenger.c:526:41: warning: passing argument 2 of 'Passenger_getPrecio' from incompatible pointer type [-Wincompatible-pointer-types]
+  526 |  Passenger_getPrecio(precioPasajeroUno, &auxPrecioUno);
+      |                                         ^~~~~~~~~~~~~
+      |                                         |
+      |                                         int *
+..\Passenger.c:243:49: note: expected 'float *' but argument is of type 'int *'
+  243 | int Passenger_getPrecio(Passenger* this, float* precio)
+      |                                          ~~~~~~~^~~~~~
+..\Passenger.c:527:41: warning: passing argument 2 of 'Passenger_getPrecio' from incompatible pointer type [-Wincompatible-pointer-types]
+  527 |  Passenger_getPrecio(precioPasajeroUno, &auxPrecioDos);
+      |                                         ^~~~~~~~~~~~~
+      |                                         |
+      |                                         int *
+..\Passenger.c:243:49: note: expected 'float *' but argument is of type 'int *'
+  243 | int Passenger_getPrecio(Passenger* this, float* precio)
+      |                                          ~~~~~~~^~~~~~
+..\Passenger.c:529:12: warning: passing argument 1 of 'strcmp' makes pointer from integer without a cast [-Wint-conversion]
+  529 |  if(strcmp(auxPrecioUno, auxPrecioDos) == 0)
+      |            ^~~~~~~~~~~~
+      |            |
+      |            int
+In file included from ..\Passenger.c:9:
+c:\mingw\include\string.h:77:46: note: expected 'const char *' but argument is of type 'int'
+   77 | _CRTIMP __cdecl __MINGW_NOTHROW  int strcmp (const char *, const char *) __MINGW_ATTRIB_PURE;
+      |                                              ^~~~~~~~~~~~
+..\Passenger.c:529:26: warning: passing argument 2 of 'strcmp' makes pointer from integer without a cast [-Wint-conversion]
+  529 |  if(strcmp(auxPrecioUno, auxPrecioDos) == 0)
+      |                          ^~~~~~~~~~~~
+      |                          |
+      |                          int
+In file included from ..\Passenger.c:9:
+c:\mingw\include\string.h:77:60: note: expected 'const char *' but argument is of type 'int'
+   77 | _CRTIMP __cdecl __MINGW_NOTHROW  int strcmp (const char *, const char *) __MINGW_ATTRIB_PURE;
+      |                                                            ^~~~~~~~~~~~
+..\Passenger.c:535:14: warning: passing argument 1 of 'strcmp' makes pointer from integer without a cast [-Wint-conversion]
+  535 |   if (strcmp(auxPrecioUno, auxPrecioDos) > 0)
+      |              ^~~~~~~~~~~~
+      |              |
+      |              int
+In file included from ..\Passenger.c:9:
+c:\mingw\include\string.h:77:46: note: expected 'const char *' but argument is of type 'int'
+   77 | _CRTIMP __cdecl __MINGW_NOTHROW  int strcmp (const char *, const char *) __MINGW_ATTRIB_PURE;
+      |                                              ^~~~~~~~~~~~
+..\Passenger.c:535:28: warning: passing argument 2 of 'strcmp' makes pointer from integer without a cast [-Wint-conversion]
+  535 |   if (strcmp(auxPrecioUno, auxPrecioDos) > 0)
+      |                            ^~~~~~~~~~~~
+      |                            |
+      |                            int
+In file included from ..\Passenger.c:9:
+c:\mingw\include\string.h:77:60: note: expected 'const char *' but argument is of type 'int'
+   77 | _CRTIMP __cdecl __MINGW_NOTHROW  int strcmp (const char *, const char *) __MINGW_ATTRIB_PURE;
+      |                                                            ^~~~~~~~~~~~
+..\Passenger.c:521:13: warning: variable 'precioPasajeroDos' set but not used [-Wunused-but-set-variable]
+  521 |  Passenger* precioPasajeroDos;
+      |             ^~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
+00:09:28 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Passenger.o "..\\Passenger.c" 
+..\Passenger.c: In function 'Passenger_compareByPrecio':
+..\Passenger.c:526:41: warning: passing argument 2 of 'Passenger_getPrecio' from incompatible pointer type [-Wincompatible-pointer-types]
+  526 |  Passenger_getPrecio(precioPasajeroUno, &auxPrecioUno);
+      |                                         ^~~~~~~~~~~~~
+      |                                         |
+      |                                         int *
+..\Passenger.c:243:49: note: expected 'float *' but argument is of type 'int *'
+  243 | int Passenger_getPrecio(Passenger* this, float* precio)
+      |                                          ~~~~~~~^~~~~~
+..\Passenger.c:527:41: warning: passing argument 2 of 'Passenger_getPrecio' from incompatible pointer type [-Wincompatible-pointer-types]
+  527 |  Passenger_getPrecio(precioPasajeroUno, &auxPrecioDos);
+      |                                         ^~~~~~~~~~~~~
+      |                                         |
+      |                                         int *
+..\Passenger.c:243:49: note: expected 'float *' but argument is of type 'int *'
+  243 | int Passenger_getPrecio(Passenger* this, float* precio)
+      |                                          ~~~~~~~^~~~~~
+..\Passenger.c:529:12: warning: passing argument 1 of 'strcmp' makes pointer from integer without a cast [-Wint-conversion]
+  529 |  if(strcmp(auxPrecioUno, &auxPrecioDos) == 0)
+      |            ^~~~~~~~~~~~
+      |            |
+      |            int
+In file included from ..\Passenger.c:9:
+c:\mingw\include\string.h:77:46: note: expected 'const char *' but argument is of type 'int'
+   77 | _CRTIMP __cdecl __MINGW_NOTHROW  int strcmp (const char *, const char *) __MINGW_ATTRIB_PURE;
+      |                                              ^~~~~~~~~~~~
+..\Passenger.c:529:26: warning: passing argument 2 of 'strcmp' from incompatible pointer type [-Wincompatible-pointer-types]
+  529 |  if(strcmp(auxPrecioUno, &auxPrecioDos) == 0)
+      |                          ^~~~~~~~~~~~~
+      |                          |
+      |                          int *
+In file included from ..\Passenger.c:9:
+c:\mingw\include\string.h:77:60: note: expected 'const char *' but argument is of type 'int *'
+   77 | _CRTIMP __cdecl __MINGW_NOTHROW  int strcmp (const char *, const char *) __MINGW_ATTRIB_PURE;
+      |                                                            ^~~~~~~~~~~~
+..\Passenger.c:535:14: warning: passing argument 1 of 'strcmp' makes pointer from integer without a cast [-Wint-conversion]
+  535 |   if (strcmp(auxPrecioUno, &auxPrecioDos) > 0)
+      |              ^~~~~~~~~~~~
+      |              |
+      |              int
+In file included from ..\Passenger.c:9:
+c:\mingw\include\string.h:77:46: note: expected 'const char *' but argument is of type 'int'
+   77 | _CRTIMP __cdecl __MINGW_NOTHROW  int strcmp (const char *, const char *) __MINGW_ATTRIB_PURE;
+      |                                              ^~~~~~~~~~~~
+..\Passenger.c:535:28: warning: passing argument 2 of 'strcmp' from incompatible pointer type [-Wincompatible-pointer-types]
+  535 |   if (strcmp(auxPrecioUno, &auxPrecioDos) > 0)
+      |                            ^~~~~~~~~~~~~
+      |                            |
+      |                            int *
+In file included from ..\Passenger.c:9:
+c:\mingw\include\string.h:77:60: note: expected 'const char *' but argument is of type 'int *'
+   77 | _CRTIMP __cdecl __MINGW_NOTHROW  int strcmp (const char *, const char *) __MINGW_ATTRIB_PURE;
+      |                                                            ^~~~~~~~~~~~
+..\Passenger.c:521:13: warning: variable 'precioPasajeroDos' set but not used [-Wunused-but-set-variable]
+  521 |  Passenger* precioPasajeroDos;
+      |             ^~~~~~~~~~~~~~~~~
+gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
+00:12:04 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Passenger.o "..\\Passenger.c" 
+..\Passenger.c: In function 'Passenger_compareByPrecio':
+..\Passenger.c:526:41: warning: passing argument 2 of 'Passenger_getPrecio' makes pointer from integer without a cast [-Wint-conversion]
+  526 |  Passenger_getPrecio(precioPasajeroUno, auxPrecioUno);
+      |                                         ^~~~~~~~~~~~
+      |                                         |
+      |                                         int
+..\Passenger.c:243:49: note: expected 'float *' but argument is of type 'int'
+  243 | int Passenger_getPrecio(Passenger* this, float* precio)
+      |                                          ~~~~~~~^~~~~~
+..\Passenger.c:527:41: warning: passing argument 2 of 'Passenger_getPrecio' makes pointer from integer without a cast [-Wint-conversion]
+  527 |  Passenger_getPrecio(precioPasajeroUno, auxPrecioDos);
+      |                                         ^~~~~~~~~~~~
+      |                                         |
+      |                                         int
+..\Passenger.c:243:49: note: expected 'float *' but argument is of type 'int'
+  243 | int Passenger_getPrecio(Passenger* this, float* precio)
+      |                                          ~~~~~~~^~~~~~
+..\Passenger.c:529:12: warning: passing argument 1 of 'strcmp' makes pointer from integer without a cast [-Wint-conversion]
+  529 |  if(strcmp(auxPrecioUno, &auxPrecioDos) == 0)
+      |            ^~~~~~~~~~~~
+      |            |
+      |            int
+In file included from ..\Passenger.c:9:
+c:\mingw\include\string.h:77:46: note: expected 'const char *' but argument is of type 'int'
+   77 | _CRTIMP __cdecl __MINGW_NOTHROW  int strcmp (const char *, const char *) __MINGW_ATTRIB_PURE;
+      |                                              ^~~~~~~~~~~~
+..\Passenger.c:529:26: warning: passing argument 2 of 'strcmp' from incompatible pointer type [-Wincompatible-pointer-types]
+  529 |  if(strcmp(auxPrecioUno, &auxPrecioDos) == 0)
+      |                          ^~~~~~~~~~~~~
+      |                          |
+      |                          int *
+In file included from ..\Passenger.c:9:
+c:\mingw\include\string.h:77:60: note: expected 'const char *' but argument is of type 'int *'
+   77 | _CRTIMP __cdecl __MINGW_NOTHROW  int strcmp (const char *, const char *) __MINGW_ATTRIB_PURE;
+      |                                                            ^~~~~~~~~~~~
+..\Passenger.c:535:14: warning: passing argument 1 of 'strcmp' makes pointer from integer without a cast [-Wint-conversion]
+  535 |   if (strcmp(auxPrecioUno, &auxPrecioDos) > 0)
+      |              ^~~~~~~~~~~~
+      |              |
+      |              int
+In file included from ..\Passenger.c:9:
+c:\mingw\include\string.h:77:46: note: expected 'const char *' but argument is of type 'int'
+   77 | _CRTIMP __cdecl __MINGW_NOTHROW  int strcmp (const char *, const char *) __MINGW_ATTRIB_PURE;
+      |                                              ^~~~~~~~~~~~
+..\Passenger.c:535:28: warning: passing argument 2 of 'strcmp' from incompatible pointer type [-Wincompatible-pointer-types]
+  535 |   if (strcmp(auxPrecioUno, &auxPrecioDos) > 0)
+      |                            ^~~~~~~~~~~~~
+      |                            |
+      |                            int *
+In file included from ..\Passenger.c:9:
+c:\mingw\include\string.h:77:60: note: expected 'const char *' but argument is of type 'int *'
+   77 | _CRTIMP __cdecl __MINGW_NOTHROW  int strcmp (const char *, const char *) __MINGW_ATTRIB_PURE;
+      |                                                            ^~~~~~~~~~~~
+..\Passenger.c:521:13: warning: variable 'precioPasajeroDos' set but not used [-Wunused-but-set-variable]
+  521 |  Passenger* precioPasajeroDos;
+      |             ^~~~~~~~~~~~~~~~~
+..\Passenger.c:526:2: warning: 'auxPrecioUno' is used uninitialized in this function [-Wuninitialized]
+  526 |  Passenger_getPrecio(precioPasajeroUno, auxPrecioUno);
+      |  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
+00:12:42 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Passenger.o "..\\Passenger.c" 
+..\Passenger.c: In function 'Passenger_compareByPrecio':
+..\Passenger.c:526:41: warning: passing argument 2 of 'Passenger_getPrecio' makes pointer from integer without a cast [-Wint-conversion]
+  526 |  Passenger_getPrecio(precioPasajeroUno, auxPrecioUno);
+      |                                         ^~~~~~~~~~~~
+      |                                         |
+      |                                         int
+..\Passenger.c:243:49: note: expected 'float *' but argument is of type 'int'
+  243 | int Passenger_getPrecio(Passenger* this, float* precio)
+      |                                          ~~~~~~~^~~~~~
+..\Passenger.c:527:41: warning: passing argument 2 of 'Passenger_getPrecio' makes pointer from integer without a cast [-Wint-conversion]
+  527 |  Passenger_getPrecio(precioPasajeroDos, auxPrecioDos);
+      |                                         ^~~~~~~~~~~~
+      |                                         |
+      |                                         int
+..\Passenger.c:243:49: note: expected 'float *' but argument is of type 'int'
+  243 | int Passenger_getPrecio(Passenger* this, float* precio)
+      |                                          ~~~~~~~^~~~~~
+..\Passenger.c:529:12: warning: passing argument 1 of 'strcmp' makes pointer from integer without a cast [-Wint-conversion]
+  529 |  if(strcmp(auxPrecioUno, &auxPrecioDos) == 0)
+      |            ^~~~~~~~~~~~
+      |            |
+      |            int
+In file included from ..\Passenger.c:9:
+c:\mingw\include\string.h:77:46: note: expected 'const char *' but argument is of type 'int'
+   77 | _CRTIMP __cdecl __MINGW_NOTHROW  int strcmp (const char *, const char *) __MINGW_ATTRIB_PURE;
+      |                                              ^~~~~~~~~~~~
+..\Passenger.c:529:26: warning: passing argument 2 of 'strcmp' from incompatible pointer type [-Wincompatible-pointer-types]
+  529 |  if(strcmp(auxPrecioUno, &auxPrecioDos) == 0)
+      |                          ^~~~~~~~~~~~~
+      |                          |
+      |                          int *
+In file included from ..\Passenger.c:9:
+c:\mingw\include\string.h:77:60: note: expected 'const char *' but argument is of type 'int *'
+   77 | _CRTIMP __cdecl __MINGW_NOTHROW  int strcmp (const char *, const char *) __MINGW_ATTRIB_PURE;
+      |                                                            ^~~~~~~~~~~~
+..\Passenger.c:535:14: warning: passing argument 1 of 'strcmp' makes pointer from integer without a cast [-Wint-conversion]
+  535 |   if (strcmp(auxPrecioUno, &auxPrecioDos) > 0)
+      |              ^~~~~~~~~~~~
+      |              |
+      |              int
+In file included from ..\Passenger.c:9:
+c:\mingw\include\string.h:77:46: note: expected 'const char *' but argument is of type 'int'
+   77 | _CRTIMP __cdecl __MINGW_NOTHROW  int strcmp (const char *, const char *) __MINGW_ATTRIB_PURE;
+      |                                              ^~~~~~~~~~~~
+..\Passenger.c:535:28: warning: passing argument 2 of 'strcmp' from incompatible pointer type [-Wincompatible-pointer-types]
+  535 |   if (strcmp(auxPrecioUno, &auxPrecioDos) > 0)
+      |                            ^~~~~~~~~~~~~
+      |                            |
+      |                            int *
+In file included from ..\Passenger.c:9:
+c:\mingw\include\string.h:77:60: note: expected 'const char *' but argument is of type 'int *'
+   77 | _CRTIMP __cdecl __MINGW_NOTHROW  int strcmp (const char *, const char *) __MINGW_ATTRIB_PURE;
+      |                                                            ^~~~~~~~~~~~
+..\Passenger.c:526:2: warning: 'auxPrecioUno' is used uninitialized in this function [-Wuninitialized]
+  526 |  Passenger_getPrecio(precioPasajeroUno, auxPrecioUno);
+      |  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
+00:13:53 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Passenger.o "..\\Passenger.c" 
+..\Passenger.c: In function 'Passenger_compareByPrecio':
+..\Passenger.c:526:41: warning: passing argument 2 of 'Passenger_getPrecio' makes pointer from integer without a cast [-Wint-conversion]
+  526 |  Passenger_getPrecio(precioPasajeroUno, auxPrecioUno);
+      |                                         ^~~~~~~~~~~~
+      |                                         |
+      |                                         int
+..\Passenger.c:243:49: note: expected 'float *' but argument is of type 'int'
+  243 | int Passenger_getPrecio(Passenger* this, float* precio)
+      |                                          ~~~~~~~^~~~~~
+..\Passenger.c:527:41: warning: passing argument 2 of 'Passenger_getPrecio' makes pointer from integer without a cast [-Wint-conversion]
+  527 |  Passenger_getPrecio(precioPasajeroDos, auxPrecioDos);
+      |                                         ^~~~~~~~~~~~
+      |                                         |
+      |                                         int
+..\Passenger.c:243:49: note: expected 'float *' but argument is of type 'int'
+  243 | int Passenger_getPrecio(Passenger* this, float* precio)
+      |                                          ~~~~~~~^~~~~~
+..\Passenger.c:529:26: error: invalid type argument of unary '*' (have 'int')
+  529 |  if(strcmp(auxPrecioUno, *auxPrecioDos) == 0)
+      |                          ^~~~~~~~~~~~~
+..\Passenger.c:529:12: warning: passing argument 1 of 'strcmp' makes pointer from integer without a cast [-Wint-conversion]
+  529 |  if(strcmp(auxPrecioUno, *auxPrecioDos) == 0)
+      |            ^~~~~~~~~~~~
+      |            |
+      |            int
+In file included from ..\Passenger.c:9:
+c:\mingw\include\string.h:77:46: note: expected 'const char *' but argument is of type 'int'
+   77 | _CRTIMP __cdecl __MINGW_NOTHROW  int strcmp (const char *, const char *) __MINGW_ATTRIB_PURE;
+      |                                              ^~~~~~~~~~~~
+..\Passenger.c:535:28: error: invalid type argument of unary '*' (have 'int')
+  535 |   if (strcmp(auxPrecioUno, *auxPrecioDos) > 0)
+      |                            ^~~~~~~~~~~~~
+..\Passenger.c:535:14: warning: passing argument 1 of 'strcmp' makes pointer from integer without a cast [-Wint-conversion]
+  535 |   if (strcmp(auxPrecioUno, *auxPrecioDos) > 0)
+      |              ^~~~~~~~~~~~
+      |              |
+      |              int
+In file included from ..\Passenger.c:9:
+c:\mingw\include\string.h:77:46: note: expected 'const char *' but argument is of type 'int'
+   77 | _CRTIMP __cdecl __MINGW_NOTHROW  int strcmp (const char *, const char *) __MINGW_ATTRIB_PURE;
+      |                                              ^~~~~~~~~~~~
+00:15:15 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Passenger.o "..\\Passenger.c" 
+..\Passenger.c: In function 'Passenger_compareByPrecio':
+..\Passenger.c:526:41: warning: passing argument 2 of 'Passenger_getPrecio' makes pointer from integer without a cast [-Wint-conversion]
+  526 |  Passenger_getPrecio(precioPasajeroUno, auxPrecioUno);
+      |                                         ^~~~~~~~~~~~
+      |                                         |
+      |                                         int
+..\Passenger.c:243:49: note: expected 'float *' but argument is of type 'int'
+  243 | int Passenger_getPrecio(Passenger* this, float* precio)
+      |                                          ~~~~~~~^~~~~~
+..\Passenger.c:527:41: warning: passing argument 2 of 'Passenger_getPrecio' makes pointer from integer without a cast [-Wint-conversion]
+  527 |  Passenger_getPrecio(precioPasajeroDos, auxPrecioDos);
+      |                                         ^~~~~~~~~~~~
+      |                                         |
+      |                                         int
+..\Passenger.c:243:49: note: expected 'float *' but argument is of type 'int'
+  243 | int Passenger_getPrecio(Passenger* this, float* precio)
+      |                                          ~~~~~~~^~~~~~
+..\Passenger.c:535:14: warning: passing argument 1 of 'strcmp' makes pointer from integer without a cast [-Wint-conversion]
+  535 |   if (strcmp(auxPrecioUno, auxPrecioDos) > 0)
+      |              ^~~~~~~~~~~~
+      |              |
+      |              int
+In file included from ..\Passenger.c:9:
+c:\mingw\include\string.h:77:46: note: expected 'const char *' but argument is of type 'int'
+   77 | _CRTIMP __cdecl __MINGW_NOTHROW  int strcmp (const char *, const char *) __MINGW_ATTRIB_PURE;
+      |                                              ^~~~~~~~~~~~
+..\Passenger.c:535:28: warning: passing argument 2 of 'strcmp' makes pointer from integer without a cast [-Wint-conversion]
+  535 |   if (strcmp(auxPrecioUno, auxPrecioDos) > 0)
+      |                            ^~~~~~~~~~~~
+      |                            |
+      |                            int
+In file included from ..\Passenger.c:9:
+c:\mingw\include\string.h:77:60: note: expected 'const char *' but argument is of type 'int'
+   77 | _CRTIMP __cdecl __MINGW_NOTHROW  int strcmp (const char *, const char *) __MINGW_ATTRIB_PURE;
+      |                                                            ^~~~~~~~~~~~
+..\Passenger.c:526:2: warning: 'auxPrecioUno' is used uninitialized in this function [-Wuninitialized]
+  526 |  Passenger_getPrecio(precioPasajeroUno, auxPrecioUno);
+      |  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\Passenger.c:527:2: warning: 'auxPrecioDos' is used uninitialized in this function [-Wuninitialized]
+  527 |  Passenger_getPrecio(precioPasajeroDos, auxPrecioDos);
+      |  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
+00:15:31 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Passenger.o "..\\Passenger.c" 
+..\Passenger.c: In function 'Passenger_compareByPrecio':
+..\Passenger.c:526:41: warning: passing argument 2 of 'Passenger_getPrecio' makes pointer from integer without a cast [-Wint-conversion]
+  526 |  Passenger_getPrecio(precioPasajeroUno, auxPrecioUno);
+      |                                         ^~~~~~~~~~~~
+      |                                         |
+      |                                         int
+..\Passenger.c:243:49: note: expected 'float *' but argument is of type 'int'
+  243 | int Passenger_getPrecio(Passenger* this, float* precio)
+      |                                          ~~~~~~~^~~~~~
+..\Passenger.c:527:41: warning: passing argument 2 of 'Passenger_getPrecio' makes pointer from integer without a cast [-Wint-conversion]
+  527 |  Passenger_getPrecio(precioPasajeroDos, auxPrecioDos);
+      |                                         ^~~~~~~~~~~~
+      |                                         |
+      |                                         int
+..\Passenger.c:243:49: note: expected 'float *' but argument is of type 'int'
+  243 | int Passenger_getPrecio(Passenger* this, float* precio)
+      |                                          ~~~~~~~^~~~~~
+..\Passenger.c:526:2: warning: 'auxPrecioUno' is used uninitialized in this function [-Wuninitialized]
+  526 |  Passenger_getPrecio(precioPasajeroUno, auxPrecioUno);
+      |  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\Passenger.c:527:2: warning: 'auxPrecioDos' is used uninitialized in this function [-Wuninitialized]
+  527 |  Passenger_getPrecio(precioPasajeroDos, auxPrecioDos);
+      |  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
+00:16:21 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Passenger.o "..\\Passenger.c" 
+..\Passenger.c: In function 'Passenger_compareByPrecio':
+..\Passenger.c:526:41: warning: passing argument 2 of 'Passenger_getPrecio' from incompatible pointer type [-Wincompatible-pointer-types]
+  526 |  Passenger_getPrecio(precioPasajeroUno, &auxPrecioUno);
+      |                                         ^~~~~~~~~~~~~
+      |                                         |
+      |                                         int *
+..\Passenger.c:243:49: note: expected 'float *' but argument is of type 'int *'
+  243 | int Passenger_getPrecio(Passenger* this, float* precio)
+      |                                          ~~~~~~~^~~~~~
+..\Passenger.c:527:41: warning: passing argument 2 of 'Passenger_getPrecio' from incompatible pointer type [-Wincompatible-pointer-types]
+  527 |  Passenger_getPrecio(precioPasajeroDos, &auxPrecioDos);
+      |                                         ^~~~~~~~~~~~~
+      |                                         |
+      |                                         int *
+..\Passenger.c:243:49: note: expected 'float *' but argument is of type 'int *'
+  243 | int Passenger_getPrecio(Passenger* this, float* precio)
+      |                                          ~~~~~~~^~~~~~
+gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
+00:17:03 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Passenger.o "..\\Passenger.c" 
+gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
+00:19:36 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Passenger.o "..\\Passenger.c" 
+gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
+Info: Nothing to build for TP_3
+00:21:25 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Passenger.o "..\\Passenger.c" 
+gcc "-LD:\\OneDrive\\Escritorio\\TP_LABORATORIO_1\\TP_3" -o TP_3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
+Info: Nothing to build for TP_3
