@@ -21696,3 +21696,452 @@ java.lang.NullPointerException
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException
+!SESSION 2022-06-12 21:15:59.672 -----------------------------------------------
+eclipse.buildId=4.23.0.I20220308-0310
+java.version=16.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_AR
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.e4.ui.css.swt.theme 4 0 2022-06-12 21:16:05.745
+!MESSAGE /css/e4-dark_autotools.css
+!STACK 0
+java.io.FileNotFoundException: /css/e4-dark_autotools.css
+	at org.eclipse.osgi.storage.url.bundleentry.Handler.findBundleEntry(Handler.java:55)
+	at org.eclipse.osgi.storage.url.BundleResourceHandler.openConnection(BundleResourceHandler.java:182)
+	at java.base/java.net.URL.openConnection(URL.java:1126)
+	at org.eclipse.osgi.storage.url.BundleURLConverter.resolve(BundleURLConverter.java:55)
+	at org.eclipse.core.runtime.FileLocator.resolve(FileLocator.java:285)
+	at org.eclipse.core.internal.runtime.PlatformURLConverter.resolve(PlatformURLConverter.java:53)
+	at org.eclipse.core.runtime.FileLocator.resolve(FileLocator.java:285)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.setTheme(ThemeEngine.java:466)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.setTheme(ThemeEngine.java:434)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.restore(ThemeEngine.java:605)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.setCSSTheme(PartRenderingEngine.java:1417)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.initializeStyling(PartRenderingEngine.java:1324)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1050)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
+
+!ENTRY org.eclipse.e4.ui.css.swt.theme 4 0 2022-06-12 21:16:05.756
+!MESSAGE /css/e4-dark_make.css
+!STACK 0
+java.io.FileNotFoundException: /css/e4-dark_make.css
+	at org.eclipse.osgi.storage.url.bundleentry.Handler.findBundleEntry(Handler.java:55)
+	at org.eclipse.osgi.storage.url.BundleResourceHandler.openConnection(BundleResourceHandler.java:182)
+	at java.base/java.net.URL.openConnection(URL.java:1126)
+	at org.eclipse.osgi.storage.url.BundleURLConverter.resolve(BundleURLConverter.java:55)
+	at org.eclipse.core.runtime.FileLocator.resolve(FileLocator.java:285)
+	at org.eclipse.core.internal.runtime.PlatformURLConverter.resolve(PlatformURLConverter.java:53)
+	at org.eclipse.core.runtime.FileLocator.resolve(FileLocator.java:285)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.setTheme(ThemeEngine.java:466)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.setTheme(ThemeEngine.java:434)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.restore(ThemeEngine.java:605)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.setCSSTheme(PartRenderingEngine.java:1417)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.initializeStyling(PartRenderingEngine.java:1324)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1050)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-06-12 21:16:11.376
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\patri'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-06-12 21:19:42.500
+!MESSAGE Indexed 'pruebaTp3' (5 sources, 25 headers) in 0,561 sec: 1.869 declarations; 3.929 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
+!SESSION 2022-06-13 10:55:08.459 -----------------------------------------------
+eclipse.buildId=4.23.0.I20220308-0310
+java.version=16.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_AR
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.e4.ui.css.swt.theme 4 0 2022-06-13 10:55:14.590
+!MESSAGE /css/e4-dark_autotools.css
+!STACK 0
+java.io.FileNotFoundException: /css/e4-dark_autotools.css
+	at org.eclipse.osgi.storage.url.bundleentry.Handler.findBundleEntry(Handler.java:55)
+	at org.eclipse.osgi.storage.url.BundleResourceHandler.openConnection(BundleResourceHandler.java:182)
+	at java.base/java.net.URL.openConnection(URL.java:1126)
+	at org.eclipse.osgi.storage.url.BundleURLConverter.resolve(BundleURLConverter.java:55)
+	at org.eclipse.core.runtime.FileLocator.resolve(FileLocator.java:285)
+	at org.eclipse.core.internal.runtime.PlatformURLConverter.resolve(PlatformURLConverter.java:53)
+	at org.eclipse.core.runtime.FileLocator.resolve(FileLocator.java:285)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.setTheme(ThemeEngine.java:466)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.setTheme(ThemeEngine.java:434)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.restore(ThemeEngine.java:605)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.setCSSTheme(PartRenderingEngine.java:1417)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.initializeStyling(PartRenderingEngine.java:1324)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1050)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
+
+!ENTRY org.eclipse.e4.ui.css.swt.theme 4 0 2022-06-13 10:55:14.597
+!MESSAGE /css/e4-dark_make.css
+!STACK 0
+java.io.FileNotFoundException: /css/e4-dark_make.css
+	at org.eclipse.osgi.storage.url.bundleentry.Handler.findBundleEntry(Handler.java:55)
+	at org.eclipse.osgi.storage.url.BundleResourceHandler.openConnection(BundleResourceHandler.java:182)
+	at java.base/java.net.URL.openConnection(URL.java:1126)
+	at org.eclipse.osgi.storage.url.BundleURLConverter.resolve(BundleURLConverter.java:55)
+	at org.eclipse.core.runtime.FileLocator.resolve(FileLocator.java:285)
+	at org.eclipse.core.internal.runtime.PlatformURLConverter.resolve(PlatformURLConverter.java:53)
+	at org.eclipse.core.runtime.FileLocator.resolve(FileLocator.java:285)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.setTheme(ThemeEngine.java:466)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.setTheme(ThemeEngine.java:434)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.restore(ThemeEngine.java:605)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.setCSSTheme(PartRenderingEngine.java:1417)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.initializeStyling(PartRenderingEngine.java:1324)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1050)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-06-13 10:55:19.673
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\patri'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2022-06-14 20:36:44.661 -----------------------------------------------
+eclipse.buildId=4.23.0.I20220308-0310
+java.version=16.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_AR
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.e4.ui.css.swt.theme 4 0 2022-06-14 20:36:50.137
+!MESSAGE /css/e4-dark_autotools.css
+!STACK 0
+java.io.FileNotFoundException: /css/e4-dark_autotools.css
+	at org.eclipse.osgi.storage.url.bundleentry.Handler.findBundleEntry(Handler.java:55)
+	at org.eclipse.osgi.storage.url.BundleResourceHandler.openConnection(BundleResourceHandler.java:182)
+	at java.base/java.net.URL.openConnection(URL.java:1126)
+	at org.eclipse.osgi.storage.url.BundleURLConverter.resolve(BundleURLConverter.java:55)
+	at org.eclipse.core.runtime.FileLocator.resolve(FileLocator.java:285)
+	at org.eclipse.core.internal.runtime.PlatformURLConverter.resolve(PlatformURLConverter.java:53)
+	at org.eclipse.core.runtime.FileLocator.resolve(FileLocator.java:285)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.setTheme(ThemeEngine.java:466)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.setTheme(ThemeEngine.java:434)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.restore(ThemeEngine.java:605)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.setCSSTheme(PartRenderingEngine.java:1417)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.initializeStyling(PartRenderingEngine.java:1324)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1050)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
+
+!ENTRY org.eclipse.e4.ui.css.swt.theme 4 0 2022-06-14 20:36:50.151
+!MESSAGE /css/e4-dark_make.css
+!STACK 0
+java.io.FileNotFoundException: /css/e4-dark_make.css
+	at org.eclipse.osgi.storage.url.bundleentry.Handler.findBundleEntry(Handler.java:55)
+	at org.eclipse.osgi.storage.url.BundleResourceHandler.openConnection(BundleResourceHandler.java:182)
+	at java.base/java.net.URL.openConnection(URL.java:1126)
+	at org.eclipse.osgi.storage.url.BundleURLConverter.resolve(BundleURLConverter.java:55)
+	at org.eclipse.core.runtime.FileLocator.resolve(FileLocator.java:285)
+	at org.eclipse.core.internal.runtime.PlatformURLConverter.resolve(PlatformURLConverter.java:53)
+	at org.eclipse.core.runtime.FileLocator.resolve(FileLocator.java:285)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.setTheme(ThemeEngine.java:466)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.setTheme(ThemeEngine.java:434)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.restore(ThemeEngine.java:605)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.setCSSTheme(PartRenderingEngine.java:1417)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.initializeStyling(PartRenderingEngine.java:1324)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1050)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-06-14 20:36:56.034
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\patri'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.cdt.core 4 0 2022-06-14 20:40:01.249
+!MESSAGE Error: Cannot run program "gcc": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "gcc": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:450)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:147)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:134)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:131)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:190)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:274)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:799)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:727)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:592)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:518)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 0 2022-06-14 20:40:01.334
+!MESSAGE Error: Cannot run program "g++": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "g++": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:450)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:147)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:134)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:131)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:190)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:274)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:799)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:727)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:592)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:518)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 0 2022-06-14 20:40:01.417
+!MESSAGE Error: Cannot run program "gcc": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "gcc": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:450)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:147)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:134)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:131)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:190)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:274)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:799)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:727)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:592)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:518)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 0 2022-06-14 20:40:01.494
+!MESSAGE Error: Cannot run program "g++": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "g++": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:450)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:147)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:134)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:131)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:190)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:274)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:799)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:727)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:592)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:518)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 0 2022-06-14 20:40:01.650
+!MESSAGE Error: Cannot run program "gcc": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "gcc": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:450)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:147)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:134)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:131)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:190)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:274)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:799)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:727)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:592)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:518)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 0 2022-06-14 20:40:01.726
+!MESSAGE Error: Cannot run program "g++": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "g++": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:450)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:147)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:134)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:131)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:190)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:274)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:799)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:727)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:592)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:518)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 0 2022-06-14 20:40:01.805
+!MESSAGE Error: Cannot run program "gcc": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "gcc": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:450)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:147)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:134)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:131)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:190)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:274)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:799)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:727)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:592)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:518)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 0 2022-06-14 20:40:01.877
+!MESSAGE Error: Cannot run program "g++": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "g++": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:450)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:147)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:134)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:131)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:190)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:274)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:799)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:727)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:592)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:518)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-06-14 20:40:02.810
+!MESSAGE Indexed 'likedList' (24 sources, 23 headers) in 0,905 sec: 807 declarations; 4.441 references; 71 unresolved inclusions; 0 syntax errors; 78 unresolved names (1,5 %)
+
+!ENTRY org.eclipse.cdt.core 4 0 2022-06-14 20:40:42.394
+!MESSAGE Error: Cannot run program "make": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "make": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:450)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:147)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:134)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:131)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:190)
+	at org.eclipse.cdt.core.CommandLauncherManager$CommandLauncherWrapper.execute(CommandLauncherManager.java:146)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:274)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeExternalBuild(ExternalBuildRunner.java:140)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeBuild(ExternalBuildRunner.java:73)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:774)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:524)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:466)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:860)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:232)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:281)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:334)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:337)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:392)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:417)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:517)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:413)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
