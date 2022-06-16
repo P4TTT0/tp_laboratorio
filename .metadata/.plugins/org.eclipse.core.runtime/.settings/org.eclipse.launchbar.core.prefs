@@ -12,5 +12,7 @@ org.eclipse.launchbar.core.descriptorType.default\:TP_1.exe/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:TP_1.exe/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:TP_2.exe/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:TP_3.exe/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:likedList.exe/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:likedList.exe/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:pruebaTp3.exe/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:pruebaTp3.exe/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
