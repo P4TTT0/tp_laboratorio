@@ -446,6 +446,21 @@ int ll_push(LinkedList* this, int index, void* pElement)
 void* ll_pop(LinkedList* this,int index)
 {
     void* returnAux = NULL;
+    int len;
+
+    if (this != NULL)
+    {
+    	len = ll_len(this);
+    	void* auxNode = NULL;
+
+    	if (index >= 0 && index < len)
+    	{
+			auxNode = ll_get(this, index);
+			ll_remove(this, index);
+			returnAux = auxNode;
+    	}
+
+    }
 
     return returnAux;
 }
@@ -462,6 +477,21 @@ void* ll_pop(LinkedList* this,int index)
 int ll_contains(LinkedList* this, void* pElement)
 {
     int returnAux = -1;
+    int validation;
+
+    if (this != NULL)
+    {
+    	validation = ll_indexOf(this, pElement);
+
+    	if (validation == -1)
+    	{
+    		returnAux = 0;
+    	}
+    	else
+    	{
+    		returnAux = 1;
+    	}
+    }
 
     return returnAux;
 }
@@ -478,7 +508,32 @@ int ll_contains(LinkedList* this, void* pElement)
 int ll_containsAll(LinkedList* this,LinkedList* this2)
 {
     int returnAux = -1;
+    int i;
+    int len;
 
+    if (this != NULL && this2 != NULL)
+    {
+    	len = ll_len(this2);
+    	void* auxNode;
+    	int validacion;
+
+    	returnAux = 1;
+
+    	if (len > 0)
+    	{
+    		for (i = 0; i < len; i++)
+    		{
+    			auxNode = ll_get(this2, i);
+				validacion = ll_contains(this, auxNode);
+
+				if (validacion == 0)
+				{
+					returnAux = 0;
+					break;
+				}
+    		}
+    	}
+    }
     return returnAux;
 }
 
@@ -510,6 +565,28 @@ LinkedList* ll_subList(LinkedList* this,int from,int to)
 LinkedList* ll_clone(LinkedList* this)
 {
     LinkedList* cloneArray = NULL;
+    int len;
+
+    if (this != NULL)
+    {
+    	cloneArray = ll_newLinkedList();
+    	len = ll_len(this);
+    	void* auxNode = NULL;
+
+    	cloneArray->pFirstNode = getNode(this, 0);
+    	cloneArray->size = 1;
+
+    	if (len > 0)
+    	{
+    		int i;
+    		for (i = 0 + 1; i < len; i++)
+    		{
+    			auxNode = getNode(this, i);
+    			addNode(cloneArray, i, auxNode);
+    			cloneArray->size = cloneArray->size + 1;
+    		}
+    	}
+    }
 
     return cloneArray;
 }
